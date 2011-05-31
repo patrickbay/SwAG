@@ -1,1 +1,14 @@
-SwAG is everything that's been left out of ActionScript 3, plus a few other things you might find useful for your own projects.
+The SwAG Toolkit provides ActionScript 3 developers with useful, extensively field-tested libraries for rapidly developing Flash / Flex / AIR applications.
+
+Some of the upfront benefits of using SwAG include:
+
+• Runtime-agnostic methods – All methods are written to work, without any modifications or additional checks, in any of the current Adobe runtimes including the Flash player (standalone, web, debug), and AIR (any OS). Where multiple native ActionScript methods are available for the same functionality (for example, loading a file in AIR), the best method is determined and used automatically with an option to also use the other available methods.
+
+• De-coupled events – Similar to standard Flash events but without the need to bind listeners to specific objects (“someObject.addEvenetListener…”).
+
+• Small code footprint - Use only what you need with minimal dependencies.
+
+• Easy to use, robust in response - SwAG is written from the ground up to be self-correcting though rigorous type checking, use of default values, and by assuming default (common) behaviours. All methods have been tweaked over years of development to keep your application running intelligently through most common problems.
+
+Current version: 1.0
+Last Update: May 31, 2011

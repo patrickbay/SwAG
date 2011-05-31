@@ -1,9 +1,11 @@
 package swag.effects {
 	
 	import swag.core.SwagSystem;
+	/*
 	import fl.transitions.Tween;
 	import fl.transitions.TweenEvent;
 	import fl.transitions.easing.None;
+	*/
 	/**
 	 * Similar to the standard Flash Tween class but with a variety of additional options and enhancements over the original
 	 * animation system.
@@ -18,24 +20,31 @@ package swag.effects {
 	public class SwagTween	{
 		
 		/**
+		 * Array of tween objects including references to individual Tween instances, tween properties, and other information
+		 * controlled by <code>SwagTween</code>.
+		 * @private 
+		 */
+		private var _tweens:Array;
+		
+		/**
 		 * Default constructor for the <code>SwagTween</code> class.
 		 * <p>The class constructor's parameter list is almost identical to a standard Flash <code>Tween</code> instance with the exception of
-		 * an additional <code>props</code> paramater which provides support for <code>SwagTween</code>'s extended features.</code>
+		 * an additional <code>props</code> paramater which provides support for <code>SwagTween</code>'s extended features.</p>
 		 * 
-		 * @param obj The object on which to perform the tween (within which the <code>props</code> property  /properties reside.
+		 * @param obj The object on which to perform the tween (within which the <code>props</code> property / properties reside.
 		 * @param props The property or properties to update with the tween. If applying the tween to multiple properties, they must be 
 		 * separated by a comma. All properties will be tweened with the same values. Note that this differs from the standard <code>Tween</code> 
 		 * instance which only supports one property).
-		 * @param func The tweening function (for example, one of the <code>fl.transitions.easing.*</code> classes) to use with the tween. The parameter
+		 * @param func The tweening function (for example, one of the <code>fl.transitions.easing.&#42;</code> classes) to use with the tween. The parameter
 		 * may either be a direct reference to the easing class, as in a standard <code>Tween</code> instance, or it may be a string in which case
 		 * <code>SwagTween</code> will attempt to retrieve a reference to the class from Flash memory. If none can be found, an error will be dispatched and
 		 * no tween will take place.
 		 * @param begin The starting value(s) for the tweenable properties. If this value is numeric, it is assumed to apply to all the properies listed in the
-		 * <code>props</code> parameter. If it's a string or an array it's assumed to contain a list of values to apply to the properties listed in the "props"
-		 * parameter in the order in which they appear (values in a string must be comma separated). If the number of values exceeds the number of properties, 
-		 * any remaining values are ignored. If the number of values is less than the associated properties, the last value in the list is used with the 
-		 * remaining properties. If no value is provided (e.g. <em>null</em>), or the value is of a type that can't be used (e.g. not a <code>String</code>, 
-		 * <code>Array</code>, or a numeric type), an error will be dispatched and no tween will take place.
+		 * <code>props</code> parameter. If it's a string or an array it's assumed to contain a list of values to apply to the properties listed in the 
+		 * <code>props</code> parameter in the order in which they appear (values in a string must be comma separated). If the number of values exceeds the 
+		 * number of properties, any remaining values are ignored. If the number of values is less than the associated properties, the last value in the list 
+		 * is used with the remaining properties. If no value is provided (e.g. <em>null</em>), or the value is of a type that can't be used (e.g. not a 
+		 * <code>String</code>, <code>Array</code>, or a numeric type), an error will be dispatched and no tween will take place.
 		 * @param finish The ending value(s) for the tweenable properties. If this value is numeric, it is assumed to apply to all the properies listed in the
 		 * <code>props</code> parameter. If it's a string or an array it's assumed to contain a list of values to apply to the properties listed in the "props"
 		 * parameter in the order in which they appear (values in a string must be comma separated). If the number of values exceeds the number of properties, 
@@ -64,7 +73,7 @@ package swag.effects {
 		public function SwagTween(obj:Object, props:String, func:*, begin:*, finish:*, duration:*, useSeconds:Boolean = false, extras:Object=null) {
 			if (obj==null) {
 				return;
-			}//if
+			}//if			
 		}//constructor
 		
 	}//SwagTween class

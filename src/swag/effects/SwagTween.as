@@ -1,9 +1,11 @@
 package swag.effects {
 	
+	import swag.interfaces.effects.ISwagTween;
 	import swag.core.SwagSystem;	
 	import fl.transitions.Tween;
 	import fl.transitions.TweenEvent;
 	import fl.transitions.easing.None;	
+
 	/**
 	 * Similar to the standard Flash Tween class but with a variety of additional options and enhancements over the original
 	 * animation system.
@@ -15,7 +17,7 @@ package swag.effects {
 	 * @see fl.transitions.Tween
 	 * 
 	 */
-	public class SwagTween	{		
+	public class SwagTween implements ISwagTween {		
 		
 		/**
 		 * Array of tween objects including references to individual Tween instances, tween properties, and other information

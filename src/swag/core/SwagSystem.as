@@ -27,8 +27,7 @@ package swag.core {
 		private static var _settings:Object=new Object();
 		private static var _onExistsTimer:Timer=null;
 		private static var _onExistsWatches:Array=new Array();
-					
-		
+							
 		/**
 		 * 
 		 * Returns true if <code>SwagSystem</code> has been initialized, false otherwise. 
@@ -280,9 +279,9 @@ package swag.core {
 		/**
 		 * @private 
 		 */		
-		private static function updateSettingsObject():void {		
+		private static function updateSettingsObject():void {					
+			_settings=new Object();	
 			_initialized=true;
-			_settings=new Object();				
 			//Push all the public properties from the Capabilities class into the settings object...
 			_settings.avHardwareDisable=Capabilities.avHardwareDisable;
 			_settings.cpuArchitecture=Capabilities.cpuArchitecture;
@@ -321,7 +320,7 @@ package swag.core {
 			_settings.parsedVersion=SwagDataTools.parseVersionString(cleanedVersion, ",");
 			//Push all the public properties from the System class...			
 			try {
-				_settings.ime=System.ime; //The iPhone player seems to have issues with this.
+				_settings.ime=System.ime; //iPhone export seems to have issues with this.
 			} catch (e:*) {
 				trace (e);
 			}//catch

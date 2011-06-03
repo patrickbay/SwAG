@@ -1,13 +1,16 @@
 package swag.core {
 	
-	import swag.core.SwagDataTools;
-	import swag.core.SwagDispatcher;
-	import swag.events.SwagEvent;
-	import swag.interfaces.core.ISwagSystem;
+	import flash.events.TimerEvent;
 	import flash.system.ApplicationDomain;
 	import flash.system.Capabilities;
 	import flash.system.System;
+	import flash.utils.Timer;
 	import flash.utils.getDefinitionByName;
+	
+	import swag.core.SwagDataTools;
+	import swag.core.SwagDispatcher;
+	import swag.events.SwagEvent;
+	import swag.interfaces.core.ISwagSystem;	
 	/**
 	 * Provides or collects a variety of methods and properties that can be used by the developer to deeply inspect and (sometimes)
 	 * update the host system settings (the Flash / AIR version, the operating system, browser, etc.), or various core ActionScript 
@@ -18,10 +21,13 @@ package swag.core {
 	 */
 	public final class SwagSystem extends SwagDispatcher implements ISwagSystem	{
 		
+		private static const _mobileOSes:Array=["Windows SmartPhone", "Windows PocketPC", "Windows CEPC", "Windows Mobile", "iPhone"];
 		//Setters (where appropriate) & getters are provided for the following properties.
 		private static var _initialized:Boolean=false;		
-		private static var _settings:Object=new Object();						
-		private static const _mobileOSes:Array=["Windows SmartPhone", "Windows PocketPC", "Windows CEPC", "Windows Mobile", "iPhone"];			
+		private static var _settings:Object=new Object();
+		private static var _onExistsTimer:Timer=null;
+		private static var _onExistsWatches:Array=new Array();
+					
 		
 		/**
 		 * 
@@ -140,7 +146,137 @@ package swag.core {
 			}//catch
 			return (null);
 		}//getDefinition
+		
+		/**
+		 * Begins monitoring for the existence of a property within a specific object, and invokes a method
+		 * when that property becomes available (is not <em>undefined</em> and, optionally, is not <em>null</em>).
+		 * <p><em>Null</em> objects are considered to exist and will trigger the <code>callbackMethod</code> unless
+		 * the <code>allowNull</code> parameter is <em>false</em>.</p> 
+		 * 
+		 * @param property The property to begin monitoring for. Must not be <em>null</em> or an empty string.
+		 * @param targetObject The object that is expected to contain the <code>property</code> at some time in the future. Must not
+		 * be <em>null</em>.
+		 * @param callbackMethod The method to invoke when the specified <code>property</code> within the <code>targetObject</code> becomes
+		 * available. The callback method should not expect any parameters.
+		 * @param allowNull If <em>true</em>, <em>null</em> objects are considered to exist and will invoke the <code>callbackMethod</code>. 
+		 * If <em>false</em>, only non-<em>null</em> and non-<em>undefined</em> objects are considered to exist.
+		 * 
+		 * @return <em>True</em> if the <code>property</code> monitor was successfully created and started. <em>False</em> is returned if there 
+		 * was a problem creating the watch monitor (for example, if one of the supplied parameters is incorrect). 
+		 * 
+		 */
+		public static function onExists(property:String, targetObject:*, callbackMethod:Function, allowNull:Boolean=true):Boolean {
+			if (!SwagDataTools.hasData(property)) {
+				return (false);
+			}//if
+			if (property=="") {
+				return (false);
+			}//if
+			if (targetObject==null) {
+				return (false);
+			}//if
+			if (callbackMethod==null) {
+				return (false);
+			}//if
+			if (addOnExistsWatch(property, targetObject, callbackMethod)==false) {
+				return (false);
+			}//if
+			if (startOnExistsTimer()==false) {
+				return (false);
+			}//if
+			return (true);
+		}//onExists
 				
+		/**
+		 * @private 		 		 
+		 */
+		private static function onExistsMonitor(eventObj:TimerEvent):void {
+			if (_onExistsWatches==null) {
+				stopOnExistsTimer();
+			}//if
+			if (_onExistsWatches.length==0) {
+				stopOnExistsTimer();
+			}//if
+			for (var count:int=0; count<_onExistsWatches.length; count++) {
+				var currentWatch:Object=_onExistsWatches[count] as Object;
+				if ((currentWatch.targetObject==null) || (currentWatch.property==null) || (currentWatch.callbackMethod==null)) {
+					removeOnExistsWatch(currentWatch);
+					return;
+				}//if
+				if (currentWatch.targetObject[currentWatch.property]!=undefined) {
+					if (currentWatch.allowNull==true) {
+						currentWatch.callbackMethod();
+						removeOnExistsWatch(currentWatch);
+					} else {
+						if (SwagDataTools.hasData(currentWatch.targetObject[currentWatch.property])) {
+							currentWatch.callbackMethod();
+							removeOnExistsWatch(currentWatch);
+						}//if
+					}//else
+				}//if
+			}//for
+		}//onExistsMonitor
+		
+		/**
+		 * @private 		 		 
+		 */
+		private static function startOnExistsTimer():Boolean {
+			stopOnExistsTimer();
+			_onExistsTimer=new Timer(10);
+			_onExistsTimer.addEventListener(TimerEvent.TIMER, onExistsMonitor);
+			_onExistsTimer.start();
+			return (true);
+		}//startOnExistsTimer
+		
+		/**
+		 * @private 		 		 
+		 */
+		private static function stopOnExistsTimer():Boolean {
+			if (_onExistsTimer!=null) {
+				if (_onExistsTimer.running) {
+					_onExistsTimer.stop();
+				}//if
+				_onExistsTimer.removeEventListener(TimerEvent.TIMER, onExistsMonitor);
+				_onExistsTimer=null;
+			}//if
+		}//stopOnExistsTimer
+		
+		/**
+		 * @private 		 		 
+		 */
+		private static function addOnExistsWatch(property:String, targetObject:*, callbackMethod:Function, allowNull:Boolean=true):Boolean {
+			if (_onExistsWatches==null) {
+				_onExistsWatches=new Array();
+			}//if
+			var watchObject:Object=new Object();
+			watchObject.property=new String(property);
+			watchObject.targetObject=targetObject;
+			watchObject.callbackMethod=callbackMethod;
+			watchObject.allowNull=allowNull;
+			_onExistsWatches.push(watchObject);
+			return (true);
+		}//addOnExistsWatch
+		
+		/**
+		 * @private 		 		 
+		 */
+		private static function removeOnExistsWatch(watchObject:Object):Boolean {
+			if (_onExistsWatches==null) {
+				return (false);
+			}//if
+			if (_onExistsWatches.length==0) {
+				return (false);
+			}//if
+			for (var count:int=0; count<_onExistsWatches.length; count++) {
+				var currentWatch:Object=_onExistsWatches[count] as Object;
+				if (currentWatch==watchObject) {
+					_onExistsWatches.splice(count, 1);
+					return (true);
+				}//if
+			}//for
+			return (false);
+		}//removeOnExistsWatch
+		
 		/**
 		 * @private 
 		 */		
@@ -189,14 +325,11 @@ package swag.core {
 			} catch (e:*) {
 				trace (e);
 			}//catch
-			/*
-			//AIR 2.0 / Flash 10+; can't run ASDoc on this in current version of Flash Builder...but it compiles okay!
 			_settings.freeMemory=System.freeMemory;
 			_settings.privateMemory=System.privateMemory;
 			_settings.totalMemoryNumber=System.totalMemoryNumber;			
 			_settings.privateMemory=null;
-			_settings.totalMemoryNumber=null;
-			*/
+			_settings.totalMemoryNumber=null;			
 			_settings.totalMemory=System.totalMemory;			
 			_settings.useCodePage=System.useCodePage;
 			//Now add custom settings properties...

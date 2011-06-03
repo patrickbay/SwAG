@@ -2,6 +2,7 @@ package swag.core {
 	
 	import flash.utils.describeType;
 	import flash.utils.getDefinitionByName;
+	import flash.xml.XMLDocument;
 	import flash.xml.XMLNode;
 	
 	import swag.core.SwagDispatcher;
@@ -95,6 +96,40 @@ package swag.core {
 			}//if
 			return (true);
 		}//hasData
+		
+		/**
+		 * Verifies that the supplied parameter is one of the valid ActionScript 3 XML objects, or a string that can be converted to a valid XML
+		 * object.
+		 *  
+		 * @param args The first parameter is the argument to validate as either <code>XML</code>, <code>XMLList</code>, <code>XMLDocument</code>, 
+		 * <code>XMLNode</code>, or a string with valid XML data if the optional second parameter is <em>true</em> (default is <em>false</em>).
+		 * 
+		 * @return <em>True</em> if the supplied argument is a valid <code>XML</code>, <code>XMLList</code>, <code>XMLDocument</code>, or 
+		 * <code>XMLNode</code> object, or if it's a string that can be converted used as a valid XML object (if the second parameter is <em>true</em>). 
+		 * <em>False</em> is returned when none of these conditions are met. 
+		 * 
+		 */
+		public static function isXML(... args):Boolean {
+			if (args == null) {				
+				return (false);
+			}//if
+			if (args[0] == undefined) {				
+				return (false);
+			}//if
+			if ((args[0] is String) && (args[1]==true)){
+				var localString:String=new String(args[0]);
+				try {					
+					var testXML:XML=new XML(localString);
+					return (true);
+				} catch (e:TypeError) {					
+					return (false);
+				}//catch				
+			}//if
+			if ((args[0] is XML) || (args[0] is XMLList) || (args[0] is XMLDocument) || (args[0] is XMLNode)) {				
+				return (true);
+			}//if			
+			return (false);
+		}//isXML
 		
 		/**
 		 * 
@@ -529,7 +564,7 @@ package swag.core {
 		 * 
 		 * @param method The method for which to retrieve the list of parameters.
 		 * @param container The containing object in which the <code>method</code> resides. Without this reference it's
-		 * not possible to determine the specific method properties.
+		 * not possible to determine the specific method properties (this call will fail).
 		 * 
 		 * @return An ordered <code>Array</code> of classes / types, in the order in which they appear, of the specified
 		 * method, or <em>null</em> if there was a problem retrieving this information. For a method with no parameters,

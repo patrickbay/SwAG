@@ -11,4 +11,4 @@ Some of the upfront benefits of using SwAG include:
 • Easy to use, robust in response - SwAG is written from the ground up to be self-correcting though rigorous type checking, use of default values, and by assuming default (common) behaviours. All methods have been tweaked over years of development to keep your application running intelligently through most common problems.
 
 Current version: 1.0
-Last Update: May 31, 2011
+Last Update: June 3, 2011

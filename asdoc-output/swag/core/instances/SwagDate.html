@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="SwagDate,swag.core.instances.SwagDate,MSDOSDate,MSDOSTime,date,dateIndex,day,dayOfWeek,dayOfWeekName,elapsedHours,elapsedMilliseconds,elapsedMinutes,elapsedSeconds,hours,milliseconds,minutes,month,seconds,timerTotalMilliseconds,totalHours,totalMilliseconds,totalMinutes,totalSeconds,year,getDaysPerMonth,getMonthName,getMonthNumber,getTimeString,isLater,isLeapYear,isSame,onCountDownComplete,onCountDownTick,onCountUpComplete,onCountUpTick,resetCountDown,resetCountUp,startCountDown,startCountUp,stopCountDown,stopCountUp,toString,toString"><title>swag.core.instances.SwagDate</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'SwagDate - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?swag/core/instances/SwagDate.html&amp;swag/core/instances/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">SwagDate</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("SwagDate"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">swag.core.instances</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  SwagDate</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">SwagDate  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr><tr><td class="classHeaderTableLabel">Implements</td><td> swag.interfaces.core.instances.ISwagDate</td></tr></table><p></p><p></p><p></p>
+	 Contains and extends a standard Flash <code>Date</code> object with various formatting and comparison options as well
+	 as other date-related utilities. 
+	 <p>This instance is intended to be used alone but is also used throughout the SwAG toolkit for date support.</p>
+	 
+	           <p></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso">Date..</div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#date" class="signatureLink">date</a> : Date<div class="summaryTableDescription">[read-only] 
+			  
+			 The standard Flash Date object associated with the SwagDate instance.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#dateIndex" class="signatureLink">dateIndex</a> : uint<div class="summaryTableDescription">[read-only] 
+			 An unsigned integer value based on the date of the instance in the format YYYYMMDD.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#day" class="signatureLink">day</a> : Number<div class="summaryTableDescription">[read-only] 
+			 
+			 The numeric value of the day of the month associated with the SwagDate instance.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#dayOfWeek" class="signatureLink">dayOfWeek</a> : Number<div class="summaryTableDescription">[read-only] 			 
+			 The numeric value representing the day of the week associated with the current SwagDate 
+			 instance.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#dayOfWeekName" class="signatureLink">dayOfWeekName</a> : String<div class="summaryTableDescription">[read-only] 
+			 The full name of the day of the week associated with this SwagDate instance.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#month" class="signatureLink">month</a> : Number<div class="summaryTableDescription">[read-only] 
+			 
+			 The numeric value of the month associated with the SwagDate instance.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#MSDOSDate" class="signatureLink">MSDOSDate</a> : uint<div class="summaryTableDescription">[write-only] 
+			 Sets the date (day / month / year) value for the SwagDate instance from a 16-bit packed MS-DOS time format.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#year" class="signatureLink">year</a> : Number<div class="summaryTableDescription">[read-only] 
+			 
+			 The numeric value of the year associated with the SwagDate instance.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#SwagDate()" class="signatureLink">SwagDate</a>(... args)</div><div class="summaryTableDescription">
+		 Default constructor for the SwagDate object.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getDaysPerMonth()" class="signatureLink">getDaysPerMonth</a>(... args):uint</div><div class="summaryTableDescription">
+		 Returns the number of days of the specified month, or of the current month associated with the SwagDate
+		 instance if none specified.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getMonthName()" class="signatureLink">getMonthName</a>(monthIndex:uint, ... args):String</div><div class="summaryTableDescription">[static] 
+			 Returns the full or partial name of the month represented by the input parameter.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getMonthNumber()" class="signatureLink">getMonthNumber</a>(monthName:String):uint</div><div class="summaryTableDescription">[static] 
+			 Translates the specified month string (name or numeric string representation), to its 0-based month value.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isLater()" class="signatureLink">isLater</a>(date:<a href="../../../swag/core/instances/SwagDate.html">SwagDate</a>):Boolean</div><div class="summaryTableDescription">
+		 Compares the current SwagDate instance to another one to see if it comes later.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isLeapYear()" class="signatureLink">isLeapYear</a>(... args):Boolean</div><div class="summaryTableDescription">[static] 
+			 Evaluates the specified year to determine whether or not it's a leap year.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isSame()" class="signatureLink">isSame</a>(date:<a href="../../../swag/core/instances/SwagDate.html">SwagDate</a>):Boolean</div><div class="summaryTableDescription">
+		 Compares the current SwagDate instance to another one to see if they fall on the same date.</div></td><td class="summaryTableOwnerCol">SwagDate</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toString()" class="signatureLink">toString</a>():String</div><div class="summaryTableDescription">
+			 
+			 </div></td><td class="summaryTableOwnerCol">SwagDate</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="date"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">date</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>date:Date</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+			  
+			 The standard Flash <code>Date</code> object associated with the <code>SwagDate</code> instance.
+			 <p> The <code>Date</code> object is used extensively throughout <code>SwagDate</code> and the values of this
+			 standard Flash object should always match the values supplied or updated via <code>SwagDate</code>.</p>
+			 
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get date():Date</code><br/></div><a name="propertyDetail"></a><a name="dateIndex"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dateIndex</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>dateIndex:uint</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+			 An unsigned integer value based on the date of the instance in the format YYYYMMDD. 
+			 <p>This allows the date object to be used as a unique index value in sorted data sets like numeric arrays or as a unique 
+			 key in databases.</p>
+			 <p>Numbers in this value that are less than 10 are padded with an extra 0 to ensure that index valued and data length are retained 
+			 (i.e. the returned value will always be 8 digits long).</p>	
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dateIndex():uint</code><br/></div><a name="propertyDetail"></a><a name="day"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">day</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>day:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+			 
+			 The numeric value of the day of the month associated with the <code>SwagDate</code> instance. Day
+			 values are standard calendar values (ranging from 1 to 31).
+			 
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get day():Number</code><br/></div><a name="propertyDetail"></a><a name="dayOfWeek"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dayOfWeek</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>dayOfWeek:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>			 
+			 The numeric value representing the day of the week associated with the current <code>SwagDate</code> 
+			 instance. 
+			 <p>This value is 0-indexed; 0=Sunday, 1=Monday, 2=Tuesday, etc.</p>	
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dayOfWeek():Number</code><br/></div><a name="propertyDetail"></a><a name="dayOfWeekName"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dayOfWeekName</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>dayOfWeekName:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+			 The full name of the day of the week associated with this <code>SwagDate</code> instance. 
+			 <p>The returned name is capitalized (e.g. "Monday").</p> 
+			 
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dayOfWeekName():String</code><br/></div><a name="propertyDetail"></a><a name="month"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">month</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>month:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+			 
+			 The numeric value of the month associated with the <code>SwagDate</code> instance. 
+			 <p>Month values are 0-indexed; 0=January, 1=February, 2=March, etc.</p> 
+			 
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get month():Number</code><br/></div><a name="propertyDetail"></a><a name="MSDOSDate"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">MSDOSDate</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>MSDOSDate:uint</code>&nbsp;&nbsp;[write-only] <p></p><p></p><p>
+			 Sets the date (day / month / year) value for the <code>SwagDate</code> instance from a 16-bit packed MS-DOS time format. 
+			 <p>If this value is combined with a 16-bit time value, as with most standard packed MSDOS date/time stamps, it can be 
+			 isolated using a simple shift-right operation:
+			 <div class="listing"><pre>MSDOSDateValue=MSDOSPackedTimeDateValue &gt;&gt; 15; //Shift right by 15 bits</pre></div></p>
+			 <p>Because Flash <code>uint</code>s are 32 or posisbly 64 bits,
+			 only the last 16 bits will be evaluated. This value is assumed to be stored in a MSB (Most Significant Bit first) order.</p>
+			 
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set MSDOSDate(value:uint):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="SwagTime.html#MSDOSTime" target="">swag.core.instances.SwagTime.MSDOSTime</a></div></div><a name="propertyDetail"></a><a name="year"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">year</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>year:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+			 
+			 The numeric value of the year associated with the <code>SwagDate</code> instance. 
+			 <p>This returned number is the full, 4-digit year value (e.g. 2011)</p> 
+			 
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get year():Number</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="SwagDate()"></a><a name="SwagDate(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SwagDate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function SwagDate(... args)</code><p></p><p>
+		 Default constructor for the <code>SwagDate</code> object.
+		 
+		  
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">args</span></code> &mdash; The parameter to instantiate the instance with. If no parameter is specified, a new standard 
+		 Flash <code>Date</code> object is created with the current system date. If the parameter specified is a string, 
+		 an attempt is made by the <code>Date</code> object to create an instance of matching date properties 
+		 (see the <code>Date</code> constructor for valid formatting options). If the parameter is another <code>SwagDate</code> 
+		 instance, the date properties of the original instance are copied to the new one.
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../package.html#Date()" target="">Date()</a></div></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="getDaysPerMonth()"></a><a name="getDaysPerMonth(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getDaysPerMonth</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function getDaysPerMonth(... args):uint</code><p></p><p></p><p>
+		 Returns the number of days of the specified month, or of the current month associated with the <code>SwagDate</code>
+		 instance if none specified.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">args</span></code> &mdash; The month number to evaluate. This parameter may either be a numberic type (starting at 0 for January),
+		 a string (valid entries include the full month name, month abreviation, or numeric string representing the month number), 
+		 or omitted in which case the current <code>SwagDate</code> month value will be used.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>uint</code> &mdash; The number of days in the specified month. <b>Note: The value for February always returns a non-leap year number
+		 (29 days). Use the <code>isLeapYear</code> method to adjust this value wherer required.</b>
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="SwagDate.html#isLeapYear()" target="">isLeapYear()</a></div></div><a name="getMonthName()"></a><a name="getMonthName(uint,restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getMonthName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getMonthName(monthIndex:uint, ... args):String</code><p></p><p></p><p>
+			 Returns the full or partial name of the month represented by the input parameter.
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">monthIndex</span>:uint</code> &mdash; The numeric index of the month, starting with 0=January, 1=February, 2=March, etc.
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code>... <span class="label">args</span></code> &mdash; Optional parameters include (in order):
+			 <p><ul>
+			 <li>abbrev (<code>Boolean</code>) - If <i>true</i>, the three-letter abbreviation for the month name
+			 is returned instead of the full name (e.g. "Jul" instead of "July"). Default is <i>false</i>.</li>
+			 <li>lowercase (<code>Boolean</code>) - If <i>true</i>, the month name (full or abbreviated) is returned
+			 as a lowercase string instead of a mixed-case string in which the first letter is capitalized. Default is
+			 <i>false</i>.</li>
+			 </ul></p>
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; The name of the month, either full or abbreviated / capitalized or lowercased (depending on the optional
+			 parameters), of the specified month number.  
+			 
+			 </td></tr></table></div><a name="getMonthNumber()"></a><a name="getMonthNumber(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getMonthNumber</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getMonthNumber(monthName:String):uint</code><p></p><p></p><p>
+			 Translates the specified month string (name or numeric string representation), to its 0-based month value.
+			 <p>Months are numbered starting from 0=January, 1=February, 2=March, and so on.</p>
+			  
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">monthName</span>:String</code> &mdash; The name, 3-letter abreviation (with an optional period at the end), or numeric string representation 
+			 of the month. For example, "February", "Feb.", "february", "feb", and "1", are all equivalent and will return 
+			 month number 1.
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>uint</code> &mdash; The 0-based month number represented by the parameter. That is, 0=January, 1=February, and so on.
+			 
+			 </td></tr></table></div><a name="isLater()"></a><a name="isLater(swag.core.instances.SwagDate)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isLater</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function isLater(date:<a href="../../../swag/core/instances/SwagDate.html">SwagDate</a>):Boolean</code><p></p><p></p><p>
+		 Compares the current <code>SwagDate</code> instance to another one to see if it comes later.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">date</span>:<a href="../../../swag/core/instances/SwagDate.html">SwagDate</a></code> &mdash; The <code>SwagDate</code> instance to compare with this one.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <i>True</i> if the current <code>SwagDate</code> instance (this) is later than the specified one. 
+		 <i>False</i> is returned if the other date (parameter) is earlier, or comes before, the current one (this).  
+		 
+		 </td></tr></table></div><a name="isLeapYear()"></a><a name="isLeapYear(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isLeapYear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function isLeapYear(... args):Boolean</code><p></p><p></p><p>
+			 Evaluates the specified year to determine whether or not it's a leap year. 
+			 <p>Use this in conjunction with any methods that evaluate the number of days in a specific month (especially February).</p>
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">args</span></code> &mdash; The year value to evaluate. This may either be a numeric type, which will be used as is, a string, which
+			 will be converted to a numeric type, or a <code>SwagDate</code> instance who's <code>year</code> property will be used.
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <i>True</i> if the specified parameter is a valid leap year, <i>false</i> if it's not or if there was an
+			 error converting the parameter to a usable (i.e. numeric) type. 
+			 
+			 </td></tr></table></div><a name="isSame()"></a><a name="isSame(swag.core.instances.SwagDate)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isSame</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function isSame(date:<a href="../../../swag/core/instances/SwagDate.html">SwagDate</a>):Boolean</code><p></p><p></p><p>
+		 Compares the current <code>SwagDate</code> instance to another one to see if they fall on the same date.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">date</span>:<a href="../../../swag/core/instances/SwagDate.html">SwagDate</a></code> &mdash; The <code>SwagDate</code> instance to compare with this one.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <i>True</i> if the current <code>SwagDate</code> instance (this) is the same as the specified one. 
+		 <i>False</i> is returned if the other date (parameter) is earlier or later than the current one (this).  
+		 
+		 </td></tr></table></div><a name="toString()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function toString():String</code><p></p><p></p><p>
+			 
+			 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; The string representation of the <code>SwagDate</code> object. 
+			 <p>Currently this is the same value as that returned by the <code>Date.toDateString</code> method.</p>
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso">Date.toDateString()</div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Fri Jun 10 2011, 04:33 PM -04:00  </center></div></body></html><!--<br/>Fri Jun 10 2011, 04:33 PM -04:00  -->

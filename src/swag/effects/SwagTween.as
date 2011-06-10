@@ -7,6 +7,8 @@ package swag.effects {
 	import fl.transitions.easing.None;	
 
 	/**
+	 * @private
+	 * 
 	 * Similar to the standard Flash Tween class but with a variety of additional options and enhancements over the original
 	 * animation system.
 	 * <p>Use the <code>SwagTween</code> class in the same way as you would a standard Tween instance. Be aware, however, that <code>SwagTween</code>

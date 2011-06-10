@@ -482,6 +482,105 @@ package swag.core {
 		}//parseVersionString
 		
 		/**
+		 * Converts the to its hexadecimal representation as a string. 		 
+		 * <p>For example, the input string "Hello" is represented by its hexadecimal values: 48+65+6C+6C+6F to produce the output 
+		 * string "48656C6C6F". If the input parameter is a Number, its value (usually 32 bits) will be converted to its hexadecimal
+		 * string representation.</p>
+		 * <p>Note that the returned string has no standard hexadecimal notation such as "#" or "0x".</p>
+		 * 
+		 * @param input The string to convert to its hexadecimal representation. Each character in the string will be converted to its
+		 * two-digit hexadecimal value. The input string is copied and so the original value won't be affected.
+		 * 
+		 * @return The hexadecimal string representation of the <code>input</code> string. Any character for which the hexadecimal
+		 * value is less than 10 will have a 0 prepended. In this way the length of the returned string will always be double that
+		 * of the input string. If the <code>input</code> parameter is invalid, an empty string is returned. 
+		 * 
+		 * @see #toHexValue()
+		 * @see #fromHexString
+		 * 
+		 * @internal Conversion from negative numeric values not working correctly!
+		 * 		 
+		 */	
+		public static function toHexString(input:*):String {
+			if (isType(input, String, false)) {
+				var localString:String=new String();
+				localString=String(input);
+				var outStr:String=new String();
+				var tempStr:String=new String();
+				var currentChar:Number=new Number();
+				for (var count:uint=0;count<localString.length;count++) {
+					currentChar=localString.charCodeAt(count);
+					tempStr=currentChar.toString(16);
+					tempStr=tempStr.toUpperCase();
+					if (tempStr.length<2) {
+						outStr+='0'+tempStr;
+					} else {
+						outStr+=tempStr;
+					}//else
+				}//for
+				return (outStr);
+			} else if (isType(input, Number, false) || isType(input, int, false) || isType(input, uint, false)) {				
+				outStr=input.toString(16);				
+				//Is this a Flash bug? There is nothing that should be producing this value but sometimes we get this!
+				if (outStr=='-(0000000') {
+					outStr='80000000';
+				}//if
+				outStr=outStr.toUpperCase();
+				return (outStr);
+			} else {
+				return ("");
+			}//else
+			return ("");
+		}//toHexString
+		
+		
+		/**	
+		 * Converts a hexadecinal input string to its ordinal representation, either as an ASCII string, or as a native
+		 * numeric type.
+		 * 
+		 * @param input The string to convert to its ordinal representation. 
+		 * @param returnType The return type to convert the <code>input</code> string to. If this is a <code>String</code>, it's assumed to
+		 * be a string of hexadecimal values with each 2-digit value representing the ordinal number of an ASCII character. For
+		 * example, the <code>input</code> string "48656C6C6F" would be converted to "Hello". If this is a numeric type 
+		 * (<code>Number</code>, <code>int</code>, or <code>uint</code>), the input string will be converted to the native numeric value 
+		 * matching that type.
+		 * 
+		 * @return The plain text or native numeric value of the hexadecimal input string, or <em>null</em> if there was a problem converting it.
+		 * 
+		 * @see #toHexString()		 
+		 */	
+		public static function fromHexString(input:String, returnType:Class):* {
+			if (returnType==Number) {
+				var returnNum:Number=new Number();
+				returnNum=Number('0x'+input);
+				return (returnNum);
+			} else if (returnType==int) {
+				var returnInt:int=new int();
+				returnInt=int('0x'+input);
+				return (returnInt);
+			} else if (returnType==uint) {
+				var returnUInt:uint=new uint();
+				returnUInt=uint('0x'+input);
+				return (returnUInt);
+			} else if (returnType==String) {
+				var realString:String=new String();
+				realString=String(input);
+				var outStr:String=new String();
+				var tempStr:String=new String();		
+				for (var count:Number=0;count<realString.length;count+=2) {
+					tempStr=realString.substr(count,2);
+					tempStr='0x'+tempStr;
+					var numVal:Number=Number(tempStr);			
+					outStr+=String.fromCharCode(numVal);
+				}//for
+				return (outStr);
+			} else {
+				return (null);
+			}//else
+			return (null);
+		}//fromHexString
+		
+		/**
 		 * Converts the input Number / int / uint to its binary string representation.
 		 *  
 		 * @param inputNumber The number (Number / int / uint) to convert to a binary string representation.
@@ -555,7 +654,157 @@ package swag.core {
 				returnValue=Number(returnValue);
 			}//else
 			return (returnValue);
-		}//fromBinaryString
+		}//fromBinaryString	
+		
+		/**
+		 * Returns the bit value at a specific position within the input number. 
+		 * 
+		 * @param input A valid numeric type (<code>Number</code>, <code>int</code>, or <code>uint</code>), from which to retrieve the 
+		 * specified bit value.
+		 * @param bitPos The bit position to retrieve from within the <code>input</code> value. This number ranges from 1 to 32 (the highest
+		 * bit position currently supported by Flash). This parameter is 1-based so that 1 is the lowest (LSB) bit and 32 is the 
+		 * highest (MSB) bit.
+		 * 		 
+		 * @return <em>True</em> denotes that the bit at the specified position is on, or 1, and <em>false</em> denotes that it's off, or 0.
+		 * An <em>undefined</em> value is returned if the associated bit or input number are invalid.
+		 * 
+		 * @see #setBit()
+		 * 		 
+		 */
+		public static function getBit(input:*=null, bitPos:uint=0):Boolean {			
+			if ((!(input is Number)) && (!(input is int)) && (!(input is uint))) {	
+				return (undefined);
+			}//if
+			if ((bitPos<1) || (bitPos>32)) {
+				return (undefined);
+			}//if
+			var returnBool:Boolean=new Boolean();
+			returnBool=Boolean ((input & (1 << (bitPos-1))) >> (bitPos-1));
+			return (returnBool);
+		}//getBit
+		
+		/**
+		 * Sets the bit at the specified position in the input number to the specified value.
+		 * 
+		 * @param input The numeric value (<code>Number</code>, <code>int</code>, or <code>uint</code>), within which
+		 * to manipulate the specified bit value.
+		 * @param bitPos The bit position to set from within the <code>input</code> value. This number ranges from 1 to 32 (the highest
+		 * bit position currently supported by Flash). This parameter is 1-based so that 1 is the lowest (LSB) bit and 32 is the 
+		 * highest (MSB) bit.
+		 * @param setValue The value to assign to the specified bit, with <em>true</em> representing 1, or on, and <em>false</em>
+		 * representing 0, or off.
+		 * 
+		 * @return The <code>input</code> value with the specified bit manipulated to the specified value. If the <code>input</code> 
+		 * value was an object reference, the original object will be updated as well.
+		 * 
+		 * @see #getBit()
+		 * 		
+		 */
+		public static function setBit(input:*=null, bitPos:uint=0, setValue:Boolean=false):* {			
+			if ((!(input is Number)) && (!(input is int)) && (!(input is uint))) {	
+				return (undefined);
+			}//if
+			if ((bitPos<1) || (bitPos>32)) {				
+				return (undefined);
+			}//if
+			if (setValue==true) {				
+				input=input | (1 << (bitPos-1));
+			} else {				
+				var tempVal:uint=1;
+				tempVal=~(tempVal << (bitPos-1));			
+				input=input & tempVal;
+			}//else
+			return (input);
+		}//setBit
+		
+		/**
+		 * Decodes a string containing HTML entitities, including those that are not directly supported with ActionScript's
+		 * <code>unescape</code> method.
+		 * <p><strong>NOTE: As per the W3C specification, HTML entitities are case-sensitive.</strong></p>
+		 * 
+		 * @param inString The string containing the HTML entitities to translate to plain text. A copy of this
+		 * string is made so that the original paramater data is not affected.
+		 * 
+		 * @return The processed copy of the <code>inString</code> parameter with all of the HTML entities translated to plain text. 
+		 * 
+		 */
+		public static function HTMLDecode(inString:String):String {
+			var localString:String=new String();
+			localString=String(inString);			
+			//Typographical / markup / grammatical marks
+			localString=replaceString(localString, String.fromCharCode(34), "&quot;");						
+			localString=replaceString(localString, String.fromCharCode(39), "&apos;");	
+			localString=replaceString(localString, String.fromCharCode(60), "&lt;");
+			localString=replaceString(localString, String.fromCharCode(62), "&gt;");
+			localString=replaceString(localString, String.fromCharCode(160), "&nbsp;");
+			localString=replaceString(localString, String.fromCharCode(38), "&amp;");
+			localString=replaceString(localString, String.fromCharCode(166), "&brvbar;");			
+			localString=replaceString(localString, String.fromCharCode(8211), "&ndash;");
+			localString=replaceString(localString, String.fromCharCode(8212), "&mdash;");
+			localString=replaceString(localString, String.fromCharCode(171), "&laquo;");
+			localString=replaceString(localString, String.fromCharCode(187), "&raquo;");
+			localString=replaceString(localString, String.fromCharCode(171), "&lsaquo;");
+			localString=replaceString(localString, String.fromCharCode(187), "&rsaquo;");
+			localString=replaceString(localString, String.fromCharCode(167), "&sect;");
+			localString=replaceString(localString, String.fromCharCode(182), "&para;");
+			localString=replaceString(localString, String.fromCharCode(8224), "&dagger;");			
+			localString=replaceString(localString, String.fromCharCode(8225), "&Dagger;");
+			localString=replaceString(localString, String.fromCharCode(8226), "&bull;");
+			localString=replaceString(localString, String.fromCharCode(183), "&middot;");
+			localString=replaceString(localString, String.fromCharCode(191), "&iquest;");
+			localString=replaceString(localString, String.fromCharCode(161), "&iexcl;");
+			//Intellectual property marks
+			localString=replaceString(localString, String.fromCharCode(169), "&copy;");
+			localString=replaceString(localString, String.fromCharCode(169), "&copyright;");
+			localString=replaceString(localString, String.fromCharCode(174), "&reg;");
+			localString=replaceString(localString, String.fromCharCode(174), "&registered;");
+			localString=replaceString(localString, String.fromCharCode(8482), "&trade;");
+			localString=replaceString(localString, String.fromCharCode(8482), "&trademark;");			
+			//Mathematical marks
+			localString=replaceString(localString, String.fromCharCode(177), "&plusmn;");
+			localString=replaceString(localString, String.fromCharCode(8722), "&minus;");
+			localString=replaceString(localString, String.fromCharCode(8721), "&sum;");
+			localString=replaceString(localString, String.fromCharCode(215), "&times;");
+			localString=replaceString(localString, String.fromCharCode(247), "&divide;");
+			localString=replaceString(localString, String.fromCharCode(189), "&frac12;");
+			localString=replaceString(localString, String.fromCharCode(188), "&frac14;");			
+			localString=replaceString(localString, String.fromCharCode(190), "&frac34;");
+			localString=replaceString(localString, String.fromCharCode(8734), "&infin;");
+			localString=replaceString(localString, String.fromCharCode(8776), "&asymp;");
+			localString=replaceString(localString, String.fromCharCode(8804), "&le;");
+			localString=replaceString(localString, String.fromCharCode(8805), "&ge;");
+			localString=replaceString(localString, String.fromCharCode(8800), "&ne;");
+			localString=replaceString(localString, String.fromCharCode(8801), "&equiv;");
+			localString=replaceString(localString, String.fromCharCode(8747), "&int;");
+			localString=replaceString(localString, String.fromCharCode(8730), "&radic;");
+			localString=replaceString(localString, String.fromCharCode(185), "&sup1;");
+			localString=replaceString(localString, String.fromCharCode(178), "&sup2;");
+			localString=replaceString(localString, String.fromCharCode(179), "&sup3;");			
+			localString=replaceString(localString, String.fromCharCode(188), "&micro;");
+			localString=replaceString(localString, String.fromCharCode(176), "&deg;");
+			localString=replaceString(localString, String.fromCharCode(8240), "&permil;"); 
+			localString=replaceString(localString, String.fromCharCode(8242), "&prime;");
+			localString=replaceString(localString, String.fromCharCode(8243), "&Prime;");
+			localString=replaceString(localString, String.fromCharCode(913), "&Alpha;");
+			localString=replaceString(localString, String.fromCharCode(945), "&alpha;");
+			localString=replaceString(localString, String.fromCharCode(914), "&Beta;");
+			localString=replaceString(localString, String.fromCharCode(946), "&beta;");
+			localString=replaceString(localString, String.fromCharCode(916), "&Delta;");
+			localString=replaceString(localString, String.fromCharCode(948), "&delta;");
+			localString=replaceString(localString, String.fromCharCode(928), "&Pi;");
+			localString=replaceString(localString, String.fromCharCode(960), "&pi;");	
+			localString=replaceString(localString, String.fromCharCode(937), "&Omega;");
+			localString=replaceString(localString, String.fromCharCode(969), "&omega;");
+			//Currency symbols
+			localString=replaceString(localString, String.fromCharCode(162), "&cent;");
+			localString=replaceString(localString, String.fromCharCode(163), "&pound;");
+			localString=replaceString(localString, String.fromCharCode(165), "&yen;");			
+			localString=replaceString(localString, String.fromCharCode(8364), "&euro;");
+			localString=replaceString(localString, String.fromCharCode(164), "&curren;");
+			//One more pass to decode numeric HTML entities
+			localString=unescape (localString);
+			return (localString);
+		}//urlDecode
 
 		/**
 		 * Retrieves an ordered list (<code>Array</code>), of the parameters for the specified method.
@@ -626,6 +875,40 @@ package swag.core {
 			}//for
 			return (returnArray);
 		}//getMethodParameters
+		
+		/**
+		 * Returns true if the specified object (usually a class or class instance), contains a
+		 * constant with a specific name.
+		 * <p>This can be used, for example, to determine if a specific event type belongs to
+		 * an event object.</p>
+		 *  
+		 * @param targetObject The object to inspect for the constant.
+		 * @param constantName The name of the constant to attempt to find.
+		 * 
+		 * @return <em>True</em> if the specified constant exists within the <code>targetObject</code>,
+		 * <em>false</em> otherwise. 
+		 * 
+		 */
+		public static function hasDeclaredConstant(targetObject:*=null, constantName:String=null):Boolean {
+			if ((targetObject==null) || (constantName==null) || (constantName=="")) {
+				return (false);
+			}//if
+			var objectInfo:XML=describeType(targetObject) as XML;
+			if (!SwagDataTools.hasData(objectInfo.constant)) {
+				return (false);
+			}//if
+			var constantNodes:XMLList=objectInfo.constant as XMLList;
+			for (var count:uint=0; count<constantNodes.length(); count++) {
+				var currentConstantNode:XML=constantNodes[count] as XML;
+				if (SwagDataTools.hasData(currentConstantNode.@name)) {
+					var currentConstantName:String=String(currentConstantNode.@name);
+					if (constantName==currentConstantName) {
+						return (true);
+					}//if
+				}//if
+			}//for
+			return (false);
+		}//hasDeclaredConstant
 		
 	}//SwagDataTools class
 	

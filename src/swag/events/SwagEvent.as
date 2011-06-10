@@ -14,7 +14,7 @@ package swag.events {
 		 * The default <code>SwagEvent</code> type. The string value "swagDefaultEvent" may also be used but
 		 * using this constant value is advisable in order to prevent potentially numerous code updates if it ever changes. 
 		 */
-		public static const DEFAULT:String="swagDefaultEvent";
+		public static const DEFAULT:String="SwagEvent.DEFAULT";
 		private var _type:String=null;
 		private var _parameters:Array=null;
 		
@@ -40,8 +40,8 @@ package swag.events {
 		
 		/**
 		 * 
-		 * @return Returns the event type which should, ideally, match one of the constant <code>SwagEvent</code> types defined 
-		 * in the toolkit.
+		 * @return Returns the event type which should, ideally, match one of the constant <code>SwagEvent</code>-derived types 
+		 * defined in the toolkit.
 		 * 
 		 */
 		public function get type():String {

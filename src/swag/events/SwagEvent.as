@@ -15,47 +15,53 @@ package swag.events {
 		 * using this constant value is advisable in order to prevent potentially numerous code updates if it ever changes. 
 		 */
 		public static const DEFAULT:String="SwagEvent.DEFAULT";
+		/**
+		 * @private 
+		 */
 		private var _type:String=null;
-		private var _parameters:Array=null;
+		/**
+		 * @private 
+		 */
+		private var _source:*=null;
 		
 		/**
 		 * The default constructor for the SwagEvent class. 
 		 *  
-		 * @param eventType The type of event to created. It's highly advisable to use one of the event constant strings provided
-		 * with the various event types in order to easily maintain code changes (especially if event types change in future revisions).
-		 * @param args Additional arguments to provide to the event. These include:
-		 * <ul>
-		 * <li>parameters (<code>Array</code>) - Optional parameters to pass to the receiving listener. The parameters specified here
-		 * are persistent -- they are maintained while the event object remains active. This allows updated values to be passed to
-		 * subsequent listeners, but for the same reason the <code>parameters</code> object should not be assumed to have the same
-		 * properties as when the event dispatch began.</li>
-		 * </ul>
+		 * @param eventType The type of event to create. It's highly advisable to use one of the event constant strings 
+		 * provided with the various event types in order to easily maintain code changes (especially if event types 
+		 * change in future revisions).
 		 * 
 		 * @see swag.core.SwagDispatcher
 		 */
-		public function SwagEvent(eventType:String=null, ... args) {
-			this._type=eventType;
-			this._parameters=args;
+		public function SwagEvent(eventType:String=null) {
+			this.type=eventType;
 		}//constructor		
 		
 		/**
 		 * 
-		 * @return Returns the event type which should, ideally, match one of the constant <code>SwagEvent</code>-derived types 
-		 * defined in the toolkit.
+		 * The event type string, typically one of the <code>SwagEvent</code>-derived types defined in the toolkit.
 		 * 
 		 */
 		public function get type():String {
 			return (this._type);
 		}//get type
 		
+		public function set type(typeSet:String):void {
+			this._type=typeSet;
+		}//set type
+		
 		/**
 		 * 
-		 * @return Returns the associated parameters object associated with the event, or <em>null</em> if not defined.
+		 * A reference to the source object that dispatched this event instance.
 		 * 
 		 */
-		public function get parameters():Array {
-			return (this._parameters);
-		}//get parameters
+		public function get source():* {
+			return (this._source);
+		}//get source
+		
+		public function set source(sourceSet:*):void {
+			this._source=sourceSet;
+		}//set source
 		
 	}//SwagEvent class
 	

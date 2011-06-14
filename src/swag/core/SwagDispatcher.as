@@ -48,7 +48,8 @@ package swag.core {
 			for (var count:uint=0; count<listenerCount; count++) {
 				var currentListener:SwagEventListener=_listeners[count] as SwagEventListener;	
 				if ((eventObj.type==currentListener.type) && sourcesMatch(source, currentListener.source)) {
-					if (currentListener.invoke(eventObj)==false) {
+					trace ("Dispatching event from source: "+source);
+					if (currentListener.invoke(eventObj, source)==false) {
 						removeEventListener(currentListener.type, currentListener.method);
 					} else {
 						dispatchSent=true;

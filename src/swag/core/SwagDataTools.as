@@ -61,17 +61,17 @@ package swag.core {
 			if ((type==null) && (property==null)) {
 				return (true);
 			}//if
-			if (type is String) {
+			if (type==String) {
 				try {
 					var typeClass:Class=getDefinitionByName(type) as Class;
-					if (property is typeClass) {
+					if (property==typeClass) {
 						return (true);
 					}//if
 				} catch (e:ReferenceError) {
 					return (false);
 				}//catch
 			} else {
-				if (property is type) {
+				if (property==type) {
 					return (true);
 				}//if
 			}//else
@@ -116,7 +116,7 @@ package swag.core {
 			if (args[0] == undefined) {				
 				return (false);
 			}//if
-			if ((args[0] is String) && (args[1]==true)){
+			if ((args[0]==String) && (args[1]==true)){
 				var localString:String=new String(args[0]);
 				try {					
 					var testXML:XML=new XML(localString);
@@ -125,7 +125,7 @@ package swag.core {
 					return (false);
 				}//catch				
 			}//if
-			if ((args[0] is XML) || (args[0] is XMLList) || (args[0] is XMLDocument) || (args[0] is XMLNode)) {				
+			if ((args[0]==XML) || (args[0]==XMLList) || (args[0]==XMLDocument) || (args[0]==XMLNode)) {				
 				return (true);
 			}//if			
 			return (false);
@@ -178,7 +178,7 @@ package swag.core {
 						return (false);
 					}//else
 				}//for
-			} else if ((sourceString is XML) || (sourceString is XMLNode)) {
+			} else if ((sourceString==XML) || (sourceString==XMLNode)) {
 				localSourceString=new String(sourceString.toString());
 				localSearchString=new String(searchString);
 				if (!caseSensitive) {
@@ -226,11 +226,11 @@ package swag.core {
 				return (inputString);
 			}//if
 			var localStripChars:String=new String();
-			if (stripChars is Array) {
+			if (stripChars==Array) {
 				for (var count:uint=0; count<stripChars.length; count++) {
 					localStripChars.concat(String(stripChars[count] as String));
 				}//for	
-			} else if (stripChars is String) {
+			} else if (stripChars==String) {
 				localStripChars=new String(stripChars);
 			} else {
 				return (inputString);
@@ -281,11 +281,11 @@ package swag.core {
 				return (inputString);
 			}//if
 			var localStripChars:String=new String();
-			if (stripChars is Array) {
+			if (stripChars==Array) {
 				for (var count:uint=0; count<stripChars.length; count++) {
 					localStripChars.concat(String(stripChars[count] as String));
 				}//for	
-			} else if (stripChars is String) {
+			} else if (stripChars==String) {
 				localStripChars=new String(stripChars);
 			} else {
 				return (inputString);
@@ -364,11 +364,11 @@ package swag.core {
 				return (inputString);
 			}//if
 			var localStripChars:String=new String();
-			if (stripChars is Array) {
+			if (stripChars==Array) {
 				for (var count:uint=0; count<stripChars.length; count++) {
 					localStripChars.concat(String(stripChars[count] as String));
 				}//for	
-			} else if (stripChars is String) {
+			} else if (stripChars==String) {
 				localStripChars=new String(stripChars);
 			} else {
 				return (inputString);
@@ -413,6 +413,108 @@ package swag.core {
 			var returnString:String=replaceSplit.join(insertString);
 			return (returnString);
 		}//replaceString
+		
+		/**
+		 * Returns a substring of a string up to, and optionally inluding, a specific matching string.
+		 * <p>This method is similar to the <code>String.slice</code>, <code>String.substr</code>, or <code>String.substring</code>
+		 * methods except that it uses character matching instead of index values to denote the selected string.</p>
+		 * 
+		 * @param sourceString The string from which to extract the substring. This value is copied by the method so the original
+		 * string will remain unaffacted.
+		 * @param patternString The pattern string to find within the <code>sourceString</code>. All the characters in <code>sourceString</code>
+		 * up to and (optionally), including <code>patternString</code> will be returned.
+		 * @param includePattern If <em>true</em>, the pattern string will be included in the returned string, otherwise only the 
+		 * characters up to the <code>patternString</code> will be returned.
+		 * @param caseSensitive If <em>true</em>, the pattern and source strings are evaluated as is (case-sensitive). If <em>false</em>,
+		 * a non-case-sensitive comparison is done.
+		 * 
+		 * @return The substring copy of <code>sourceString</code> up to and (optionally) including the <code>patternString</code>. If the
+		 * pattern can't be found, or it's empty (null or ""), an empty string is returned. If the method 
+		 * encounters any other problem, a <em>null</em> value is returned.
+		 * 
+		 * @see #getStringAfter()
+		 * 
+		 */
+		public static function getStringBefore(sourceString:String, patternString:String, includePattern:Boolean=false, caseSensitive:Boolean=false):String {
+			if (sourceString==null) {
+				return (null);
+			}//if			
+			var localSourceString:String=new String(sourceString);
+			if ((patternString==null) || (patternString=="") || (sourceString=="")) {
+				return (localSourceString);
+			}//if
+			var localLCSourceString:String=localSourceString.toLowerCase();
+			var localPatternString:String=new String(patternString);			
+			var localLCPatternString:String=localPatternString.toLowerCase();
+			var returnString:String=new String();;
+			if (caseSensitive==true) {
+				var patternIndex:int=localSourceString.indexOf(localPatternString);				
+			} else {
+				patternIndex=localLCSourceString.indexOf(localLCPatternString);			
+			}//else
+			if (patternIndex>0) {
+				if (includePattern) {
+					patternIndex+=localPatternString.length;
+					returnString=localSourceString.substr(0, patternIndex);
+				} else {
+					returnString=localSourceString.substr(0, patternIndex);
+				}//else
+				return (returnString);
+			} else {
+				return (returnString);
+			}//else
+			return (returnString);
+		}//getStringBefore
+		
+		/**
+		 * Returns a substring of a string after, and optionally inluding, a specific matching string.
+		 * <p>This method mimics the functionality of the <code>getStringBefore</code> method but returns the end of the string
+		 * up to and (optionally) including the pattern string instead of the beginning.</p>
+		 * 
+		 * @param sourceString The string from which to extract the substring. This value is copied by the method so the original
+		 * string will remain unaffacted.
+		 * @param patternString The pattern string to find within the <code>sourceString</code>. All the characters in <code>sourceString</code>
+		 * after and (optionally), including <code>patternString</code> will be returned.
+		 * @param includePattern If <em>true</em>, the pattern string will be included in the returned string, otherwise only the 
+		 * characters after the <code>patternString</code> will be returned.
+		 * @param caseSensitive If <em>true</em>, the pattern and source strings are evaluated as is (case-sensitive). If <em>false</em>,
+		 * a non-case-sensitive comparison is done.
+		 * 
+		 * @return The substring copy of <code>sourceString</code> after and (optionally) including the <code>patternString</code>. If the
+		 * pattern can't be found, or it's empty (null or ""), an empty string is returned. If the method encounters any other problem, 
+		 * a <em>null</em> value is returned.
+		 * 
+		 */
+		public static function getStringAfter(sourceString:String, patternString:String, includePattern:Boolean=false, caseSensitive:Boolean=false):String {
+			if (sourceString==null) {
+				return (null);
+			}//if			
+			var localSourceString:String=new String(sourceString);
+			if ((patternString==null) || (patternString=="") || (sourceString=="")) {
+				return (localSourceString);
+			}//if
+			var localLCSourceString:String=localSourceString.toLowerCase();
+			var localPatternString:String=new String(patternString);			
+			var localLCPatternString:String=localPatternString.toLowerCase();
+			var returnString:String=new String();;
+			if (caseSensitive==true) {
+				var patternIndex:int=localSourceString.lastIndexOf(localPatternString);				
+			} else {
+				patternIndex=localLCSourceString.lastIndexOf(localLCPatternString);			
+			}//else
+			if (patternIndex>0) {
+				if (includePattern) {
+					patternIndex-=localPatternString.length;
+					returnString=localSourceString.substr(patternIndex);
+				} else {
+					returnString=localSourceString.substr(patternIndex);
+				}//else
+				return (returnString);
+			} else {
+				return (returnString);
+			}//else
+			return (returnString);
+		}//getStringAfter
 		
 		/**
 		 * Parses / splits a string containing software version information (for example, "3.2.1 b"), into native (numeric / boolean) values.
@@ -878,7 +980,7 @@ package swag.core {
 		
 		/**
 		 * Returns true if the specified object (usually a class or class instance), contains a
-		 * constant with a specific name.
+		 * public constant with a specific name.
 		 * <p>This can be used, for example, to determine if a specific event type belongs to
 		 * an event object.</p>
 		 *  

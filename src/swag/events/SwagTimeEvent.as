@@ -67,8 +67,8 @@ package swag.events {
 		 * @see swag.events.SwagEvent()
 		 * 
 		 */
-		public function SwagTimeEvent(eventType:String=null, ...args)	{
-			super(eventType, args);
+		public function SwagTimeEvent(eventType:String=null)	{
+			super(eventType);
 		}//constructor
 		
 	}//SwagTimeEvent class

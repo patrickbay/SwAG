@@ -1,6 +1,7 @@
 package swag.core.instances {
 	
 	import swag.core.SwagDataTools;
+	import swag.events.SwagEvent;
 	import swag.interfaces.core.instances.ISwagEventListener;
 	import swag.interfaces.events.ISwagEvent;	
 	/**
@@ -142,8 +143,8 @@ package swag.core.instances {
 				var currentParameterType:Class=this.methodParameters[count] as Class;
 				if (currentParameterType==null) {
 					returnArray.push(null);	
-				} else {
-					returnArray.push(new currentParameterType());
+				} else {					
+					returnArray.push(new currentParameterType());				
 				}//else
 			}//for
 			return (returnArray);
@@ -152,16 +153,18 @@ package swag.core.instances {
 		/**
 		 * Invokes the event by calling the associated <code>method</code>.
 		 *  
-		 * @param event The event (implementation of <code>ISwagEvent</code>), to dispatch. 
+		 * @param event The event (implementation of <code>ISwagEvent</code>), to dispatch.
+		 * @param source A reference to the source object invoking this event. 
 		 * @return <em>True</em> if the event was successfully dispatched, <em>false</em> if there was an error (for example,
 		 * no <code>method</code> was defined for the listener).
 		 * 
 		 * @see swag.interfaces.events.ISwagEvent
 		 */
-		public function invoke(event:ISwagEvent):Boolean {			
+		public function invoke(event:ISwagEvent, source:*):Boolean {			
 			if (this.method==null) {
 				return (false);
 			}//if
+			event.source=source;			
 			if (this.methodParameters==null) {
 				try {
 					this.method(event);
@@ -188,8 +191,8 @@ package swag.core.instances {
 					return (false);
 				}//catch
 			}//if
-			if (this.methodParameters[0] is ISwagEvent) {
-				try {
+			if ((this.methodParameters[0]==ISwagEvent) || (this.methodParameters[0]==SwagEvent)) {
+				try {					
 					this.method(event);
 					return (true);
 				} catch (e:ArgumentError) {

@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="SwagZip,swag.core.instances.SwagZip,MSDOSDate,MSDOSTime,data,date,dateIndex,day,dayOfWeek,dayOfWeekName,directory,elapsedHours,elapsedMilliseconds,elapsedMinutes,elapsedSeconds,header,hours,milliseconds,minutes,month,seconds,timerTotalMilliseconds,totalHours,totalMilliseconds,totalMinutes,totalSeconds,year,extractFile,extractFileData,getDaysPerMonth,getFileInfo,getMonthName,getMonthNumber,getTimeString,isLater,isLeapYear,isSame,onCountDownComplete,onCountDownTick,onCountUpComplete,onCountUpTick,resetCountDown,resetCountUp,startCountDown,startCountUp,stopCountDown,stopCountUp,toString,toString"><title>swag.core.instances.SwagZip</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'SwagZip - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?swag/core/instances/SwagZip.html&amp;swag/core/instances/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">SwagZip</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("SwagZip"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">swag.core.instances</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  SwagZip</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">SwagZip  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr><tr><td class="classHeaderTableLabel">Implements</td><td> swag.interfaces.core.instances.ISwagZip</td></tr></table><p></p><p></p><p></p>
+	 Used to access / extract ZIP-formatted data.
+	 <p>This class is heavily dependent on methods of the <code>ByteArray</code> class for both data access and fast 
+	 decompression.</p> 
+	              <p>Because ZIP files may contain nested directories as well as multiple file records, a virtual in-memory mapping
+	 is used to represent the stored of the file. Once this map is created, individual compressed entries may be 
+	 randomly accessed as desired (one of the advantaged of the ZIP format).</p>
+	              <p>This class adheres to the strict ZIP format specification (i.e. the "central directory" record is read and 
+	 analyzed first, followed by individual directory records). As such, future versions of ZIPFile may support recovery 
+	 of partially corrupted ZIP data. However, no compression algorithm other than "deflate" is currently supported 
+	 for compressed data so some records within the ZIP may be inaccessible -- though not corrupted (the format allows 
+	 for other compression methods than deflate).</p>
+	              <p>Other standardized formats such as OpenDocument and Office Open XML may be based on this class.</p>
+	              <p>The flow of events when ZIP file data is assigned is as follows:</p>
+	              <p>
+                  <b>ZIP data assigned to internal buffer</b> -> <b>header info is parsed</b> -> 
+	 <b>directory info is parsed</b>
+	                 <p>Each of these steps is dependent on the previous one so a failure in the chain will cause subequent steps to 
+	 also fail.</p>
+	                 <p>Once the header information for the ZIP data is parsed into the <code>header</code> object (getter provided), 
+	 it will contain the following properties:</p>
+	                 <p>
+                     <ul>
+	                       <li>diskNumber (<code>uint</code>): The disk number associated with this archive (for multi-disk archives).</li>
+	                       <li>directoryDiskNumber (<code>uint</code>): The number of the current disk's directory (for multi-disk archives).</li>
+	                       <li>directoryDiskRecords (<code>uint</code>): The total number of directory records across all disks (for multi-disk 
+	 archives).</li>
+	                       <li>directoryRecords (<code>uint</code>): The total number of records in the current disk directory (should match the 
+	 number of <code>directory</code> elements once parsed).</li>
+	                       <li>directorySize (<code>uint</code>): The size of the directory, in bytes, in the current disk archive.</li>
+	                       <li>directoryOffser (<code>uint</code>): The offset, in bytes from the beginning of the ZIP data, of the directory 
+	 data in the current archive.</li>
+	                       <li>comment (<code>String</code>): A comment associated with the current ZIP data. May be up to 65,535 characters.</li>
+	                    </ul>
+                  </p>
+	                 <p>Once the <code>header</code> is parsed, the <code>directory</code> (getter provided) array is populated sequentially 
+	 with entries from the ZIP directory. For example, <code>directory[0]</code> is the first directory object, 
+	 <code>directory[1]</code> the second, and so on. The number of elements in the <code>directory</code> should match 
+	 the <code>header</code>'s <code>directoryRecords</code> value.</p>.
+	 <p>Each <code>directory</code> object contains the following information:</p>
+	                 <p>
+                     <ul>
+	                       <li>compressorID (<code>uint</code>): The ID of the software used to create the ZIP data.</li>
+	                       <li>compressorVersion (<code>uint</code>): The minium version of the software required to handle the associated 
+	 ZIP data.</li>
+	                       <li>bitFlags (<code>uint</code>): Special attribute flags. Currently, if bit 3 is set (0x04), the CRC32 value is stored as 
+	 0 in the <code>directory</code> object and will rather be appended as a 12-byte value at the end of the compressed 
+	 data.</li>
+	                       <li>compressor (<code>uint</code>): The compression algorithm used for the stored file. Valid values include 
+	 <b>0 = stored</b> (no compression), <b>1 = shrunk</b>, <b>2 to 5 = reduced with 
+	 compression factor 1 to 4</b> (in order), <b>6 = imploded</b>, <b>7 = reserved</b>, 
+	 <b>8 = deflated</b> (most common).</li>
+	                       <li>modifiedTime (<code>SwagTime</code>): The last modified time of the file, stored in a <code>SwagTime</code> 
+	 instance.</li>
+	                       <li>modifiedDate (<code>SwagDate</code>): The last modified date of the file, stored in a <code>Swagdate</code> 
+	 instance.</li>
+	                       <li>CRC32 (<code>uint</code>): The 32-bit cyclical redundancy check value that can be used to verify the integrity 
+	 of the associated data.</li>
+	                       <li>compressedSize (<code>uint</code>): The size of the compressed file, in bytes.</li>
+	                       <li>uncompressedSize (<code>uint</code>): The size of the uncompressed file, in bytes.</li>
+	                       <li>startDisk (<code>uint</code>): The first disk in which the compressed file resides. For multi-disk / multi-part 
+	 ZIPs.</li>
+	                       <li>internalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown).</li>
+	                       <li>externalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown). Most likely these 
+	 refer to file-system settings for the associated file / folder.</li>
+	                       <li>headerOffset (<code>uint</code>): The offset to the file header within the ZIP. After the header is the actual 
+	 compressed data. The file header repeats much of the information found in the directory information and can thus be used 
+	 to retrieve data from partially corrupted ZIP files.</li>
+	                       <li>fullPath (<code>String</code>): The full, relative path of the file or folder. For example: 
+	 <i>/folder/sub_folder/my_file.txt</i> --or-- <i>no_folder_file.doc</i>
+                        </li>
+	                       <li>extraField (<code>uint</code>): Extra field provided for associating extra information with the compressed data. 
+	 Format unspecified.</li>
+	                       <li>comment (<code>String</code>): A comment associated with the individual file or folder.</li>
+	                       <li>name (<code>String</code>): The file name portion of the <code>fullPath</code> property. For example, if 
+	 <code>fullPath</code> is <i>some_folder/my_file.txt</i>, the name will be <i>my_file.txt</i>. For folder items, 
+	 this is an empty string.</li>
+	                       <li>path (<code>String</code>): The path portion of the <code>fullPath</code> property. For example, if 
+	 <code>fullPath</code> is <i>some_folder/my_file.txt</i>, this path will be <i>some_folder</i>. If a file is 
+	 stored in the root of the ZIP data (not in any folder), this will be an empty string.</li>
+	                       <li>pathParts (<code>Array</code>): The path broken up into a numbered array, each element corresponding to a 
+	 deeper level in the folder structure. For example, the path <i>folder_one/folder_two</i> would produce 
+	 <code>pathParts[0]="folder_one"</code> and <code>pathParts[1]="folder_two"</code>. The file name is not included 
+	 in this array since it's not part of the path.</li>
+	                       <li>pathDepth (<code>uint</code>): The depth (within folder) at which the file resides. This is equal to the length 
+	 of the <code>pathParts</code> array. For example, the file <i>folder_one/second_folder/my_file.txt</i> is at 
+	 <code>pathDepth</code> 2 (two folders deep).</li> 
+	                       <li>type (<code>String</code>): The type of item that this directory entry is. Valid values include "<i>file</i>" 
+	 and "<i>folder</i>".</li>
+	                       <li>index (<code>uint</code>): The index value at which this item resides in the <code>directory</code> array.</li>
+	                    </ul>
+                  </p>
+               </p>
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#data" class="signatureLink">data</a> : ByteArray<div class="summaryTableDescription"> 
+		 The raw, compressed ZIP data for the class instance.</div></td><td class="summaryTableOwnerCol">SwagZip</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#directory" class="signatureLink">directory</a> : Array<div class="summaryTableDescription">[read-only] 
+		 The parsed directory information associated with the compressed ZIP data for this class.</div></td><td class="summaryTableOwnerCol">SwagZip</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#header" class="signatureLink">header</a> : Object<div class="summaryTableDescription">[read-only] 
+		 Retrieves the parsed header information for the associated ZIP data.</div></td><td class="summaryTableOwnerCol">SwagZip</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#SwagZip()" class="signatureLink">SwagZip</a>(ZIPData:ByteArray = null)</div><div class="summaryTableDescription">
+		 Default constructor for the class.</div></td><td class="summaryTableOwnerCol">SwagZip</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#extractFile()" class="signatureLink">extractFile</a>(fileName:String, returnType:Class = null):Object</div><div class="summaryTableDescription">
+		 Extracts file data from the ZIP into an object containing detailed information about
+		 the compressed data, as well as the data itself.</div></td><td class="summaryTableOwnerCol">SwagZip</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#extractFileData()" class="signatureLink">extractFileData</a>(fileName:String, returnType:Class = null):*</div><div class="summaryTableDescription">
+		 Extracts file data from the ZIP as usable, uncompressed data.</div></td><td class="summaryTableOwnerCol">SwagZip</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getFileInfo()" class="signatureLink">getFileInfo</a>(fileName:String = null):Object</div><div class="summaryTableDescription">
+		 Returns the file info object for a specified file name within the ZIP data.</div></td><td class="summaryTableOwnerCol">SwagZip</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="data"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">data</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>data:ByteArray</code><p></p><p></p><p> 
+		 The raw, compressed ZIP data for the class instance.
+		 <p>The data is parsed directly, verifying whether or not it's valid ZIP data, and then extracting 
+		 <code>directory</code> information from it (available via the <code>header</code> object).</p> 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get data():ByteArray</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set data(value:ByteArray):void</code><br/></div><a name="propertyDetail"></a><a name="directory"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">directory</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>directory:Array</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The parsed directory information associated with the compressed ZIP data for this class.
+		 <p>This is a numbered array of objects, each of which contains information about each file or folder
+		 within the ZIP data.</p>
+		 <p>Each <code>directory</code> record contains the following information:</p>
+		 <p><ul>
+		 <li>compressorID (<code>uint</code>): The ID of the software used to create the ZIP data.</li>
+		 <li>compressorVersion (<code>uint</code>): The minium version of the software required to handle the associated 
+		 ZIP data.</li>
+		 <li>bitFlags (<code>uint</code>): Special attribute flags. Currently, if bit 3 is set (0x04), the CRC32 value is stored as 
+		 0 in the <code>directory</code> object and will rather be appended as a 12-byte value at the end of the compressed 
+		 data.</li>
+		 <li>compressor (<code>uint</code>): The compression algorithm used for the stored file. Valid values include 
+		 <b>0 = stored</b> (no compression), <b>1 = shrunk</b>, <b>2 to 5 = reduced with 
+		 compression factor 1 to 4</b> (in order), <b>6 = imploded</b>, <b>7 = reserved</b>, 
+		 <b>8 = deflated</b> (most common).</li>
+		 <li>modifiedTime (<code>SwagTime</code>): The last modified time of the file, stored in a <code>SwagTime</code> 
+		 instance.</li>
+		 <li>modifiedDate (<code>SwagDate</code>): The last modified date of the file, stored in a <code>Swagdate</code> 
+		 instance.</li>
+		 <li>CRC32 (<code>uint</code>): The 32-bit cyclical redundancy check value that can be used to verify the integrity 
+		 of the associated data.</li>
+		 <li>compressedSize (<code>uint</code>): The size of the compressed file, in bytes.</li>
+		 <li>uncompressedSize (<code>uint</code>): The size of the uncompressed file, in bytes.</li>
+		 <li>startDisk (<code>uint</code>): The first disk in which the compressed file resides. For multi-disk / multi-part 
+		 ZIPs.</li>
+		 <li>internalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown).</li>
+		 <li>externalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown). Most likely these 
+		 refer to file-system settings for the associated file / folder.</li>
+		 <li>headerOffset (<code>uint</code>): The offset to the file header within the ZIP. After the header is the actual 
+		 compressed data. The file header repeats much of the information found in the directory information and can thus be used 
+		 to retrieve data from partially corrupted ZIP files.</li>
+		 <li>fullPath (<code>String</code>): The full, relative path of the file or folder. For example: 
+		 <i>/folder/sub_folder/my_file.txt</i> --or-- <i>no_folder_file.doc</i></li>
+		 <li>extraField (<code>uint</code>): Extra field provided for associating extra information with the compressed data. 
+		 Format unspecified.</li>
+		 <li>comment (<code>String</code>): A comment associated with the individual file or folder.</li>
+		 <li>name (<code>String</code>): The file name portion of the <code>fullPath</code> property. For example, if 
+		 <code>fullPath</code> is <i>some_folder/my_file.txt</i>, the name will be <i>my_file.txt</i>. For folder items, 
+		 this is an empty string.</li>
+		 <li>path (<code>String</code>): The path portion of the <code>fullPath</code> property. For example, if 
+		 <code>fullPath</code> is <i>some_folder/my_file.txt</i>, this path will be <i>some_folder</i>. If a file is 
+		 stored in the root of the ZIP data (not in any folder), this will be an empty string.</li>
+		 <li>pathParts (<code>Array</code>): The path broken up into a numbered array, each element corresponding to a 
+		 deeper level in the folder structure. For example, the path <i>folder_one/folder_two</i> would produce 
+		 <code>pathParts[0]="folder_one"</code> and <code>pathParts[1]="folder_two"</code>. The file name is not included 
+		 in this array since it's not part of the path.</li>
+		 <li>pathDepth (<code>uint</code>): The depth (within folder) at which the file resides. This is equal to the length 
+		 of the <code>pathParts</code> array. For example, the file <i>folder_one/second_folder/my_file.txt</i> is at 
+		 <code>pathDepth</code> 2 (two folders deep).</li> 
+		 <li>type (<code>String</code>): The type of item that this directory entry is. Valid values include "<i>file</i>" 
+		 and "<i>folder</i>".</li>
+		 <li>index (<code>uint</code>): The index value at which this item resides in the <code>directory</code> array.</li>
+		 </ul></p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get directory():Array</code><br/></div><a name="propertyDetail"></a><a name="header"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">header</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>header:Object</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Retrieves the parsed header information for the associated ZIP data. 
+		 <p>This includes global items such as the offset of the file information headers within the ZIP 
+		 data, the comment associated with the ZIP data, and so on.</p>
+		 <p>The header object contains the following information:</p>
+		 <p><ul>
+		 <li>diskNumber (<code>uint</code>): The disk number associated with this archive (for multi-disk archives).</li>
+		 <li>directoryDiskNumber (<code>uint</code>): The number of the current disk's directory (for multi-disk archives).</li>
+		 <li>directoryDiskRecords (<code>uint</code>): The total number of directory records across all disks (for multi-disk 
+		 archives).</li>
+		 <li>directoryRecords (<code>uint</code>): The total number of records in the current disk directory (should match the 
+		 number of <code>directory</code> elements once parsed).</li>
+		 <li>directorySize (<code>uint</code>): The size of the directory, in bytes, in the current disk archive.</li>
+		 <li>directoryOffser (<code>uint</code>): The offset, in bytes from the beginning of the ZIP data, of the directory 
+		 data in the current archive.</li>
+		 <li>comment (<code>String</code>): A comment associated with the current ZIP data. May be up to 65,535 characters.</li>
+		 </ul></p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get header():Object</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="SwagZip()"></a><a name="SwagZip(flash.utils.ByteArray)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SwagZip</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function SwagZip(ZIPData:ByteArray = null)</code><p></p><p>
+		 Default constructor for the class.
+		 
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">ZIPData</span>:ByteArray</code> (default = <code>null</code>)<code></code> &mdash; optional <code>ByteArray</code> object containing valid ZIP-compressed data with which
+		 to initialilze the instance. If supplied, the compressed data and all associated functionality
+		 become available right away, otherwise it must be assigned to the <code>data</code> object first.
+		 
+		 </td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="extractFile()"></a><a name="extractFile(String,Class)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">extractFile</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function extractFile(fileName:String, returnType:Class = null):Object</code><p></p><p></p><p>
+		 Extracts file data from the ZIP into an object containing detailed information about
+		 the compressed data, as well as the data itself. 
+		 <p>Along with this is returned information from the file header within the ZIP. 
+		 This is a smaller sub-set of the <code>directory</code> information and should be the same as the associated 
+		 <code>directory</code> entry (but may not be!)</p> 
+		 <p>This smaller subset includes the properties:
+		 <code>compressorVersion</code>, <code>bitFlags</code>, <code>compressor</code>, <code>modifiedTime</code>, 
+		 <code>modifiedDate</code>, <code>CRC32</code>, <code>compressedSize</code>, <code>uncompressedSize</code>, 
+		 <code>name</code>, and <code>extraField</code>.</p> 
+		 <p>Differences between these values and the associated <code>directory</code> entry may indicate
+		 data corruption.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fileName</span>:String</code> &mdash; The name of the file as it appears in the ZIP directory. Use the associated 
+		 <code>directory</code> object to retrieve the list of files within the ZIP data first if this
+		 value is unknown.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">returnType</span>:Class</code> (default = <code>null</code>)<code></code> &mdash; The object type (<code>ByteArray</code>, <code>String</code>, or <code>XML</code>) to 
+		 return the decompressed data as. If not specified the default is <code>ByteArray</code> (safest).
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code> &mdash; <p>An object containing the properties of the associated file (detailed below), and also including 
+		 the following two properties:
+		 <p>
+		 <ul>
+		 <li>data (<code>ByteArray</code> / <code>String</code> / <code>XML</code>): The uncompressed data in the 
+		 format specified by the <code>returnType</code> parameter.</li>
+		 <li>type (<code>Class</code>): The class type specified in the <code>returnType</code> parameter.</li>
+		 </ul>
+		 </p>
+		 <p>If the required parameters are supplied as <i>null</i>, or they are of an unexpected type / format,
+		 <i>null</i> is returned.</p>
+		 <p>The returned object also contains the following properties:</p>
+		 <ul>
+		 <li>compressorID (<code>uint</code>): The ID of the software used to create the ZIP data.</li>
+		 <li>compressorVersion (<code>uint</code>): The minium version of the software required to handle the associated 
+		 ZIP data.</li>
+		 <li>bitFlags (<code>uint</code>): Special attribute flags. Currently, if bit 3 is set (0x04), the CRC32 value is stored as 
+		 0 in the <code>directory</code> object and will rather be appended as a 12-byte value at the end of the compressed 
+		 data.</li>
+		 <li>compressor (<code>uint</code>): The compression algorithm used for the stored file. Valid values include 
+		 <b>0 = stored</b> (no compression), <b>1 = shrunk</b>, <b>2 to 5 = reduced with 
+		 compression factor 1 to 4</b> (in order), <b>6 = imploded</b>, <b>7 = reserved</b>, 
+		 <b>8 = deflated</b> (most common).</li>
+		 <li>modifiedTime (<code>SwagTime</code>): The last modified time of the file, stored in a <code>SwagTime</code> 
+		 instance.</li>
+		 <li>modifiedDate (<code>SwagDate</code>): The last modified date of the file, stored in a <code>Swagdate</code> 
+		 instance.</li>
+		 <li>CRC32 (<code>uint</code>): The 32-bit cyclical redundancy check value that can be used to verify the integrity 
+		 of the associated data.</li>
+		 <li>compressedSize (<code>uint</code>): The size of the compressed file, in bytes.</li>
+		 <li>uncompressedSize (<code>uint</code>): The size of the uncompressed file, in bytes.</li>
+		 <li>startDisk (<code>uint</code>): The first disk in which the compressed file resides. For multi-disk / multi-part 
+		 ZIPs.</li>
+		 <li>internalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown).</li>
+		 <li>externalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown). Most likely these 
+		 refer to file-system settings for the associated file / folder.</li>
+		 <li>headerOffset (<code>uint</code>): The offset to the file header within the ZIP. After the header is the actual 
+		 compressed data. The file header repeats much of the information found in the directory information and can thus be used 
+		 to retrieve data from partially corrupted ZIP files.</li>
+		 <li>fullPath (<code>String</code>): The full, relative path of the file or folder. For example: 
+		 <i>/folder/sub_folder/my_file.txt</i> --or-- <i>no_folder_file.doc</i></li>
+		 <li>extraField (<code>uint</code>): Extra field provided for associating extra information with the compressed data. 
+		 Format unspecified.</li>
+		 <li>comment (<code>String</code>): A comment associated with the individual file or folder.</li>
+		 <li>name (<code>String</code>): The file name portion of the <code>fullPath</code> property. For example, if 
+		 <code>fullPath</code> is <i>some_folder/my_file.txt</i>, the name will be <i>my_file.txt</i>. For folder items, 
+		 this is an empty string.</li>
+		 <li>path (<code>String</code>): The path portion of the <code>fullPath</code> property. For example, if 
+		 <code>fullPath</code> is <i>some_folder/my_file.txt</i>, this path will be <i>some_folder</i>. If a file is 
+		 stored in the root of the ZIP data (not in any folder), this will be an empty string.</li>
+		 <li>pathParts (<code>Array</code>): The path broken up into a numbered array, each element corresponding to a 
+		 deeper level in the folder structure. For example, the path <i>folder_one/folder_two</i> would produce 
+		 <code>pathParts[0]="folder_one"</code> and <code>pathParts[1]="folder_two"</code>. The file name is not included 
+		 in this array since it's not part of the path.</li>
+		 <li>pathDepth (<code>uint</code>): The depth (within folder) at which the file resides. This is equal to the length 
+		 of the <code>pathParts</code> array. For example, the file <i>folder_one/second_folder/my_file.txt</i> is at 
+		 <code>pathDepth</code> 2 (two folders deep).</li> 
+		 <li>type (<code>String</code>): The type of item that this directory entry is. Valid values include "<i>file</i>" 
+		 and "<i>folder</i>".</li>
+		 <li>index (<code>uint</code>): The index value at which this item resides in the <code>directory</code> array.</li>
+		 </ul></p>
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="SwagZip.html#extractFileData()" target="">extractFileData()</a></div></div><a name="extractFileData()"></a><a name="extractFileData(String,Class)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">extractFileData</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function extractFileData(fileName:String, returnType:Class = null):*</code><p></p><p></p><p>
+		 Extracts file data from the ZIP as usable, uncompressed data. 
+		 <p>This is almost identical to the <code>extractFile</code> function except that it returns just 
+		 the uncompressed data, not an object with the complete associated file information.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fileName</span>:String</code> &mdash; The name of the file as it appears in the ZIP directory.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">returnType</span>:Class</code> (default = <code>null</code>)<code></code> &mdash; The object type (<code>ByteArray</code>, <code>String</code>, or <code>XML</code>) to 
+		 return the decompressed	data as. If not specified the default is <code>ByteArray</code> (safest).
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>*</code> &mdash; The uncompressed data in the format specified by the returnType (<code>ByteArray</code> / 
+		 <code>String</code> / <code>XML</code>), or <i>null</i> if there was an error getting the data.
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="SwagZip.html#extractFile()" target="">extractFile()</a></div></div><a name="getFileInfo()"></a><a name="getFileInfo(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getFileInfo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getFileInfo(fileName:String = null):Object</code><p></p><p></p><p>
+		 Returns the file info object for a specified file name within the ZIP data. 
+		 <p>If a specific file name within the ZIP data is known to exist, this method will search
+		 for it within the <code>directory</code> array and return the found object. The <code>directory</code> 
+		 must first exist -- the ZIP data must already be assigned or loaded, in other words -- otherwise
+		 an error is dispatched and the method fails.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fileName</span>:String</code> (default = <code>null</code>)<code></code> &mdash; The exact file name (without path) of the file to find in the <code>directory</code> array.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code> &mdash; An object from the <code>directory</code> array matching the file name specified in the
+		 parameter. This object contains the properties of the <code>header</code> object. <i>Null</i> is
+		 returned if the parameters are incorrect.
+		 <p>The returned object contains the following properties:</p>
+		 <p><ul>
+		 <li>compressorID (<code>uint</code>): The ID of the software used to create the ZIP data.</li>
+		 <li>compressorVersion (<code>uint</code>): The minium version of the software required to handle the associated 
+		 ZIP data.</li>
+		 <li>bitFlags (<code>uint</code>): Special attribute flags. Currently, if bit 3 is set (0x04), the CRC32 value is stored as 
+		 0 in the <code>directory</code> object and will instead be appended as a 12-byte value at the end of the compressed 
+		 data.</li>
+		 <li>compressor (<code>uint</code>): The compression algorithm used for the stored file. Valid values include 
+		 <b>0 = stored</b> (no compression), <b>1 = shrunk</b>, <b>2 to 5 = reduced with 
+		 compression factor 1 to 4</b> (in order), <b>6 = imploded</b>, <b>7 = reserved</b>, 
+		 <b>8 = deflated</b> (most common).</li>
+		 <li>modifiedTime (<code>SwagTime</code>): The last modified time of the file, stored in a <code>SwagTime</code> 
+		 instance.</li>
+		 <li>modifiedDate (<code>SwagDate</code>): The last modified date of the file, stored in a <code>Swagdate</code> 
+		 instance.</li>
+		 <li>CRC32 (<code>uint</code>): The 32-bit cyclical redundancy check value that can be used to verify the integrity 
+		 of the associated data.</li>
+		 <li>compressedSize (<code>uint</code>): The size of the compressed file, in bytes.</li>
+		 <li>uncompressedSize (<code>uint</code>): The size of the uncompressed file, in bytes.</li>
+		 <li>startDisk (<code>uint</code>): The first disk in which the compressed file resides. For multi-disk / multi-part 
+		 ZIPs.</li>
+		 <li>internalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown).</li>
+		 <li>externalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown). Most likely these 
+		 refer to file-system settings for the associated file / folder.</li>
+		 <li>headerOffset (<code>uint</code>): The offset to the file header within the ZIP. After the header is the actual 
+		 compressed data. The file header repeats much of the information found in the directory information and can thus be used 
+		 to retrieve data from partially corrupted ZIP files.</li>
+		 <li>fullPath (<code>String</code>): The full, relative path of the file or folder. For example: 
+		 <i>/folder/sub_folder/my_file.txt</i> --or-- <i>no_folder_file.doc</i></li>
+		 <li>extraField (<code>uint</code>): Extra field provided for associating extra information with the compressed data. 
+		 Format unspecified.</li>
+		 <li>comment (<code>String</code>): A comment associated with the individual file or folder.</li>
+		 <li>name (<code>String</code>): The file name portion of the <code>fullPath</code> property. For example, if 
+		 <code>fullPath</code> is <i>some_folder/my_file.txt</i>, the name will be <i>my_file.txt</i>. For folder items, 
+		 this is an empty string.</li>
+		 <li>path (<code>String</code>): The path portion of the <code>fullPath</code> property. For example, if 
+		 <code>fullPath</code> is <i>some_folder/my_file.txt</i>, this path will be <i>some_folder</i>. If a file is 
+		 stored in the root of the ZIP data (not in any folder), this will be an empty string.</li>
+		 <li>pathParts (<code>Array</code>): The path broken up into a numbered array, each element corresponding to a 
+		 deeper level in the folder structure. For example, the path <i>folder_one/folder_two</i> would produce 
+		 <code>pathParts[0]="folder_one"</code> and <code>pathParts[1]="folder_two"</code>. The file name is not included 
+		 in this array since it's not part of the path.</li>
+		 <li>pathDepth (<code>uint</code>): The depth (within folder) at which the file resides. This is equal to the length 
+		 of the <code>pathParts</code> array. For example, the file <i>folder_one/second_folder/my_file.txt</i> is at 
+		 <code>pathDepth</code> 2 (two folders deep).</li> 
+		 <li>type (<code>String</code>): The type of item that this directory entry is. Valid values include "<i>file</i>" 
+		 and "<i>folder</i>".</li>
+		 <li>index (<code>uint</code>): The index value at which this item resides in the <code>directory</code> array.</li>
+		 </ul></p>
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="SwagZip.html#extractFile()" target="">extractFile()</a></div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Mon Jun 13 2011, 01:08 PM -04:00  </center></div></body></html><!--<br/>Mon Jun 13 2011, 01:08 PM -04:00  -->

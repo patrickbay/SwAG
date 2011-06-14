@@ -237,7 +237,9 @@ package swag.core {
 				}//if
 				_onExistsTimer.removeEventListener(TimerEvent.TIMER, onExistsMonitor);
 				_onExistsTimer=null;
+				return (true);
 			}//if
+			return (false);
 		}//stopOnExistsTimer
 		
 		/**

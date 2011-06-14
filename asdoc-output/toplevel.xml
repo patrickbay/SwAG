@@ -1,0 +1,4231 @@
+<asdoc>
+
+<interfaceRec name='ISwagEvent' fullname='swag.interfaces.events:ISwagEvent' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\events\ISwagEvent.as' namespace='swag.interfaces.events' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<method name='type' fullname='swag.interfaces.events:ISwagEvent/swag.interfaces.events:ISwagEvent:type/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+</method>
+<interfaceRec name='ISwagErrorEvent' fullname='swag.interfaces.events:ISwagErrorEvent' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\events\ISwagErrorEvent.as' namespace='swag.interfaces.events' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagSequencer' fullname='swag.interfaces.core:ISwagSequencer' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\ISwagSequencer.as' namespace='swag.interfaces.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagDataTools' fullname='swag.interfaces.core:ISwagDataTools' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\ISwagDataTools.as' namespace='swag.interfaces.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagDispatcher' fullname='swag.interfaces.core:ISwagDispatcher' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\ISwagDispatcher.as' namespace='swag.interfaces.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagSystem' fullname='swag.interfaces.core:ISwagSystem' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\ISwagSystem.as' namespace='swag.interfaces.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagTween' fullname='swag.interfaces.effects:ISwagTween' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\effects\ISwagTween.as' namespace='swag.interfaces.effects' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagZipEvent' fullname='swag.interfaces.core.instances:ISwagZipEvent' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\instances\ISwagZipEvent.as' namespace='swag.interfaces.core.instances' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagLoader' fullname='swag.interfaces.core.instances:ISwagLoader' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\instances\ISwagLoader.as' namespace='swag.interfaces.core.instances' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagTime' fullname='swag.interfaces.core.instances:ISwagTime' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\instances\ISwagTime.as' namespace='swag.interfaces.core.instances' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay	 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagZip' fullname='swag.interfaces.core.instances:ISwagZip' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\instances\ISwagZip.as' namespace='swag.interfaces.core.instances' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagDate' fullname='swag.interfaces.core.instances:ISwagDate' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\instances\ISwagDate.as' namespace='swag.interfaces.core.instances' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay	 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagEventListener' fullname='swag.interfaces.core.instances:ISwagEventListener' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\instances\ISwagEventListener.as' namespace='swag.interfaces.core.instances' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<interfaceRec name='ISwagSequence' fullname='swag.interfaces.core.instances:ISwagSequence' sourcefile='C:\BNM\development\SwAG.git\src\swag\interfaces\core\instances\ISwagSequence.as' namespace='swag.interfaces.core.instances' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay	 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</interfaceRec>
+<classRec name='SwagSequencer' fullname='swag.core:SwagSequencer' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\SwagSequencer.as' namespace='swag.core' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+<see><![CDATA[swag.core.instances.SwagSequence
+
+	 
+
+	 ]]></see>
+<private><![CDATA[]]></private>
+</classRec>
+<method name='SwagSequencer' fullname='swag.core:SwagSequencer/SwagSequencer' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+</method>
+<classRec name='SwagDispatcher' fullname='swag.core:SwagDispatcher' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\SwagDispatcher.as' namespace='swag.core' access='public' baseclass='Object' interfaces='swag.interfaces.core:ISwagDispatcher' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Provides global event broadcasting capabilities similar to the standard Flash event system.
+
+	 <p>Unlike Flash events, the SwAG event system is decoupled by default (event listeners are not required to be
+
+	 bound to specific dispatchers), thereby providing a much greater degree of flexibility. For example, listeners
+
+	 may be established before the dispatching object exists, which means that an application can be assembled at
+
+	 runtime without the need for any specific load order. Furthermore, decoupled events allow the application to
+
+	 dispatch from / listen to static objects, something that is not supported with the standard event system.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+<see><![CDATA[swag.core.instances.SwagEventListener	  
+
+	 ]]></see>
+</classRec>
+<method name='addEventListener' fullname='swag.core:SwagDispatcher/addEventListener' isStatic='true' isFinal='false' isOverride='false'  param_names='eventType;eventMethod;thisRef;sourceObject' param_types='String;Function;*;*' param_defaults='undefined;undefined;null;null' result_type='swag.core.instances:SwagEventListener'>
+<description><![CDATA[
+
+		 Adds an event listener to the <code>SwagDispatcher</code>.
+
+		 <p>The format of the listener is very similar to a standard Flash event but, because <code>SwagDispatcher</code> events
+
+		 can be decoupled, it also provides an optional <code>sourceObject</code> property for event filtering based on the dispatcher, as
+
+		 well as a reference to the containing object (<code>thisRef</code>) which the dispatcher uses to intelligently invoke listening
+
+		 methods (ones that don't necessarily match the required format -- a <code>SwagEvent</code>-type object as the first parameter).</p>
+
+		 
+
+		 ]]></description>
+<param><![CDATA[eventType The event type to broadcast. While this may be a standard string, it's advisable to use the various event
+
+		 string constants provided with the event objects in order to prevent having to implement numerous changes if event strings ever change.
+
+		 ]]></param>
+<param><![CDATA[eventMethod The method to invoke when the <code>eventType</code> is dispatched.
+
+		 ]]></param>
+<param><![CDATA[thisRef A reference to the object (class, instance, etc.), containing the method to be invoked. If this parameter is not supplied,
+
+		 or is <em>null</em>, the event is unable to verify that the listening method has the correct parameters and this may result in runtime
+
+		 errors (i.e. you must be careful to include a <code>SwagEvent</code> or related type as the first parameter). If <code>thisRef</code> is
+
+		 supplied and contains the target method, the event broadcaster attempts to invoke the event method more intelligently (i.e. the dispatcher
+
+		 will attempt to invoke the method with the correct parameter types, even if they don't match the standard event listener method format). 
+
+		 ]]></param>
+<param><![CDATA[sourceObject The object(s) from which the event is expected. If this is <em>null</em>, any object will be considered a match
+
+		 for the event, otherwise only the specified object(s) will be a match and other events, even if they have the same <code>eventType</code>,
+
+		 won't invoke the <code>eventMethod</code>. This parameter may either be a singular object or an array of object references.
+
+		 ]]></param>
+<return><![CDATA[The newly created <code>SwagEventListener</code> instance created, or <em>null</em> if there was a problem creating the listener.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[swag.core.instances.SwagEventListener
+
+		 
+
+		 ]]></see>
+</method>
+<method name='dispatchEvent' fullname='swag.core:SwagDispatcher/dispatchEvent' isStatic='true' isFinal='false' isOverride='false'  param_names='eventObj;source' param_types='swag.interfaces.events:ISwagEvent;*' param_defaults='undefined;undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Dispatches a standard, de-coupled <code>SwagEvent</code>-type event. 
+
+		 <p>Like standard Flash events, SwAG events are matched according to their <code>type</code> property.
+
+		 Unlike standard Flash events, however, SwAG events are not bubbled or propagated through the class inheritance 
+
+		 chain. Rather, they are broadcast on a first-come, first-serve basis (in the order in which they're added), 
+
+		 anywhere throughout the application.</p>
+
+		 
+
+		 ]]></description>
+<param><![CDATA[eventObj A <code>SwagEvent</code> instance, extending instance, or implementation of <code>ISwagEvent</code>
+
+		 ]]></param>
+<param><![CDATA[source The source object (the object / class / instance / etc.) from which the event is being dispatched. Listeners 
+
+		 that are not bound to a specific dispatcher will be invoked regardless of this parameter, but methods bound to only a specific
+
+		 dispatcher use this value to determine whether or not they should be invoked. 
+
+		 
+
+		 ]]></param>
+</method>
+<method name='removeEventListener' fullname='swag.core:SwagDispatcher/removeEventListener' isStatic='true' isFinal='false' isOverride='false'  param_names='eventType;eventMethod;sourceObject' param_types='String;Function;*' param_defaults='undefined;undefined;null' result_type='Boolean'>
+<description><![CDATA[
+
+		 Removes an event listener created with the <code>addEventListener</code> method.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[eventType The event type to remove. This, along with the <code>eventMethod</code> and, optionally, the 
+
+		 <code>sourceObject</code>, are used to determine which listener(s) should be removed.
+
+		 ]]></param>
+<param><![CDATA[eventMethod The method associated with the event to remove.
+
+		 ]]></param>
+<param><![CDATA[sourceObject The optional source object associated with the event to remove. If this is <em>null</em>,
+
+		 this parameter is essentially ignored. If this is a singular object reference, it must match the object used
+
+		 to register the event with the <code>addEventListener</code> call. If this object is an array, any of the objects
+
+		 in the array are considered a source match for removal.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> is the listener was successfully removed, <em>false</em> if there was a problem or
+
+		 no associated listener could be found to remove.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[addEventListener()
+
+		 ]]></see>
+</method>
+<method name='removeOrphanedListeners' fullname='swag.core:SwagDispatcher/removeOrphanedListeners' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+
+		 Removes any orphaned event listeners created by the <code>SwagDispatcher</code>. Orphaned listeners are those that still 
+
+		 exit in memory but whose type or listening methods are <em>null</em> (no longer exist). Removing orphaned listeners helps to 
+
+		 maintain application memory by removing any references which will no longer be used. 
+
+		 
+
+		 ]]></description>
+</method>
+<method name='sourcesMatch' fullname='swag.core:SwagDispatcher/private:sourcesMatch' isStatic='true' isFinal='false' isOverride='false'  param_names='dispatcher;sourceFilter' param_types='*;*' param_defaults='undefined;undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Returns true if the dispatcher object and sourceFilter(s) match. If sourceFilter is an array,
+
+		 it is assumed that it contains indexed references to check against (if any one matches,
+
+		 this method returns true).
+
+		 
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='listeners' fullname='swag.core:SwagDispatcher/listeners/get' isStatic='true' isFinal='false' isOverride='false'  result_type='Vector$swag.core.instances:SwagEventListener'>
+<description><![CDATA[
+
+		 Stores a packed vector array of all registered <code>SwagEventListener</code> objects.
+
+		  
+
+		 ]]></description>
+<return><![CDATA[A vector array of <code>SwagEventListener</code> objects.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[swag.core.instances.SwagEventListener
+
+		 ]]></see>
+</method>
+<field name='_listeners' fullname='swag.core:SwagDispatcher/private:_listeners' type='Vector$swag.core.instances:SwagEventListener' isStatic='true' isConst='false' >
+</field>
+<classRec name='SwagSystem' fullname='swag.core:SwagSystem' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\SwagSystem.as' namespace='swag.core' access='public' baseclass='swag.core:SwagDispatcher' interfaces='swag.interfaces.core:ISwagSystem' isFinal='true' isDynamic='false' >
+<description><![CDATA[
+
+	 Provides or collects a variety of methods and properties that can be used by the developer to deeply inspect and (sometimes)
+
+	 update the host system settings (the Flash / AIR version, the operating system, browser, etc.), or various core ActionScript 
+
+	 objects.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+</classRec>
+<method name='addOnExistsWatch' fullname='swag.core:SwagSystem/private:addOnExistsWatch' isStatic='true' isFinal='false' isOverride='false'  param_names='property;targetObject;callbackMethod;allowNull' param_types='String;*;Function;Boolean' param_defaults='undefined;undefined;undefined;true' result_type='Boolean'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='getDefinition' fullname='swag.core:SwagSystem/getDefinition' isStatic='true' isFinal='false' isOverride='false'  param_names='definition;appDomain' param_types='String;flash.system:ApplicationDomain' param_defaults='undefined;null' result_type='Class'>
+<description><![CDATA[
+
+		 Similar to the built-in <code>flash.utils.getDefinitionByName</code> method, this method attemps to find an object definition (protype or
+
+		 class object), for the specified object name (string).
+
+		 
+
+		 ]]></description>
+<param><![CDATA[definition The name of the object to look up and (if found), return a reference to.
+
+		 ]]></param>
+<param><![CDATA[appDomain An optional application domain inspect if the initial attempt to discover the <code>definition</code> fails.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[A reference to the found class object for the specified <code>definition</code>, or <em>null</em> if no such object
+
+		 can be found.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[flash.utils.getDefinitionByName
+
+		 ]]></see>
+<see><![CDATA[flash.system.ApplicationDomain
+
+		 
+
+		 ]]></see>
+</method>
+<method name='onExistsMonitor' fullname='swag.core:SwagSystem/private:onExistsMonitor' isStatic='true' isFinal='false' isOverride='false'  param_names='eventObj' param_types='flash.events:TimerEvent' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='onExists' fullname='swag.core:SwagSystem/onExists' isStatic='true' isFinal='false' isOverride='false'  param_names='property;targetObject;callbackMethod;allowNull' param_types='String;*;Function;Boolean' param_defaults='undefined;undefined;undefined;true' result_type='Boolean'>
+<description><![CDATA[
+
+		 Begins monitoring for the existence of a property within a specific object, and invokes a method
+
+		 when that property becomes available (is not <em>undefined</em> and, optionally, is not <em>null</em>).
+
+		 <p><em>Null</em> objects are considered to exist and will trigger the <code>callbackMethod</code> unless
+
+		 the <code>allowNull</code> parameter is <em>false</em>.</p> 
+
+		 
+
+		 ]]></description>
+<param><![CDATA[property The property to begin monitoring for. Must not be <em>null</em> or an empty string.
+
+		 ]]></param>
+<param><![CDATA[targetObject The object that is expected to contain the <code>property</code> at some time in the future. Must not
+
+		 be <em>null</em>.
+
+		 ]]></param>
+<param><![CDATA[callbackMethod The method to invoke when the specified <code>property</code> within the <code>targetObject</code> becomes
+
+		 available. The callback method should not expect any parameters.
+
+		 ]]></param>
+<param><![CDATA[allowNull If <em>true</em>, <em>null</em> objects are considered to exist and will invoke the <code>callbackMethod</code>. 
+
+		 If <em>false</em>, only non-<em>null</em> and non-<em>undefined</em> objects are considered to exist.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> if the <code>property</code> monitor was successfully created and started. <em>False</em> is returned if there 
+
+		 was a problem creating the watch monitor (for example, if one of the supplied parameters is incorrect). 
+
+		 
+
+		 ]]></return>
+</method>
+<method name='removeOnExistsWatch' fullname='swag.core:SwagSystem/private:removeOnExistsWatch' isStatic='true' isFinal='false' isOverride='false'  param_names='watchObject' param_types='Object' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='startOnExistsTimer' fullname='swag.core:SwagSystem/private:startOnExistsTimer' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='stopOnExistsTimer' fullname='swag.core:SwagSystem/private:stopOnExistsTimer' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='updateSettingsObject' fullname='swag.core:SwagSystem/private:updateSettingsObject' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='initialized' fullname='swag.core:SwagSystem/initialized/get' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 
+
+		 Returns true if <code>SwagSystem</code> has been initialized, false otherwise. 
+
+		 <p>If not properly initialized, <code>SwagSystem</code> may not return accurate values because it hasn't 
+
+		 had a chance to fully query the system.</p> 
+
+		 
+
+		 ]]></description>
+</method>
+<method name='isAIR' fullname='swag.core:SwagSystem/isAIR/get' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 
+
+		 Returns <em>true</em> if the containing runtime environment is the Adobe Integrated Runtime, <em>false</em> otherwise.
+
+		 
+
+		 ]]></description>
+</method>
+<method name='isMobile' fullname='swag.core:SwagSystem/isMobile/get' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 
+
+		 Returns <em>true</em> if the containing runtime environment is a mobile OS version, <em>false</em> if it's a desktop OS version.
+
+		 
+
+		 ]]></description>
+</method>
+<method name='isStandalone' fullname='swag.core:SwagSystem/isStandalone/get' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 
+
+		 Returns <em>true</em> if the containing runtime environment is the standalone (external) Flash player, <em>false</em> otherwise.
+
+		 
+
+		 ]]></description>
+</method>
+<method name='isWeb' fullname='swag.core:SwagSystem/isWeb/get' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 
+
+		 Returns <em>true</em> if the containing runtime environment is the Flash web player, <em>false</em> otherwise.
+
+		 
+
+		 ]]></description>
+</method>
+<method name='settings' fullname='swag.core:SwagSystem/settings/get' isStatic='true' isFinal='false' isOverride='false'  result_type='Object'>
+<description><![CDATA[
+
+		 
+
+		 Contains all of the settings detected by <code>SwagSystem</code>. 
+
+		 
+
+		 <p>As well as including all of the properties from the <code>flash.system.Capabilities</code>, 
+
+		 <code>flash.system.System</code>, and <code>flash.desktop.NativeApplication</code> classes, 
+
+		 the <code>settings</code> object also includes the following data:
+
+		 <ul>
+
+		 <li>isAIR (<code>Boolean</code>) - <em>True</em> if the enclosing runtime is AIR.</li>
+
+		 <li>isWeb (<code>Boolean</code>) - <em>True</em> if the enclosing runtime is the Flash web player (plugin or ActiveX).</li>
+
+		 <li>isStandalone (<code>Boolean</code>) - <em>True</em> if the enclosing runtime is the standalone Flash player.</li>
+
+		 <li>isMobile (<code>Boolean</code>) - <em>True</em> if the enclosing runtime is a mobile version of AIR or the Flash web player.</li>		 
+
+		 </ul>
+
+		 </p>
+
+		 
+
+		 <p>Any properties that are not available are set to <em>null</em>; for example, when attempting to read AIR properties from within
+
+		 the Flash web player.</p>
+
+		 
+
+		 ]]></description>
+<see><![CDATA[flash.system.Capabilities
+
+		 ]]></see>
+<see><![CDATA[flash.system.System
+
+		 ]]></see>
+<see><![CDATA[flash.system.NativeApplication
+
+		 ]]></see>
+</method>
+<field name='_initialized' fullname='swag.core:SwagSystem/private:_initialized' type='Boolean' isStatic='true' isConst='false' defaultValue='false' >
+</field>
+<field name='_mobileOSes' fullname='swag.core:SwagSystem/private:_mobileOSes' type='Array' isStatic='true' isConst='true' defaultValue='unknown' >
+</field>
+<field name='_onExistsTimer' fullname='swag.core:SwagSystem/private:_onExistsTimer' type='flash.utils:Timer' isStatic='true' isConst='false' defaultValue='null' >
+</field>
+<field name='_onExistsWatches' fullname='swag.core:SwagSystem/private:_onExistsWatches' type='Array' isStatic='true' isConst='false' defaultValue='unknown' >
+</field>
+<field name='_settings' fullname='swag.core:SwagSystem/private:_settings' type='Object' isStatic='true' isConst='false' defaultValue='unknown' >
+</field>
+<classRec name='SwagDataTools' fullname='swag.core:SwagDataTools' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\SwagDataTools.as' namespace='swag.core' access='public' baseclass='swag.core:SwagDispatcher' interfaces='swag.interfaces.core:ISwagDataTools' isFinal='true' isDynamic='false' >
+<description><![CDATA[
+
+	 The <code>SwagDataTools</code> class contains a variety of static methods and properties to assist with a variety
+
+	 of data modification and verification tasks. For the most part, methods and properties can be accessed directly
+
+	 without first creating an instance of the <code>SwagDataTools</code> class. 
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 ]]></author>
+</classRec>
+<method name='HTMLDecode' fullname='swag.core:SwagDataTools/HTMLDecode' isStatic='true' isFinal='false' isOverride='false'  param_names='inString' param_types='String' param_defaults='undefined' result_type='String'>
+<description><![CDATA[
+
+		 Decodes a string containing HTML entitities, including those that are not directly supported with ActionScript's
+
+		 <code>unescape</code> method.
+
+		 <p><strong>NOTE: As per the W3C specification, HTML entitities are case-sensitive.</strong></p>
+
+		 
+
+		 ]]></description>
+<param><![CDATA[inString The string containing the HTML entitities to translate to plain text. A copy of this
+
+		 string is made so that the original paramater data is not affected.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The processed copy of the <code>inString</code> parameter with all of the HTML entities translated to plain text. 
+
+		 
+
+		 ]]></return>
+</method>
+<method name='fromBinaryString' fullname='swag.core:SwagDataTools/fromBinaryString' isStatic='true' isFinal='false' isOverride='false'  param_names='inputString;returnType' param_types='String;Class' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Converts the input binary string sequence to a native numeric type.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[inputString The string to convert to a native numeric type.
+
+		 ]]></param>
+<param><![CDATA[returnType The numeric type to convert the <code>inputString</code> to. Valid types are 
+
+		 <code>Number</code>, <code>uint</code>, and <code>int</code>.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The numeric value represented by the binary <code>inputString</code>, of the type specified
+
+		 by <code>returnType</code>. If the <code>returnType</code> specified is not a valid numeric type,
+
+		 or the <code>inputString</code> contains invalid digits (not 0 or 1), <em>null</em> is returned.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[toBinaryString()
+
+		 
+
+		 ]]></see>
+</method>
+<method name='fromHexString' fullname='swag.core:SwagDataTools/fromHexString' isStatic='true' isFinal='false' isOverride='false'  param_names='input;returnType' param_types='String;Class' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[	
+
+		 Converts a hexadecinal input string to its ordinal representation, either as an ASCII string, or as a native
+
+		 numeric type.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[input The string to convert to its ordinal representation. 
+
+		 ]]></param>
+<param><![CDATA[returnType The return type to convert the <code>input</code> string to. If this is a <code>String</code>, it's assumed to
+
+		 be a string of hexadecimal values with each 2-digit value representing the ordinal number of an ASCII character. For
+
+		 example, the <code>input</code> string "48656C6C6F" would be converted to "Hello". If this is a numeric type 
+
+		 (<code>Number</code>, <code>int</code>, or <code>uint</code>), the input string will be converted to the native numeric value 
+
+		 matching that type.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The plain text or native numeric value of the hexadecimal input string, or <em>null</em> if there was a problem converting it.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[#toHexString()		 
+
+		 ]]></see>
+</method>
+<method name='getBit' fullname='swag.core:SwagDataTools/getBit' isStatic='true' isFinal='false' isOverride='false'  param_names='input;bitPos' param_types='*;uint' param_defaults='null;0' result_type='Boolean'>
+<description><![CDATA[
+
+		 Returns the bit value at a specific position within the input number. 
+
+		 
+
+		 ]]></description>
+<param><![CDATA[input A valid numeric type (<code>Number</code>, <code>int</code>, or <code>uint</code>), from which to retrieve the 
+
+		 specified bit value.
+
+		 ]]></param>
+<param><![CDATA[bitPos The bit position to retrieve from within the <code>input</code> value. This number ranges from 1 to 32 (the highest
+
+		 bit position currently supported by Flash). This parameter is 1-based so that 1 is the lowest (LSB) bit and 32 is the 
+
+		 highest (MSB) bit.
+
+		 		 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> denotes that the bit at the specified position is on, or 1, and <em>false</em> denotes that it's off, or 0.
+
+		 An <em>undefined</em> value is returned if the associated bit or input number are invalid.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[#setBit()
+
+		 		 
+
+		 ]]></see>
+</method>
+<method name='getMethodParameters' fullname='swag.core:SwagDataTools/getMethodParameters' isStatic='true' isFinal='false' isOverride='false'  param_names='method;container' param_types='Function;*' param_defaults='undefined;undefined' result_type='Array'>
+<description><![CDATA[
+
+		 Retrieves an ordered list (<code>Array</code>), of the parameters for the specified method.
+
+		 <p>The returned list will be an array of classes / types that can be used to determine what data type(s)
+
+		 the supplied method supports.</p> 
+
+		 
+
+		 ]]></description>
+<param><![CDATA[method The method for which to retrieve the list of parameters.
+
+		 ]]></param>
+<param><![CDATA[container The containing object in which the <code>method</code> resides. Without this reference it's
+
+		 not possible to determine the specific method properties (this call will fail).
+
+		 
+
+		 ]]></param>
+<return><![CDATA[An ordered <code>Array</code> of classes / types, in the order in which they appear, of the specified
+
+		 method, or <em>null</em> if there was a problem retrieving this information. For a method with no parameters,
+
+		 an empty <code>Array</code> object is returned. If the <code>container</code> property is <em>null</em> or
+
+		 doesn't contain the referenced <code>method</code>, <em>null</em> is returned. If a parameter is a wildcard (&#42;),
+
+		 a <em>null</em> value is stored at the associated index location within the returned array. The <code>... rest</code>
+
+		 notation is not considered a parameter since, technically, the method does not expect any data and no type is declared. 
+
+		 <p><strong>Note: Unlike the index values returned by the <code>describeType</code> method, the returned parameter list 
+
+		 is 0-indexed (i.e. always 1 less than in the XML description).</strong></p>
+
+		 
+
+		 ]]></return>
+</method>
+<method name='hasData' fullname='swag.core:SwagDataTools/hasData' isStatic='true' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Verifies that the supplied property has data -- is not <em>undefined</em> and not <em>null</em>.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[args The property to check.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> if the supplied <code>property</code> is not <em>undefined</em> and not <em>null</em>, otherwise
+
+		 <em>false</em> is returned.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='hasDeclaredConstant' fullname='swag.core:SwagDataTools/hasDeclaredConstant' isStatic='true' isFinal='false' isOverride='false'  param_names='targetObject;constantName' param_types='*;String' param_defaults='null;null' result_type='Boolean'>
+<description><![CDATA[
+
+		 Returns true if the specified object (usually a class or class instance), contains a
+
+		 constant with a specific name.
+
+		 <p>This can be used, for example, to determine if a specific event type belongs to
+
+		 an event object.</p>
+
+		  
+
+		 ]]></description>
+<param><![CDATA[targetObject The object to inspect for the constant.
+
+		 ]]></param>
+<param><![CDATA[constantName The name of the constant to attempt to find.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> if the specified constant exists within the <code>targetObject</code>,
+
+		 <em>false</em> otherwise. 
+
+		 
+
+		 ]]></return>
+</method>
+<method name='isType' fullname='swag.core:SwagDataTools/isType' isStatic='true' isFinal='false' isOverride='false'  param_names='property;type;canBeNull' param_types='*;*;Boolean' param_defaults='null;null;false' result_type='Boolean'>
+<description><![CDATA[
+
+		 
+
+		 Verifies the supplied <code>property</code> against the supplied <code>type</code>.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[property The property (variable, object, reference, etc.), to check.
+
+		 ]]></param>
+<param><![CDATA[type The type to check against. If this is an object reference, it is used directly. If this is a string,
+
+		 a <code>getDefinitionByType</code> call is made to attempt to retrieve the object type first.
+
+		 ]]></param>
+<param><![CDATA[canBeNull If <em>true</em>, the evaluation will still return <code>true</code> even if the 
+
+		 supplied <code>property</code> is null. If <em>false</em>, the <code>property</code> must contain a value (i.e. be non-null). 
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<em>true</em> if the supplied <code>property</code> parameter matches the supplied <code>type</code>
+
+		 parameter, or <em>false</em> if the type doesn't match, or the <code>property</code> is null and <code>canBeNull</code> 
+
+		 is false.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='isXML' fullname='swag.core:SwagDataTools/isXML' isStatic='true' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Verifies that the supplied parameter is one of the valid ActionScript 3 XML objects, or a string that can be converted to a valid XML
+
+		 object.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[args The first parameter is the argument to validate as either <code>XML</code>, <code>XMLList</code>, <code>XMLDocument</code>, 
+
+		 <code>XMLNode</code>, or a string with valid XML data if the optional second parameter is <em>true</em> (default is <em>false</em>).
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> if the supplied argument is a valid <code>XML</code>, <code>XMLList</code>, <code>XMLDocument</code>, or 
+
+		 <code>XMLNode</code> object, or if it's a string that can be converted used as a valid XML object (if the second parameter is <em>true</em>). 
+
+		 <em>False</em> is returned when none of these conditions are met. 
+
+		 
+
+		 ]]></return>
+</method>
+<method name='parseVersionString' fullname='swag.core:SwagDataTools/parseVersionString' isStatic='true' isFinal='false' isOverride='false'  param_names='versionString;separator' param_types='String;String' param_defaults='undefined;.' result_type='Object'>
+<description><![CDATA[
+
+		 Parses / splits a string containing software version information (for example, "3.2.1 b"), into native (numeric / boolean) values.
+
+		 
+
+		 <p>The format of a typical version string is: <strong>majorVersion.minorVersion.buildNumber.internalBuildNumber a / b</strong>, where
+
+		 "a" signifies an alpha version, and "b" is a beta version. If both "a" and "b" appear in the version information, it's considered
+
+		 to represent an alpha version.</p>
+
+		  
+
+		 ]]></description>
+<param><![CDATA[versionString The version string to parse. Currently, four levels of revision are supported (i.e. four
+
+		 separators), as well as optional "b" or "a" on the end to denote beta or alpha versions.
+
+		 ]]></param>
+<param><![CDATA[separator The separator character between the version numbers (for example, ".").
+
+		 
+
+		 ]]></param>
+<return><![CDATA[An object containing the following properties:
+
+		 <ul>
+
+		 <li>major (<code>int</code>) - The parsed major value from the version string.</li>
+
+		 <li>minor (<code>int</code>) - The parsed minor value from the version string.</li> 
+
+		 <li>build (<code>int</code>) - The parsed build value from the version string.</li>
+
+		 <li>internalBuild (<code>int</code>) - The parsed internal build value from the version string.</li>
+
+		 <li>alpha (<code>Boolean</code>) - The parsed alpha notation setting from the version string.</li>
+
+		 <li>beta (<code>Boolean</code>) - The parsed beta notation setting from the version string (if <code>alpha</code> 
+
+		 is <em>true</em>, <code>beta</code> will always be false).</li>
+
+		 </ul>
+
+		 Any numeric version values omitted will be returned as <em>-1</em>, and boolean values as <em>false</em>.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[flash.system.Capabilities#version
+
+		 ]]></see>
+</method>
+<method name='replaceString' fullname='swag.core:SwagDataTools/replaceString' isStatic='true' isFinal='false' isOverride='false'  param_names='sourceString;insertString;patternString' param_types='String;String;String' param_defaults='undefined;undefined;undefined' result_type='String'>
+<description><![CDATA[
+
+		 Replaces all occurances of a specified string within a string with another string.
+
+		  
+
+		 ]]></description>
+<example><![CDATA[The following example replaces all occurances of "%name%" with "Bob".
+
+		 
+
+		 <listing version="3.0">
+
+		 var sourceString:String = "%name% is an excellent developer, and %name% is also a friend.";
+
+		 var resultString:String = SwagDataTools.replaceString(sourceString, "Bob", "%name%");
+
+		 trace (resultString); //"Bob is an excellent developer, and Bob is also a friend."
+
+		 </listing> 
+
+		 
+
+		 ]]></example>
+<param><![CDATA[sourceString The string within which to perform the replacement. The contents of the string are copied so that
+
+		 the original string is not affected.
+
+		 ]]></param>
+<param><![CDATA[insertString The string to replace within <code>sourceString</code>.
+
+		 ]]></param>
+<param><![CDATA[patternString The pattern to replace with <code>insertString</code> within the <code>sourceString</code>.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[A copy of the <code>sourceString</code> with any occurances of <code>patternString</code> replaced with 
+
+		 <code>insertString</code>.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='setBit' fullname='swag.core:SwagDataTools/setBit' isStatic='true' isFinal='false' isOverride='false'  param_names='input;bitPos;setValue' param_types='*;uint;Boolean' param_defaults='null;0;false' result_type='*'>
+<description><![CDATA[
+
+		 Sets the bit at the specified position in the input number to the specified value.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[input The numeric value (<code>Number</code>, <code>int</code>, or <code>uint</code>), within which
+
+		 to manipulate the specified bit value.
+
+		 ]]></param>
+<param><![CDATA[bitPos The bit position to set from within the <code>input</code> value. This number ranges from 1 to 32 (the highest
+
+		 bit position currently supported by Flash). This parameter is 1-based so that 1 is the lowest (LSB) bit and 32 is the 
+
+		 highest (MSB) bit.
+
+		 ]]></param>
+<param><![CDATA[setValue The value to assign to the specified bit, with <em>true</em> representing 1, or on, and <em>false</em>
+
+		 representing 0, or off.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The <code>input</code> value with the specified bit manipulated to the specified value. If the <code>input</code> 
+
+		 value was an object reference, the original object will be updated as well.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[#getBit()
+
+		 		
+
+		 ]]></see>
+</method>
+<method name='stringContains' fullname='swag.core:SwagDataTools/stringContains' isStatic='true' isFinal='false' isOverride='false'  param_names='sourceString;searchString;caseSensitive' param_types='*;String;Boolean' param_defaults='undefined;undefined;true' result_type='Boolean'>
+<description><![CDATA[
+
+		 
+
+		 Scans <code>sourceString</code> for occurances of <code>searchString</code> and returns true if found.
+
+		 <p>Optionally, a case-insensitive search may be performed between the two strings.</p>
+
+		  
+
+		 ]]></description>
+<param><![CDATA[sourceString The string, or strings, to search through. If this parameter is a string, it is used as is. If the parameter is an
+
+		 array, the contents of the array are analyzed one by one wherever possible. If the parameter is of a type that can be converted to a string
+
+		 (XML, for example), a conversion will be attempted.
+
+		 ]]></param>
+<param><![CDATA[searchString The string to find within <code>sourceString</code>.
+
+		 ]]></param>
+<param><![CDATA[caseSensitive If <em>true</em>, a case-insensitive search is performed, otherwise the strings must match exactly.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[True if the <code>searchString</code> could be found within the <code>sourceString</code>. <em>False</em> is returned if
+
+		 <code>sourceString</code> or <code>searchString</code> are <em>null</em>, or are of a type that can't be analyzed.		 
+
+		 
+
+		 ]]></return>
+</method>
+<method name='stripChars' fullname='swag.core:SwagDataTools/stripChars' isStatic='true' isFinal='false' isOverride='false'  param_names='inputString;stripChars' param_types='String;*' param_defaults='undefined; ' result_type='String'>
+<description><![CDATA[
+
+		 Strips all of the specified characters from an input string and returns the newly reformatted string.
+
+		  
+
+		 <p>This method affects the whole string unlike the <code>stripLeadingChars</code>, <code>stripTrailingChars</code>, and
+
+		 <code>stripOutsideChars</code> methods.</p>
+
+		  
+
+		 ]]></description>
+<example><![CDATA[The following example strips the uppercase letters from the input string:
+
+		 <listing version="3.0">
+
+		 var sourceString:String = "EeVvEeRrYy OoTtHhEeRr LlEeTtTtEeRr IiSs OoKkAaYy";
+
+		 var strippedString:String = SwagDataTools.stripChars(sourceString, SwagDataTools.UPPERCASE_RANGE);
+
+		 trace (strippedString); //"every other letter is okay"
+
+		 </listing>
+
+		 
+
+		 ]]></example>
+<param><![CDATA[inputString The string from which to strip the characters. The contents of this parameter are copied
+
+		 so the original data is not affected.
+
+		 ]]></param>
+<param><![CDATA[stripChars The character or characters to strip from <code>inputString</code>. Multiple characters may be included
+
+		 as a string or, alternately, this parameter may be an array of strings.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[A newly created copy of <code>inputString</code> with all the specified characters stripped out.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='stripLeadingChars' fullname='swag.core:SwagDataTools/stripLeadingChars' isStatic='true' isFinal='false' isOverride='false'  param_names='inputString;stripChars' param_types='String;*' param_defaults='undefined; ' result_type='String'>
+<description><![CDATA[
+
+		 Strips the leading characters from an input string and returns the newly reformatted string. As soon as a non-stripped
+
+		 character is encountered, the remainder of the string is left intact.
+
+		  
+
+		 ]]></description>
+<example><![CDATA[The following example strips all punctuation from the beginning of the given input string:
+
+		 <listing version="3.0">
+
+		 var sourceString:String = "$-=This should not have puncutation at the beginning.";
+
+		 var strippedString:String = SwagDataTools.stripLeadingChars(sourceString, SwagDataTools.PUNCTUATION_RANGE);
+
+		 trace (strippedString); //"This should not have puncutation at the beginning."
+
+		 </listing>
+
+		 
+
+		 ]]></example>
+<param><![CDATA[inputString The string from which to strip the leading characters. The contents of this parameter are copied
+
+		 so the original data is not affected.
+
+		 ]]></param>
+<param><![CDATA[stripChars The character or characters to strip from <code>inputString</code>. Multiple characters may be included
+
+		 as a string or, alternately, this parameter may be an array of strings.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[A newly created copy of <code>inputString</code> with all the specified characters stripped out.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='stripOutsideChars' fullname='swag.core:SwagDataTools/stripOutsideChars' isStatic='true' isFinal='false' isOverride='false'  param_names='inputString;stripChars' param_types='String;*' param_defaults='undefined;undefined' result_type='String'>
+<description><![CDATA[
+
+		 Strips the outside (leading and trailing) characters from an input string and returns the newly reformatted string. As soon as a 
+
+		 non-stripped character is encountered from both directions, the remaining middle of the string is left intact.
+
+		  
+
+		 ]]></description>
+<example><![CDATA[The following example strips all punctuation and separators from the beginning and end of the given input string:
+
+		 <listing version="3.0">
+
+		 var sourceString:String = "No extra stuff here! ;
+
+		 var strippedString:String = SwagDataTools.stripOutsideChars(sourceString, SwagDataTools.PUNCTUATION_RANGE + SwagDataTools.SEPARATOR_RANGE);
+
+		 trace (strippedString); //"No extra stuff here"
+
+		 </listing>
+
+		 
+
+		 ]]></example>
+<param><![CDATA[inputString The string from which to strip the outside characters. The contents of this parameter are copied
+
+		 so the original data is not affected.
+
+		 ]]></param>
+<param><![CDATA[stripChars The character or characters to strip from <code>inputString</code>. Multiple characters may be included
+
+		 as a string or, alternately, this parameter may be an array of strings.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[A newly created copy of <code>inputString</code> with all the specified characters stripped out.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='stripTrailingChars' fullname='swag.core:SwagDataTools/stripTrailingChars' isStatic='true' isFinal='false' isOverride='false'  param_names='inputString;stripChars' param_types='String;*' param_defaults='undefined; ' result_type='String'>
+<description><![CDATA[
+
+		 Strips the trailing (end) characters from an input string and returns the newly reformatted string. As soon as a non-stripped
+
+		 character is encountered, the remainder of the string is left intact.
+
+		  
+
+		 ]]></description>
+<example><![CDATA[The following example strips all lowercase letters and separators from the end of the given input string:
+
+		 <listing version="3.0">
+
+		 var sourceString:String = "IF YOU'RE NOT SHOUTING you will not be heard";
+
+		 var strippedString:String = SwagDataTools.stripTrailingChars(sourceString, SwagDataTools.LOWERCASE_RANGE + SwagDataTools.SEPARATOR_RANGE);
+
+		 trace (strippedString); //"IF YOU'RE NOT SHOUTING"
+
+		 </listing>
+
+		 
+
+		 ]]></example>
+<param><![CDATA[inputString The string from which to strip the trailing characters. The contents of this parameter are copied
+
+		 so the original data is not affected.
+
+		 ]]></param>
+<param><![CDATA[stripChars The character or characters to strip from <code>inputString</code>. Multiple characters may be included
+
+		 as a string or, alternately, this parameter may be an array of strings.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[A newly created copy of <code>inputString</code> with all the specified characters stripped out.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='toBinaryString' fullname='swag.core:SwagDataTools/toBinaryString' isStatic='true' isFinal='false' isOverride='false'  param_names='inputNumber;bits' param_types='*;uint' param_defaults='undefined;32' result_type='String'>
+<description><![CDATA[
+
+		 Converts the input Number / int / uint to its binary string representation.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[inputNumber The number (Number / int / uint) to convert to a binary string representation.
+
+		 ]]></param>
+<param><![CDATA[bits The number of bits to process in the <code>inputNumber</code>. Note that if using a 
+
+		 <code>bits</code> value that is less than the number of bits found in the <code>inputNumber</code>
+
+		 (typically 32 or 64), the resulting binary value won't be equal to the original decimal value since
+
+		 some of the information is necessarily lost.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The binary representation of the input number, accurate to the number of bits specified.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[fromBinaryString()
+
+		 
+
+		 ]]></see>
+</method>
+<method name='toHexString' fullname='swag.core:SwagDataTools/toHexString' isStatic='true' isFinal='false' isOverride='false'  param_names='input' param_types='*' param_defaults='undefined' result_type='String'>
+<description><![CDATA[
+
+		 Converts the to its hexadecimal representation as a string. 		 
+
+		 <p>For example, the input string "Hello" is represented by its hexadecimal values: 48+65+6C+6C+6F to produce the output 
+
+		 string "48656C6C6F". If the input parameter is a Number, its value (usually 32 bits) will be converted to its hexadecimal
+
+		 string representation.</p>
+
+		 <p>Note that the returned string has no standard hexadecimal notation such as "#" or "0x".</p>
+
+		 
+
+		 ]]></description>
+<internal><![CDATA[Conversion from negative numeric values not working correctly!
+
+		 		 
+
+		 ]]></internal>
+<param><![CDATA[input The string to convert to its hexadecimal representation. Each character in the string will be converted to its
+
+		 two-digit hexadecimal value. The input string is copied and so the original value won't be affected.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The hexadecimal string representation of the <code>input</code> string. Any character for which the hexadecimal
+
+		 value is less than 10 will have a 0 prepended. In this way the length of the returned string will always be double that
+
+		 of the input string. If the <code>input</code> parameter is invalid, an empty string is returned. 
+
+		 
+
+		 ]]></return>
+<see><![CDATA[#toHexValue()
+
+		 ]]></see>
+<see><![CDATA[#fromHexString
+
+		 
+
+		 ]]></see>
+</method>
+<field name='LOWERCASE_RANGE' fullname='swag.core:SwagDataTools/LOWERCASE_RANGE' type='String' isStatic='true' isConst='true' defaultValue='abcdefghijklmnopqrstuvwxyz' >
+<description><![CDATA[
+
+		 Contains the range of all lowercase ASCII characters that can be used with various string operations. 
+
+		 ]]></description>
+</field>
+<field name='NUMBERS_RANGE' fullname='swag.core:SwagDataTools/NUMBERS_RANGE' type='String' isStatic='true' isConst='true' defaultValue='0123456789' >
+<description><![CDATA[
+
+		 Contains the range of all numeric ASCII characters that can be used with various string operations. 
+
+		 ]]></description>
+</field>
+<field name='PUNCTUATION_RANGE' fullname='swag.core:SwagDataTools/PUNCTUATION_RANGE' type='String' isStatic='true' isConst='true' defaultValue='~`!@#$%^&amp;*()+-={}[]|:&quot;;&apos;&lt;&gt;,.?' >
+<description><![CDATA[
+
+		 Contains the range of all puncuation ASCII characters that can be used with various string operations. 
+
+		 ]]></description>
+</field>
+<field name='SEPARATOR_RANGE' fullname='swag.core:SwagDataTools/SEPARATOR_RANGE' type='String' isStatic='true' isConst='true' defaultValue=' -_\/' >
+<description><![CDATA[
+
+		 Contains the range of all separator ASCII characters (space, hyphen, underscore, back slash, forward slash), 
+
+		 that can be used with various string operations. 
+
+		 ]]></description>
+</field>
+<field name='UPPERCASE_RANGE' fullname='swag.core:SwagDataTools/UPPERCASE_RANGE' type='String' isStatic='true' isConst='true' defaultValue='ABCDEFGHIJKLMNOPQRSTUVWXYZ' >
+<description><![CDATA[
+
+		 Contains the range of all uppercase ASCII characters that can be used with various string operations. 
+
+		 ]]></description>
+</field>
+<classRec name='SwagProxy' fullname='swag.core.instances:SwagProxy' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\instances\SwagProxy.as' namespace='swag.core.instances' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</classRec>
+<method name='SwagProxy' fullname='swag.core.instances:SwagProxy/SwagProxy' isStatic='false' isFinal='false' isOverride='false'  param_names='proxyMethod;proxyContainer;replaceMehod;autoInit' param_types='Function;*;Function;Boolean' param_defaults='undefined;undefined;undefined;true' result_type='*'>
+<description><![CDATA[
+
+		 Instantiates the ProxyMethod intercept and optionally creates the proxy re-direct.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[proxyMethod The method to be proxied (i.e. the method to temporarily replace with <code>replaceMehod</code>).
+
+		 May not be <em>null</em>.
+
+		 ]]></param>
+<param><![CDATA[replaceMehod The method that will act as a proxy for <code>proxy</code> method. Ensure that the replacement
+
+		 method accepts the correct parameters otherwise it may generate a runtime error. May not be <em>null</em>.
+
+		 ]]></param>
+<param><![CDATA[proxyContainer The containing object in which the <code>proxyMethod</code> may be found. May not be <em>null</em>.
+
+		 ]]></param>
+<param><![CDATA[autoInit If <em>true</em>, the proxy is created right away, otherwise the <code>create</code> method must be called
+
+		 manually.
+
+		 
+
+		 ]]></param>
+</method>
+<method name='create' fullname='swag.core.instances:SwagProxy/create' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 Creates the proxy method by swapping references between it and the replacing method.
+
+		  
+
+		 ]]></description>
+<eventType><![CDATA[swag.events.SwagErrorEvent
+
+		 
+
+		 ]]></eventType>
+<return><![CDATA[<em>True</em> is returned if the method was successfully proxied, <em>false</em> otherwise.
+
+		 A <code>SwagErrorEvent</code> event is also broadcast with specific information about the failure.
+
+		 
+
+		 ]]></return>
+</method>
+<field name='_proxyContainer' fullname='swag.core.instances:SwagProxy/private:_proxyContainer' type='Function' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_proxyMethod' fullname='swag.core.instances:SwagProxy/private:_proxyMethod' type='Function' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_replaceMethod' fullname='swag.core.instances:SwagProxy/private:_replaceMethod' type='Function' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='SwagSequence' fullname='swag.core.instances:SwagSequence' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\instances\SwagSequence.as' namespace='swag.core.instances' access='public' baseclass='Object' interfaces='swag.interfaces.core.instances:ISwagSequence' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+<see><![CDATA[swag.core.SwagSequencer
+
+	 
+
+	 ]]></see>
+<private><![CDATA[]]></private>
+</classRec>
+<method name='SwagSequence' fullname='swag.core.instances:SwagSequence/SwagSequence' isStatic='false' isFinal='false' isOverride='false'  param_names='type;args' param_types='String;restParam' param_defaults='null;undefined' result_type='*'>
+</method>
+<field name='TIMETYPE' fullname='swag.core.instances:SwagSequence/TIMETYPE' type='String' isStatic='true' isConst='true' defaultValue='SwagSequence.TIMETYPE' >
+</field>
+<field name='_type' fullname='swag.core.instances:SwagSequence/private:_type' type='String' isStatic='false' isConst='false' defaultValue='null' >
+</field>
+<classRec name='SwagLoader' fullname='swag.core.instances:SwagLoader' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\instances\SwagLoader.as' namespace='swag.core.instances' access='public' baseclass='Object' interfaces='swag.interfaces.core.instances:ISwagLoader' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Provides runtime-agnostic methods and properties for downloading / uploading data from / to remote or local sources. 
+
+	 <p>Runtime-agnostic means that the best methods will be used depending on the runtime and should be completely transparent
+
+	 to the developer. As such, the most
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+</classRec>
+<method name='SwagLoader' fullname='swag.core.instances:SwagLoader/SwagLoader' isStatic='false' isFinal='false' isOverride='false'  param_names='pathRef' param_types='*' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Default constructor for the class.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[filePathRef The file path to associate with this <code>SwagLoader</code> instance. This
+
+		 value may either be a <code>String</code>, in which case it's assumed to be a direct file / URL reference,
+
+		 a <code>URLRequest</code> object to be used directly with a <code>URLStream</code> instance, or a
+
+		 <code>File</code> instance to be used directly with a <code>FileStream</code> instance. If omitted,
+
+		 the <code>path</code> property must be set manually before attempting a load operation.
+
+		 
+
+		 ]]></param>
+</method>
+<method name='FileStream' fullname='swag.core.instances:SwagLoader/private:FileStream/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Class'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='File' fullname='swag.core.instances:SwagLoader/private:File/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Class'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='path' fullname='swag.core.instances:SwagLoader/path/get' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 The file path associated with this <code>SwagLoader</code> instance (i.e. the path to the file to be 
+
+		 downloaded / uploaded).
+
+		 <p>This value may either be a string which will be analyzed for the most appropriate transport method 
+
+		 (i.e. using Flash or AIR routines depending on the runtime), a <code>URLRequest</code> instance which
+
+		 will use <code>URLStream</code> by default, or a <code>File</code> instance which will use 
+
+		 <code>FileStream</code> by default. The transport method (<code>URLStream</code> or <code>FileStream</code>),
+
+		 can be changed manually if desired.</p>
+
+		 
+
+		 ]]></description>
+</method>
+<method name='stream' fullname='swag.core.instances:SwagLoader/stream/get' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 The instance of the data streaming object (<code>URLStream</code> or <code>FileStream</code> instance, depending on 
+
+		 the runtime), being used to most stream data for this <code>SwagLoader</code> instance.
+
+		 <p>This value will be <em>null</em> until a load or send operation has been started.</p>
+
+		 ]]></description>
+</method>
+<method name='path' fullname='swag.core.instances:SwagLoader/path/set' isStatic='false' isFinal='false' isOverride='false'  param_names='pathSet' param_types='*' param_defaults='undefined' result_type='void'>
+</method>
+<field name='_path' fullname='swag.core.instances:SwagLoader/private:_path' type='' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_stream' fullname='swag.core.instances:SwagLoader/private:_stream' type='' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='SwagDate' fullname='swag.core.instances:SwagDate' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\instances\SwagDate.as' namespace='swag.core.instances' access='public' baseclass='Object' interfaces='swag.interfaces.core.instances:ISwagDate' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Contains and extends a standard Flash <code>Date</code> object with various formatting and comparison options as well
+
+	 as other date-related utilities. 
+
+	 <p>This instance is intended to be used alone but is also used throughout the SwAG toolkit for date support.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+<see><![CDATA[Date.#
+
+	 ]]></see>
+</classRec>
+<method name='SwagDate' fullname='swag.core.instances:SwagDate/SwagDate' isStatic='false' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+
+		 Default constructor for the <code>SwagDate</code> object.
+
+		 
+
+		  
+
+		 ]]></description>
+<param><![CDATA[args The parameter to instantiate the instance with. If no parameter is specified, a new standard 
+
+		 Flash <code>Date</code> object is created with the current system date. If the parameter specified is a string, 
+
+		 an attempt is made by the <code>Date</code> object to create an instance of matching date properties 
+
+		 (see the <code>Date</code> constructor for valid formatting options). If the parameter is another <code>SwagDate</code> 
+
+		 instance, the date properties of the original instance are copied to the new one.
+
+		 
+
+		 ]]></param>
+<see><![CDATA[global#Date() 
+
+		 
+
+		 ]]></see>
+</method>
+<method name='getDaysPerMonth' fullname='swag.core.instances:SwagDate/getDaysPerMonth' isStatic='false' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='uint'>
+<description><![CDATA[
+
+		 Returns the number of days of the specified month, or of the current month associated with the <code>SwagDate</code>
+
+		 instance if none specified.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[args The month number to evaluate. This parameter may either be a numberic type (starting at 0 for January),
+
+		 a string (valid entries include the full month name, month abreviation, or numeric string representing the month number), 
+
+		 or omitted in which case the current <code>SwagDate</code> month value will be used.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The number of days in the specified month. <strong>Note: The value for February always returns a non-leap year number
+
+		 (29 days). Use the <code>isLeapYear</code> method to adjust this value wherer required.</strong>
+
+		 
+
+		 ]]></return>
+<see><![CDATA[#isLeapYear()
+
+		 
+
+		 ]]></see>
+</method>
+<method name='getMonthName' fullname='swag.core.instances:SwagDate/getMonthName' isStatic='true' isFinal='false' isOverride='false'  param_names='monthIndex;args' param_types='uint;restParam' param_defaults='undefined;undefined' result_type='String'>
+<description><![CDATA[
+
+			 Returns the full or partial name of the month represented by the input parameter.
+
+			 
+
+			 ]]></description>
+<param><![CDATA[monthIndex The numeric index of the month, starting with 0=January, 1=February, 2=March, etc.
+
+			 ]]></param>
+<param><![CDATA[args Optional parameters include (in order):
+
+			 <p><ul>
+
+			 <li>abbrev (<code>Boolean</code>) - If <em>true</em>, the three-letter abbreviation for the month name
+
+			 is returned instead of the full name (e.g. "Jul" instead of "July"). Default is <em>false</em>.</li>
+
+			 <li>lowercase (<code>Boolean</code>) - If <em>true</em>, the month name (full or abbreviated) is returned
+
+			 as a lowercase string instead of a mixed-case string in which the first letter is capitalized. Default is
+
+			 <em>false</em>.</li>
+
+			 </ul></p>
+
+			 
+
+			 ]]></param>
+<return><![CDATA[The name of the month, either full or abbreviated / capitalized or lowercased (depending on the optional
+
+			 parameters), of the specified month number.  
+
+			 
+
+			 ]]></return>
+</method>
+<method name='getMonthNumber' fullname='swag.core.instances:SwagDate/getMonthNumber' isStatic='true' isFinal='false' isOverride='false'  param_names='monthName' param_types='String' param_defaults='undefined' result_type='uint'>
+<description><![CDATA[
+
+			 Translates the specified month string (name or numeric string representation), to its 0-based month value.
+
+			 <p>Months are numbered starting from 0=January, 1=February, 2=March, and so on.</p>
+
+			  
+
+			 ]]></description>
+<param><![CDATA[monthName The name, 3-letter abreviation (with an optional period at the end), or numeric string representation 
+
+			 of the month. For example, "February", "Feb.", "february", "feb", and "1", are all equivalent and will return 
+
+			 month number 1.
+
+			 
+
+			 ]]></param>
+<return><![CDATA[The 0-based month number represented by the parameter. That is, 0=January, 1=February, and so on.
+
+			 
+
+			 ]]></return>
+</method>
+<method name='isLater' fullname='swag.core.instances:SwagDate/isLater' isStatic='false' isFinal='false' isOverride='false'  param_names='date' param_types='swag.core.instances:SwagDate' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Compares the current <code>SwagDate</code> instance to another one to see if it comes later.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[date The <code>SwagDate</code> instance to compare with this one.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> if the current <code>SwagDate</code> instance (this) is later than the specified one. 
+
+		 <em>False</em> is returned if the other date (parameter) is earlier, or comes before, the current one (this).  
+
+		 
+
+		 ]]></return>
+</method>
+<method name='isLeapYear' fullname='swag.core.instances:SwagDate/isLeapYear' isStatic='true' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+			 Evaluates the specified year to determine whether or not it's a leap year. 
+
+			 <p>Use this in conjunction with any methods that evaluate the number of days in a specific month (especially February).</p>
+
+			 
+
+			 ]]></description>
+<param><![CDATA[args The year value to evaluate. This may either be a numeric type, which will be used as is, a string, which
+
+			 will be converted to a numeric type, or a <code>SwagDate</code> instance who's <code>year</code> property will be used.
+
+			 
+
+			 ]]></param>
+<return><![CDATA[<em>True</em> if the specified parameter is a valid leap year, <em>false</em> if it's not or if there was an
+
+			 error converting the parameter to a usable (i.e. numeric) type. 
+
+			 
+
+			 ]]></return>
+</method>
+<method name='isSame' fullname='swag.core.instances:SwagDate/isSame' isStatic='false' isFinal='false' isOverride='false'  param_names='date' param_types='swag.core.instances:SwagDate' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Compares the current <code>SwagDate</code> instance to another one to see if they fall on the same date.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[date The <code>SwagDate</code> instance to compare with this one.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> if the current <code>SwagDate</code> instance (this) is the same as the specified one. 
+
+		 <em>False</em> is returned if the other date (parameter) is earlier or later than the current one (this).  
+
+		 
+
+		 ]]></return>
+</method>
+<method name='toString' fullname='swag.core.instances:SwagDate/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+			 
+
+			 ]]></description>
+<return><![CDATA[The string representation of the <code>SwagDate</code> object. 
+
+			 <p>Currently this is the same value as that returned by the <code>Date.toDateString</code> method.</p>
+
+			 
+
+			 ]]></return>
+<see><![CDATA[Date#toDateString()
+
+			 ]]></see>
+</method>
+<method name='dateIndex' fullname='swag.core.instances:SwagDate/dateIndex/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+
+			 An unsigned integer value based on the date of the instance in the format YYYYMMDD. 
+
+			 <p>This allows the date object to be used as a unique index value in sorted data sets like numeric arrays or as a unique 
+
+			 key in databases.</p>
+
+			 <p>Numbers in this value that are less than 10 are padded with an extra 0 to ensure that index valued and data length are retained 
+
+			 (i.e. the returned value will always be 8 digits long).</p>	
+
+			 ]]></description>
+</method>
+<method name='date' fullname='swag.core.instances:SwagDate/date/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Date'>
+<description><![CDATA[
+
+			  
+
+			 The standard Flash <code>Date</code> object associated with the <code>SwagDate</code> instance.
+
+			 <p> The <code>Date</code> object is used extensively throughout <code>SwagDate</code> and the values of this
+
+			 standard Flash object should always match the values supplied or updated via <code>SwagDate</code>.</p>
+
+			 
+
+			 ]]></description>
+</method>
+<method name='dayOfWeekName' fullname='swag.core.instances:SwagDate/dayOfWeekName/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+			 The full name of the day of the week associated with this <code>SwagDate</code> instance. 
+
+			 <p>The returned name is capitalized (e.g. "Monday").</p> 
+
+			 
+
+			 ]]></description>
+</method>
+<method name='dayOfWeek' fullname='swag.core.instances:SwagDate/dayOfWeek/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[			 
+
+			 The numeric value representing the day of the week associated with the current <code>SwagDate</code> 
+
+			 instance. 
+
+			 <p>This value is 0-indexed; 0=Sunday, 1=Monday, 2=Tuesday, etc.</p>	
+
+			 ]]></description>
+</method>
+<method name='day' fullname='swag.core.instances:SwagDate/day/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+
+			 
+
+			 The numeric value of the day of the month associated with the <code>SwagDate</code> instance. Day
+
+			 values are standard calendar values (ranging from 1 to 31).
+
+			 
+
+			 ]]></description>
+</method>
+<method name='month' fullname='swag.core.instances:SwagDate/month/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+
+			 
+
+			 The numeric value of the month associated with the <code>SwagDate</code> instance. 
+
+			 <p>Month values are 0-indexed; 0=January, 1=February, 2=March, etc.</p> 
+
+			 
+
+			 ]]></description>
+</method>
+<method name='year' fullname='swag.core.instances:SwagDate/year/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+
+			 
+
+			 The numeric value of the year associated with the <code>SwagDate</code> instance. 
+
+			 <p>This returned number is the full, 4-digit year value (e.g. 2011)</p> 
+
+			 
+
+			 ]]></description>
+</method>
+<method name='MSDOSDate' fullname='swag.core.instances:SwagDate/MSDOSDate/set' isStatic='false' isFinal='false' isOverride='false'  param_names='MSDOSDateValue' param_types='uint' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+			 Sets the date (day / month / year) value for the <code>SwagDate</code> instance from a 16-bit packed MS-DOS time format. 
+
+			 <p>If this value is combined with a 16-bit time value, as with most standard packed MSDOS date/time stamps, it can be 
+
+			 isolated using a simple shift-right operation:
+
+			 <listing>MSDOSDateValue=MSDOSPackedTimeDateValue >> 15; //Shift right by 15 bits</listing></p>
+
+			 <p>Because Flash <code>uint</code>s are 32 or posisbly 64 bits,
+
+			 only the last 16 bits will be evaluated. This value is assumed to be stored in a MSB (Most Significant Bit first) order.</p>
+
+			 
+
+			 ]]></description>
+<see><![CDATA[swag.core.instances.SwagTime#MSDOSTime
+
+			 ]]></see>
+</method>
+<field name='_date' fullname='swag.core.instances:SwagDate/private:_date' type='Date' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='SwagEventListener' fullname='swag.core.instances:SwagEventListener' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\instances\SwagEventListener.as' namespace='swag.core.instances' access='public' baseclass='Object' isFinal='true' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay 
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</classRec>
+<method name='SwagEventListener' fullname='swag.core.instances:SwagEventListener/SwagEventListener' isStatic='false' isFinal='false' isOverride='false'  param_names='eventType;eventMethod;thisRef;sourceObject' param_types='String;Function;*;*' param_defaults='null;null;null;null' result_type='*'>
+<description><![CDATA[
+
+		 Default constructor for the <code>SwagEventListener</code> class. 
+
+		 
+
+		 ]]></description>
+<param><![CDATA[eventType The type of event to create a listener for. While this may be a standard string, it's advisable to use 
+
+		 one of the defined <code>SwagEvent</code> constant strings in order to easily propagate changes throughout an application should
+
+		 the event string constants ever change.
+
+		 ]]></param>
+<param><![CDATA[eventMethod The method to assign to the listener (i.e. the method to invoke when the matching event is dispatched).
+
+		 ]]></param>
+<param><![CDATA[thisRef A reference to the object (class, instance, etc.), that contains the <code>eventMethod</code>. If valid, the
+
+		 event dispatch will try to intelligently invoke methods that are not correctly formatted (e.g. don't have a <code>SwagEvent</code>-
+
+		 type object as the first parameter). If ommitted, or <em>null</em>, the listening method <strong>must</strong> be properly
+
+		 formatted or the event invokation will result in a runtime error. 
+
+		 ]]></param>
+<param><![CDATA[sourceObject The object(s) from which the dispatched event is/are allowed. This may either be a singular object reference
+
+		 or an array of objects. If this value is <em>null</em>, all events of <code>eventType</code> will be considered a match.
+
+		 
+
+		 ]]></param>
+<see><![CDATA[swag.core.SwagDispatcher
+
+		 ]]></see>
+</method>
+<method name='invoke' fullname='swag.core.instances:SwagEventListener/invoke' isStatic='false' isFinal='false' isOverride='false'  param_names='event' param_types='swag.interfaces.events:ISwagEvent' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Invokes the event by calling the associated <code>method</code>.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[event The event (implementation of <code>ISwagEvent</code>), to dispatch. 
+
+		 ]]></param>
+<return><![CDATA[<em>True</em> if the event was successfully dispatched, <em>false</em> if there was an error (for example,
+
+		 no <code>method</code> was defined for the listener).
+
+		 
+
+		 ]]></return>
+<see><![CDATA[swag.interfaces.events.ISwagEvent
+
+		 ]]></see>
+</method>
+<method name='methodParameterInstances' fullname='swag.core.instances:SwagEventListener/private:methodParameterInstances/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='methodParameters' fullname='swag.core.instances:SwagEventListener/private:methodParameters/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='method' fullname='swag.core.instances:SwagEventListener/method/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Function'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='sourceContainer' fullname='swag.core.instances:SwagEventListener/private:sourceContainer/get' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='source' fullname='swag.core.instances:SwagEventListener/source/get' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='type' fullname='swag.core.instances:SwagEventListener/type/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='method' fullname='swag.core.instances:SwagEventListener/method/set' isStatic='false' isFinal='false' isOverride='false'  param_names='methodSet' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 The method to invoke when a matching event is dispatched.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[methodSet The method to associate with the event (the method to invoke when the matching event is dispatched).
+
+		 
+
+		 ]]></param>
+</method>
+<method name='source' fullname='swag.core.instances:SwagEventListener/source/set' isStatic='false' isFinal='false' isOverride='false'  param_names='sourceSet' param_types='*' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 The source object(s) for the listener.
+
+		 <p>The listener is only invoked if the source is <em>null</em>, or if the source matches the dispatching object(s). 
+
+		 This value may either be a singular object reference or an array of object references.</p>
+
+		  
+
+		 ]]></description>
+<param><![CDATA[sourceSet The source object(s) associated with the listener, or <em>null</em> to associate with all events
+
+		 that match the event <code>type</code>.
+
+		 
+
+		 ]]></param>
+</method>
+<method name='type' fullname='swag.core.instances:SwagEventListener/type/set' isStatic='false' isFinal='false' isOverride='false'  param_names='typeSet' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 The event type string associated with the listener.
+
+		 <p>This value may also be set within the class constructor.</p>
+
+		  
+
+		 ]]></description>
+<param><![CDATA[typeSet The event type associated with this event. It's advisable to use one of the defined <code>SwagEvent</code> 
+
+		 (or derived), event constants rather than a basic string for easy maintainability and future compatibility.
+
+		 
+
+		 ]]></param>
+</method>
+<field name='_eventMethod' fullname='swag.core.instances:SwagEventListener/private:_eventMethod' type='Function' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_eventType' fullname='swag.core.instances:SwagEventListener/private:_eventType' type='String' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_methodParameters' fullname='swag.core.instances:SwagEventListener/private:_methodParameters' type='Array' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_sourceContainer' fullname='swag.core.instances:SwagEventListener/private:_sourceContainer' type='' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_sourceObject' fullname='swag.core.instances:SwagEventListener/private:_sourceObject' type='' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='SwagTime' fullname='swag.core.instances:SwagTime' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\instances\SwagTime.as' namespace='swag.core.instances' access='public' baseclass='Object' interfaces='swag.interfaces.core.instances:ISwagTime' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Extended routines and properties for dealing with time and time-related calculations.
+
+	 
+
+	 <p>The <code>SwagTimer</code> object is also used in most SwAG Toolkit classes where time-based data
+
+	 is required.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+</classRec>
+<method name='SwagTime' fullname='swag.core.instances:SwagTime/SwagTime' isStatic='false' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+
+		 Creates a new <code>SwagTime</code> instance and assigns to it the current system time if
+
+		 none is supplied to the constructor.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[args A valid time string to create the <code>SwagTime</code> object with. If empty or <em>null</em>,
+
+		 the new instance is created with the current system time. The format of this parameter is the
+
+		 same as that for the standard <code>Date</code> constructor.
+
+		 
+
+		 ]]></param>
+<see><![CDATA[Date()#
+
+		 ]]></see>
+</method>
+<method name='calculateTotalMilliseconds' fullname='swag.core.instances:SwagTime/private:calculateTotalMilliseconds' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+
+		 
+
+		 Calculates the total milliseconds from the appropriate class member variables. All private member variables are updated
+
+		 so that all getters and other output methods will have correctly calculated time values.
+
+		 
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='getTimeString' fullname='swag.core.instances:SwagTime/getTimeString' isStatic='false' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='String'>
+<description><![CDATA[
+
+		 
+
+		 Returns a formatted time string based on the time value of the time object and the specified format string supplied as a parameter.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[args Specifies the format of the output time string. All characters in the time string that are not one
+
+		 of the special format characters listed below will be included, as specified, in the output string.
+
+		 <p>Valid format characters include:
+
+		 <ul> 
+
+		 <li>"h" - Hours with no leading 0 if less than 10.</li>
+
+		 <li>"H" - Hours with leading 0 if less than 10.</li>
+
+		 <li>"m" - Minutes with no leading 0 if less than 10.</li>
+
+		 <li>"M" - Minutes with leading 0 if less than 10.</li>
+
+		 <li>"s" - Seconds with no leading 0 if less than 10.</li>
+
+		 <li>"S" - Seconds with leading 0 if less than 10.</li>
+
+		 <li>"l" - Milliseconds. Leading 0 is not used in this value.</li>
+
+		 </ul></p>
+
+		 <p>For example, the string "H:M:S.l" would produce (assuming the instance had the following values): "09:12:01.999"
+
+		 Default format string is "h:m:s:l".</p>
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The time string representation of this time object, as specified by the format string.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='onCountDownComplete' fullname='swag.core.instances:SwagTime/onCountDownComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='eventObj' param_types='flash.events:TimerEvent' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Invoked when the count down timer completes. 
+
+		 <p>This may either happen as the result of the countdown <code>Timer</code> instance elapsing, or the 
+
+		 calculated internal timer elapsing to 0.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.STOPCOUNTDOWN
+
+		 ]]></eventType>
+<param><![CDATA[eventObj A standard Flash <code>TimerEvent</code> object (usually a reference to the instance
+
+		 used internally by <code>SwagTime</code>.
+
+		 
+
+		 ]]></param>
+<see><![CDATA[#startCountDown()
+
+		 ]]></see>
+<see><![CDATA[#stopCountDown()
+
+		 ]]></see>
+<see><![CDATA[#resetCountDown()
+
+		 
+
+		 ]]></see>
+</method>
+<method name='onCountDownTick' fullname='swag.core.instances:SwagTime/onCountDownTick' isStatic='false' isFinal='false' isOverride='false'  param_names='eventObj;silent' param_types='flash.events:TimerEvent;Boolean' param_defaults='undefined;false' result_type='void'>
+<description><![CDATA[
+
+		 Invoked on every countdown interval tick.
+
+		 <p>This method broadcasts regular updates to all listeners with updated elapsed time and the new remaining time 
+
+		 in the time object.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.ONCOUNTDOWN
+
+		 
+
+		 ]]></eventType>
+<param><![CDATA[eventObj A standard Flash <code>TimerEvent</code> object dispatched by the <code>Timer</code> instance.
+
+		 ]]></param>
+<param><![CDATA[silent Specifies whether the <code>SwagTimeEvent.ONCOUNTDOWN</code> event should be broadcast with
+
+		 each timer tick (<em>true</em>), or not (<em>false</em>). Setting this property to <em>false</em> reduces
+
+		 some of the overhead associated with the count down loop if this event is not used.
+
+		 
+
+		 ]]></param>
+<see><![CDATA[#stopCountDown()
+
+		 ]]></see>
+<see><![CDATA[#resetCountDown()
+
+		 ]]></see>
+</method>
+<method name='onCountUpComplete' fullname='swag.core.instances:SwagTime/onCountUpComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='eventObj' param_types='flash.events:TimerEvent' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Invoked when the countdown timer completes. 
+
+		 <p>This may either happen as the result of the countdown <code>Timer</code> instance elapsing, or the 
+
+		 calculated internal timer elapsing to / past 0.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.STOPCOUNTUP
+
+		 ]]></eventType>
+<param><![CDATA[eventObj A standard Flash <code>TimerEvent</code> object (usually a reference to the instance
+
+		 used internally by <code>SwagTime</code>.
+
+		 
+
+		 ]]></param>
+<see><![CDATA[#startCountUp()
+
+		 ]]></see>
+<see><![CDATA[#stopCountUp()
+
+		 ]]></see>
+<see><![CDATA[#resetCountUp()
+
+		 
+
+		 ]]></see>
+</method>
+<method name='onCountUpTick' fullname='swag.core.instances:SwagTime/onCountUpTick' isStatic='false' isFinal='false' isOverride='false'  param_names='eventObj;silent' param_types='flash.events:TimerEvent;Boolean' param_defaults='undefined;false' result_type='void'>
+<description><![CDATA[
+
+		 Invoked on every countup interval tick. 
+
+		 <p>This method broadcasts regular updates to all listeners with updated elapsed time.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.ONCOUNTUP
+
+		 
+
+		 ]]></eventType>
+<param><![CDATA[eventObj A standard Flash <code>TimerEvent</code> object dispatched by the <code>Timer</code> instance.
+
+		 ]]></param>
+<param><![CDATA[silent Specifies whether the <code>SwagTimeEvent.ONCOUNTUP</code> event should be broadcast with
+
+		 each timer tick (<em>true</em>), or not (<em>false</em>). Setting this property to <em>false</em> reduces
+
+		 some of the overhead associated with the count up loop if this event is not used.
+
+		 
+
+		 ]]></param>
+<see><![CDATA[#stopCountUp()
+
+		 ]]></see>
+<see><![CDATA[#resetCountUp()
+
+		 ]]></see>
+</method>
+<method name='resetCountDown' fullname='swag.core.instances:SwagTime/resetCountDown' isStatic='false' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Resets the count down timer. 
+
+		 <p>This resets the time object value to the state it was at just before the count down timer started. The
+
+		 count down timer is not affected so that if it's running, it will continue to run. The count up timer is not affected.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.RESETCOUNTDOWN
+
+		 
+
+		 ]]></eventType>
+<see><![CDATA[#startCountUp()
+
+		 ]]></see>
+<see><![CDATA[#resetCountUp()
+
+		 ]]></see>
+</method>
+<method name='resetCountUp' fullname='swag.core.instances:SwagTime/resetCountUp' isStatic='false' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Resets the countup timer. 
+
+		 <p>This resets the time object value to 0, the initial state of the counter. This should be 
+
+		 called whenever the timer is restarted as this is not done automatically by starting the counter.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.RESETCOUNTUP
+
+		 		
+
+		 ]]></eventType>
+<see><![CDATA[#startCountUp()
+
+		 ]]></see>
+<see><![CDATA[#resetCountUp()
+
+		 ]]></see>
+</method>
+<method name='startCountDown' fullname='swag.core.instances:SwagTime/startCountDown' isStatic='false' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Starts a countdown timer based on the current time settings of the time object (e.g. hours, minutes, and seconds). 
+
+		 <p>When the countdown timer reaches 00:00:00.00, the timer is stopped. A special set of getters is provided for displaying
+
+		 the count up values which are essentially the invert of the core count down values.</p>
+
+		 <p>A double precision system is used to calculate the elapsed time so that if the internal application timer calculation indicates that
+
+		 the countdown timer should be complete, it stops the timer even if the <code>SwagTimer</code> instance is not necessarily complete. The 
+
+		 <code>SwagTimer</code> instance, however, is taken as authoritative if it completes first since the interval counter is likely slower 
+
+		 and therefore not as precise. Setting any of the time object's values (such as <code>totalHours</code>) will affect the running timer.</p>
+
+		 
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.STARTCOUNTDOWN
+
+		 
+
+		 ]]></eventType>
+<param><![CDATA[args Specifies a notification interval, in milliseconds, at which the time object will broadcast updates. 
+
+		 <p>It is highly recommended to keep this value greater than 100 milliseconds to prevent bombarding the event system with too many events. 
+
+		 Setting this value to 0 disables the count down timer tick and causes the countdown to broadcast only when it is complete.</p>
+
+		 
+
+		 ]]></param>
+<see><![CDATA[#stopCountDown()
+
+		 ]]></see>
+<see><![CDATA[#resetCountDown()
+
+		 ]]></see>
+</method>
+<method name='startCountUp' fullname='swag.core.instances:SwagTime/startCountUp' isStatic='false' isFinal='false' isOverride='false'  param_names='args' param_types='restParam' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Starts a countup timer. This is an indefinite timer that will continue to count until it is stopped. 
+
+		 <p>This does not reset the current time settings of the object since this command may be used to re-start a previous
+
+		 counter. When starting a new counter, be sure to call <code>resetCountUp</code> first in order to clear the current time
+
+		 object and reset all values to 0.</p>
+
+		 <p>Since countup timers don't have a set end, a TIME_COMPLETE event will never be used and so this timer is never assumed
+
+		 to be complete. Rather, the caller must control the completion state of this instance.</p>
+
+		 
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.STARTCOUNTUP
+
+		 
+
+		 ]]></eventType>
+<param><![CDATA[args Specifies a notification interval, in milliseconds, at which the time object will broadcast updates. 
+
+		 <p>It is highly recommended to keep this value greater than 100 milliseconds to prevent bombarding the
+
+		 event system with too many events. Setting this value to 0 disables the count down timer tick and causes the countup
+
+		 to broadcast only when it is complete.</p>
+
+		 
+
+		 ]]></param>
+<see><![CDATA[#stopCountUp()
+
+		 ]]></see>
+<see><![CDATA[#resetCountUp()
+
+		 ]]></see>
+</method>
+<method name='stopCountDown' fullname='swag.core.instances:SwagTime/stopCountDown' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+
+		 Stops the count down timer. 
+
+		 <p>This does not reset the time object so the last elapsed time remains until <code>resetCountDown</code> is invoked.</p>
+
+		 <p>This method does not affect the count up timer.</p>
+
+		 		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.STOPCOUNTDOWN
+
+		  
+
+		 ]]></eventType>
+<see><![CDATA[#startCountDown()
+
+		 ]]></see>
+<see><![CDATA[#resetCountDown()
+
+		 ]]></see>
+</method>
+<method name='stopCountUp' fullname='swag.core.instances:SwagTime/stopCountUp' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[		 
+
+		 Stops the count up timer. 
+
+		 <p>This does not reset the time object so the last elapsed time remains until <code>resetCountUp</code> is invoked.</p>
+
+		 <p>This method does not affect the count down timer.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagTimeEvent.STOPCOUNTUP
+
+		 
+
+		 ]]></eventType>
+<see><![CDATA[#startCountUp()
+
+		 ]]></see>
+<see><![CDATA[#resetCountUp()
+
+		 ]]></see>
+</method>
+<method name='toString' fullname='swag.core.instances:SwagTime/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 The string representation of the <code>SwagTime</code> object, in the format "H:M:S.l".
+
+		 Refer to the <code>getTimeString</code> method for the format of this ouput.
+
+		  
+
+		 ]]></description>
+<return><![CDATA[The string representation of the <code>SwagTime</code> object, in the format "H:M:S.l".
+
+		 
+
+		 ]]></return>
+</method>
+<method name='elapsedHours' fullname='swag.core.instances:SwagTime/elapsedHours/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[		
+
+		 The total number of elapsed hours for the current count down timer. 
+
+		 <p>This value is valid while the count down timer is running, or when it has stopped but before the 
+
+		 <code>resetCountDown</code> method is invoked.</p>		 
+
+		 ]]></description>
+</method>
+<method name='elapsedMilliseconds' fullname='swag.core.instances:SwagTime/elapsedMilliseconds/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[		
+
+		 The total number of elapsed milliseconds for the current count down timer. 
+
+		 <p>This value is valid while the count down timer is running, or when it has stopped but before the 
+
+		 <code>resetCountDown</code> method is invoked.</p>		 
+
+		 ]]></description>
+</method>
+<method name='elapsedMinutes' fullname='swag.core.instances:SwagTime/elapsedMinutes/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+
+		 The total number of elapsed minutes for the current count down timer. 
+
+		 <p>This value is valid while the count down timer is running, or when it has stopped but before the 
+
+		 <code>resetCountDown</code> method is invoked.</p>		 
+
+		 ]]></description>
+</method>
+<method name='elapsedSeconds' fullname='swag.core.instances:SwagTime/elapsedSeconds/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+
+		 The total number of elapsed seconds for the current count down timer. 
+
+		 <p>This value is valid while the count down timer is running, or when it has stopped but before the 
+
+		 <code>resetCountDown</code> method is invoked.</p>		 
+
+		 ]]></description>
+</method>
+<method name='hours' fullname='swag.core.instances:SwagTime/hours/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+
+		 The hours component of the <code>SwagTime</code> object.
+
+		 <p>This is not the total, aggregated hours but rather the portion of the time object representing the left-over hours from 
+
+		 total time calculations.</p>		 
+
+		 ]]></description>
+</method>
+<method name='milliseconds' fullname='swag.core.instances:SwagTime/milliseconds/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+
+		 The milliseconds component of the <code>SwagTime</code> object. 
+
+		 <p>This is not the total, aggregated milliseconds but rather the portion of the time object representing the left-over 
+
+		 milliseconds from total time calculations.</p>		 
+
+		 ]]></description>
+</method>
+<method name='minutes' fullname='swag.core.instances:SwagTime/minutes/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[		 
+
+		 The minutes component of the <code>SwagTime</code> object. 
+
+		 <p>This is not the total, aggregated minutes but rather the portion of the time object representing the left-over minutes
+
+		 from total time calculations.</p>		 
+
+		 ]]></description>
+</method>
+<method name='seconds' fullname='swag.core.instances:SwagTime/seconds/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+
+		 The seconds component of the <code>SwagTime</code> object. 
+
+		 <p>This is not the total, aggregated seconds but rather the portion of the time object representing the left-over seconds 
+
+		 from total time calculations.</p>		 
+
+		 ]]></description>
+</method>
+<method name='timerTotalMilliseconds' fullname='swag.core.instances:SwagTime/timerTotalMilliseconds/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+
+		 Returns the stored milliseconds value used when <code>SwagTime</code> is used as a counter. 
+
+		 <p>Once the internal counter is complete, this value will be assigned to "totalMilliseconds" when reset methods are invoked.</p>		 
+
+		 ]]></description>
+</method>
+<method name='totalHours' fullname='swag.core.instances:SwagTime/totalHours/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+
+		 The total calculated hours for the <code>SwagTime</code> object. 
+
+		 <p>This is an aggregate value of hours, minutes, seconds, and milliseconds.</p>		 
+
+		 ]]></description>
+</method>
+<method name='totalMilliseconds' fullname='swag.core.instances:SwagTime/totalMilliseconds/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[		
+
+		 Returns the total calculated milliseconds for the <code>SwagTime</code> object. 
+
+		 <p>This is an aggregate value of hours, minutes, seconds, and milliseconds.</p>		 
+
+		 ]]></description>
+</method>
+<method name='totalMinutes' fullname='swag.core.instances:SwagTime/totalMinutes/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+
+		 The total calculated minutes for the <code>SwagTime</code> object. 
+
+		 <p>This is an aggregate value of hours, minutes, seconds, and milliseconds.</p>		 
+
+		 ]]></description>
+</method>
+<method name='totalSeconds' fullname='swag.core.instances:SwagTime/totalSeconds/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+
+		 The total calculated seconds for the <code>SwagTime</code> object. 
+
+		 <p>This is an aggregate value of hours, minutes, seconds, and milliseconds.</p>		 
+
+		 ]]></description>
+</method>
+<method name='MSDOSTime' fullname='swag.core.instances:SwagTime/MSDOSTime/set' isStatic='false' isFinal='false' isOverride='false'  param_names='MSDOSTimeValue' param_types='uint' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Sets the hours, minutes, and seconds value for the <code>SwagTime</code> object from a 16-bit packed MS-DOS time format stored 
+
+		 in an unsigned integer (uint). 
+
+		 <p>Any values above the 16th bit will be ignored. This value is assumed to be stored in MSB (Most Significant Bit first) format.</p> 
+
+		 
+
+		 ]]></description>
+<see><![CDATA[swag.core.instances.SwagDate#MSDOSDate		
+
+		 ]]></see>
+</method>
+<method name='hours' fullname='swag.core.instances:SwagTime/hours/set' isStatic='false' isFinal='false' isOverride='false'  param_names='hourVal' param_types='uint' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Sets the number of hours in the time object. 
+
+		 <p>Any number of hours may be set for the class, but fractional values will only have their whole part used. 
+
+		 That is, minute, second, and millisecond calculations aren't applied.</p>		 
+
+		 ]]></description>
+</method>
+<method name='milliseconds' fullname='swag.core.instances:SwagTime/milliseconds/set' isStatic='false' isFinal='false' isOverride='false'  param_names='msVal' param_types='uint' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Sets the number of milliseconds in the <code>SwagTime</code> object. 
+
+		 <p>This value only affects milliseconds absolutely, and no other values are affected. In other words, updating milliseconds 
+
+		 does not affect seconds, minutes, or hours. Milliseconds are converted to proper values using modulo math so that 1001
+
+		 milliseconds becomes 1 second. This is useful for setting individual components of the time object without affecting the 
+
+		 overall time value.</p>
+
+		 ]]></description>
+</method>
+<method name='minutes' fullname='swag.core.instances:SwagTime/minutes/set' isStatic='false' isFinal='false' isOverride='false'  param_names='minuteVal' param_types='uint' param_defaults='undefined' result_type='void'>
+<description><![CDATA[		 
+
+		 Sets the number of minutes in the <code>SwagTime</code> object.
+
+		 <p>This value only affects minutes absolutely, no other values are affected.
+
+		 In other words, updating minutes does not affect milliseconds, seconds, or hours. Minutes are converted to proper values so that
+
+		 61 minutes becomes 1 minute. This is useful for setting individual components of the time object without affecting the overall
+
+		 time value.</p>		 
+
+		 ]]></description>
+</method>
+<method name='seconds' fullname='swag.core.instances:SwagTime/seconds/set' isStatic='false' isFinal='false' isOverride='false'  param_names='secondVal' param_types='uint' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Sets the number of seconds in the <code>SwagTime</code> object. 
+
+		 <p>This value only affects seconds absolutely, no other values are affected. In other words, updating seconds does not affect 
+
+		 milliseconds, minutes, or hours. Seconds are converted to proper values so that 61 seconds becomes 1 second. This is useful 
+
+		 for setting individual components of the time object without affecting the overall time value.</p>		 
+
+		 ]]></description>
+</method>
+<method name='timerTotalMilliseconds' fullname='swag.core.instances:SwagTime/timerTotalMilliseconds/set' isStatic='false' isFinal='false' isOverride='false'  param_names='ttmsVal' param_types='uint' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Stores the total milliseconds value for the internal timer (the "totalMilliseconds" value is used for counting down). 
+
+		 <p>Typically this is not a value that should be touched directly, but some applications of TimeObject (e.g. Thread object)
+
+		 require a manual invokation of timer tick methods which, in turn, depend on this value.</p>		 
+
+		 ]]></description>
+</method>
+<method name='totalHours' fullname='swag.core.instances:SwagTime/totalHours/set' isStatic='false' isFinal='false' isOverride='false'  param_names='thVal' param_types='Number' param_defaults='undefined' result_type='void'>
+<description><![CDATA[		 
+
+		 Sets the total hours value for the whole <code>SwagTime</code> object. 
+
+		 <p>This is translated to the total number of hours, minutes, seconds, and milliseconds (especially when fractional 
+
+		 values are used). Because this value is manipulated before being stored, non whole values (fractional values) will result 
+
+		 in different values on the getter. For example, setting 36 hours will return simply 36 hours and 0 minutes. However, setting
+
+		 36.5 hours will result in 36 hours and 30 minutes. Because all values area affected, setting any "total" value
+
+		 will effectively overwrite any other set values.</p>		 
+
+		 ]]></description>
+</method>
+<method name='totalMilliseconds' fullname='swag.core.instances:SwagTime/totalMilliseconds/set' isStatic='false' isFinal='false' isOverride='false'  param_names='tmsVal' param_types='uint' param_defaults='undefined' result_type='void'>
+<description><![CDATA[		
+
+		 Sets the total milliseconds value for the whole <code>SwagTime</code> object. 
+
+		 <p>This is translated to the total number of hours, minutes, seconds, and milliseconds (especially when fractional values are used 
+
+		 or milliseconds exceeds 999). For example, setting 999 milliseconds will return simply 999 milliseconds and 0 seconds. However, 
+
+		 setting 1000 milliseconds will cause 1 second and 0 milliseconds to be returned on the other class getters. Because all values area 
+
+		 affected, setting any "total" value will effectively overwrite any other set values.</p>		 
+
+		 ]]></description>
+</method>
+<method name='totalMinutes' fullname='swag.core.instances:SwagTime/totalMinutes/set' isStatic='false' isFinal='false' isOverride='false'  param_names='tmVal' param_types='Number' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 Sets the total minutes value for the whole <code>SwagTime</code> object. 
+
+		 <p>This is translated to the total number of hours, minutes, seconds, and milliseconds (especially when fractional values 
+
+		 are used or minutes exceeds 59). For example, setting 59 minutes will return simply 59 minutes and 0 hours. However, setting 
+
+		 60 minutes will cause 1 hour and 0 minutes to be returned. Because all values area affected, setting any "total" value will 
+
+		 effectively overwrite any other set values.</p>		 
+
+		 ]]></description>
+</method>
+<method name='totalSeconds' fullname='swag.core.instances:SwagTime/totalSeconds/set' isStatic='false' isFinal='false' isOverride='false'  param_names='tsVal' param_types='Number' param_defaults='undefined' result_type='void'>
+<description><![CDATA[		 
+
+		 Sets the total seconds value for the whole <code>SwagTime</code> object. 
+
+		 <p>This is translated to the total number of hours, minutes, seconds, and milliseconds (especially when fractional values are 
+
+		 used or seconds exceeds 59). For example, setting 59 seconds will return simply 59 seconds and 0 minutes. However, setting 60 
+
+		 seconds will cause 1 minute and 0 seconds to be returned. Because all values area affected, setting any "total" value will 
+
+		 effectively overwrite any other set values.</p>		 
+
+		 ]]></description>
+</method>
+<field name='_countDownTimer' fullname='swag.core.instances:SwagTime/private:_countDownTimer' type='flash.utils:Timer' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_countUpTimer' fullname='swag.core.instances:SwagTime/private:_countUpTimer' type='flash.utils:Timer' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_elapsedMilliseconds' fullname='swag.core.instances:SwagTime/private:_elapsedMilliseconds' type='uint' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_hours' fullname='swag.core.instances:SwagTime/private:_hours' type='uint' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_intervalTimer' fullname='swag.core.instances:SwagTime/private:_intervalTimer' type='flash.utils:Timer' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_lastTimerMilliseconds' fullname='swag.core.instances:SwagTime/private:_lastTimerMilliseconds' type='int' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_milliSeconds' fullname='swag.core.instances:SwagTime/private:_milliSeconds' type='uint' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_minutes' fullname='swag.core.instances:SwagTime/private:_minutes' type='uint' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_seconds' fullname='swag.core.instances:SwagTime/private:_seconds' type='uint' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_timerInitData' fullname='swag.core.instances:SwagTime/private:_timerInitData' type='Object' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_totalMilliSeconds' fullname='swag.core.instances:SwagTime/private:_totalMilliSeconds' type='uint' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='SwagZip' fullname='swag.core.instances:SwagZip' sourcefile='C:\BNM\development\SwAG.git\src\swag\core\instances\SwagZip.as' namespace='swag.core.instances' access='public' baseclass='Object' interfaces='swag.interfaces.core.instances:ISwagZip' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Used to access / extract ZIP-formatted data.
+
+	 <p>This class is heavily dependent on methods of the <code>ByteArray</code> class for both data access and fast 
+
+	 decompression.</p> 
+
+	 <p>Because ZIP files may contain nested directories as well as multiple file records, a virtual in-memory mapping
+
+	 is used to represent the stored of the file. Once this map is created, individual compressed entries may be 
+
+	 randomly accessed as desired (one of the advantaged of the ZIP format).</p>
+
+	 <p>This class adheres to the strict ZIP format specification (i.e. the "central directory" record is read and 
+
+	 analyzed first, followed by individual directory records). As such, future versions of ZIPFile may support recovery 
+
+	 of partially corrupted ZIP data. However, no compression algorithm other than "deflate" is currently supported 
+
+	 for compressed data so some records within the ZIP may be inaccessible -- though not corrupted (the format allows 
+
+	 for other compression methods than deflate).</p>
+
+	 <p>Other standardized formats such as OpenDocument and Office Open XML may be based on this class.</p>
+
+	 <p>The flow of events when ZIP file data is assigned is as follows:</p>
+
+	 <p><strong>ZIP data assigned to internal buffer</strong> -> <strong>header info is parsed</strong> -> 
+
+	 <strong>directory info is parsed</strong>
+
+	 <p>Each of these steps is dependent on the previous one so a failure in the chain will cause subequent steps to 
+
+	 also fail.</p>
+
+	 <p>Once the header information for the ZIP data is parsed into the <code>header</code> object (getter provided), 
+
+	 it will contain the following properties:</p>
+
+	 <p><ul>
+
+	 <li>diskNumber (<code>uint</code>): The disk number associated with this archive (for multi-disk archives).</li>
+
+	 <li>directoryDiskNumber (<code>uint</code>): The number of the current disk's directory (for multi-disk archives).</li>
+
+	 <li>directoryDiskRecords (<code>uint</code>): The total number of directory records across all disks (for multi-disk 
+
+	 archives).</li>
+
+	 <li>directoryRecords (<code>uint</code>): The total number of records in the current disk directory (should match the 
+
+	 number of <code>directory</code> elements once parsed).</li>
+
+	 <li>directorySize (<code>uint</code>): The size of the directory, in bytes, in the current disk archive.</li>
+
+	 <li>directoryOffser (<code>uint</code>): The offset, in bytes from the beginning of the ZIP data, of the directory 
+
+	 data in the current archive.</li>
+
+	 <li>comment (<code>String</code>): A comment associated with the current ZIP data. May be up to 65,535 characters.</li>
+
+	 </ul></p>
+
+	 <p>Once the <code>header</code> is parsed, the <code>directory</code> (getter provided) array is populated sequentially 
+
+	 with entries from the ZIP directory. For example, <code>directory[0]</code> is the first directory object, 
+
+	 <code>directory[1]</code> the second, and so on. The number of elements in the <code>directory</code> should match 
+
+	 the <code>header</code>'s <code>directoryRecords</code> value.</p>.
+
+	 <p>Each <code>directory</code> object contains the following information:</p>
+
+	 <p><ul>
+
+	 <li>compressorID (<code>uint</code>): The ID of the software used to create the ZIP data.</li>
+
+	 <li>compressorVersion (<code>uint</code>): The minium version of the software required to handle the associated 
+
+	 ZIP data.</li>
+
+	 <li>bitFlags (<code>uint</code>): Special attribute flags. Currently, if bit 3 is set (0x04), the CRC32 value is stored as 
+
+	 0 in the <code>directory</code> object and will rather be appended as a 12-byte value at the end of the compressed 
+
+	 data.</li>
+
+	 <li>compressor (<code>uint</code>): The compression algorithm used for the stored file. Valid values include 
+
+	 <strong>0 = stored</strong> (no compression), <strong>1 = shrunk</strong>, <strong>2 to 5 = reduced with 
+
+	 compression factor 1 to 4</strong> (in order), <strong>6 = imploded</strong>, <strong>7 = reserved</strong>, 
+
+	 <strong>8 = deflated</strong> (most common).</li>
+
+	 <li>modifiedTime (<code>SwagTime</code>): The last modified time of the file, stored in a <code>SwagTime</code> 
+
+	 instance.</li>
+
+	 <li>modifiedDate (<code>SwagDate</code>): The last modified date of the file, stored in a <code>Swagdate</code> 
+
+	 instance.</li>
+
+	 <li>CRC32 (<code>uint</code>): The 32-bit cyclical redundancy check value that can be used to verify the integrity 
+
+	 of the associated data.</li>
+
+	 <li>compressedSize (<code>uint</code>): The size of the compressed file, in bytes.</li>
+
+	 <li>uncompressedSize (<code>uint</code>): The size of the uncompressed file, in bytes.</li>
+
+	 <li>startDisk (<code>uint</code>): The first disk in which the compressed file resides. For multi-disk / multi-part 
+
+	 ZIPs.</li>
+
+	 <li>internalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown).</li>
+
+	 <li>externalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown). Most likely these 
+
+	 refer to file-system settings for the associated file / folder.</li>
+
+	 <li>headerOffset (<code>uint</code>): The offset to the file header within the ZIP. After the header is the actual 
+
+	 compressed data. The file header repeats much of the information found in the directory information and can thus be used 
+
+	 to retrieve data from partially corrupted ZIP files.</li>
+
+	 <li>fullPath (<code>String</code>): The full, relative path of the file or folder. For example: 
+
+	 <em>/folder/sub_folder/my_file.txt</em> --or-- <em>no_folder_file.doc</em></li>
+
+	 <li>extraField (<code>uint</code>): Extra field provided for associating extra information with the compressed data. 
+
+	 Format unspecified.</li>
+
+	 <li>comment (<code>String</code>): A comment associated with the individual file or folder.</li>
+
+	 <li>name (<code>String</code>): The file name portion of the <code>fullPath</code> property. For example, if 
+
+	 <code>fullPath</code> is <em>some_folder/my_file.txt</em>, the name will be <em>my_file.txt</em>. For folder items, 
+
+	 this is an empty string.</li>
+
+	 <li>path (<code>String</code>): The path portion of the <code>fullPath</code> property. For example, if 
+
+	 <code>fullPath</code> is <em>some_folder/my_file.txt</em>, this path will be <em>some_folder</em>. If a file is 
+
+	 stored in the root of the ZIP data (not in any folder), this will be an empty string.</li>
+
+	 <li>pathParts (<code>Array</code>): The path broken up into a numbered array, each element corresponding to a 
+
+	 deeper level in the folder structure. For example, the path <em>folder_one/folder_two</em> would produce 
+
+	 <code>pathParts[0]="folder_one"</code> and <code>pathParts[1]="folder_two"</code>. The file name is not included 
+
+	 in this array since it's not part of the path.</li>
+
+	 <li>pathDepth (<code>uint</code>): The depth (within folder) at which the file resides. This is equal to the length 
+
+	 of the <code>pathParts</code> array. For example, the file <em>folder_one/second_folder/my_file.txt</em> is at 
+
+	 <code>pathDepth</code> 2 (two folders deep).</li> 
+
+	 <li>type (<code>String</code>): The type of item that this directory entry is. Valid values include "<em>file</em>" 
+
+	 and "<em>folder</em>".</li>
+
+	 <li>index (<code>uint</code>): The index value at which this item resides in the <code>directory</code> array.</li>
+
+	 </ul></p></p>
+
+	 ]]></description>
+</classRec>
+<method name='SwagZip' fullname='swag.core.instances:SwagZip/SwagZip' isStatic='false' isFinal='false' isOverride='false'  param_names='ZIPData' param_types='flash.utils:ByteArray' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Default constructor for the class.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[An optional <code>ByteArray</code> object containing valid ZIP-compressed data with which
+
+		 to initialilze the instance. If supplied, the compressed data and all associated functionality
+
+		 become available right away, otherwise it must be assigned to the <code>data</code> object first.
+
+		 
+
+		 ]]></param>
+</method>
+<method name='extractFileData' fullname='swag.core.instances:SwagZip/extractFileData' isStatic='false' isFinal='false' isOverride='false'  param_names='fileName;returnType' param_types='String;Class' param_defaults=';null' result_type='*'>
+<description><![CDATA[
+
+		 Extracts file data from the ZIP as usable, uncompressed data. 
+
+		 <p>This is almost identical to the <code>extractFile</code> function except that it returns just 
+
+		 the uncompressed data, not an object with the complete associated file information.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagEvent.SwagErrorEvent.DATAFORMATERROR
+
+		 ]]></eventType>
+<param><![CDATA[fileName The name of the file as it appears in the ZIP directory.
+
+		 ]]></param>
+<param><![CDATA[returnType The object type (<code>ByteArray</code>, <code>String</code>, or <code>XML</code>) to 
+
+		 return the decompressed	data as. If not specified the default is <code>ByteArray</code> (safest).
+
+		 
+
+		 ]]></param>
+<return><![CDATA[The uncompressed data in the format specified by the returnType (<code>ByteArray</code> / 
+
+		 <code>String</code> / <code>XML</code>), or <em>null</em> if there was an error getting the data.
+
+		 
+
+		 ]]></return>
+<see><![CDATA[#extractFile()		 
+
+		 ]]></see>
+</method>
+<method name='extractFile' fullname='swag.core.instances:SwagZip/extractFile' isStatic='false' isFinal='false' isOverride='false'  param_names='fileName;returnType' param_types='String;Class' param_defaults=';null' result_type='Object'>
+<description><![CDATA[
+
+		 Extracts file data from the ZIP into an object containing detailed information about
+
+		 the compressed data, as well as the data itself. 
+
+		 <p>Along with this is returned information from the file header within the ZIP. 
+
+		 This is a smaller sub-set of the <code>directory</code> information and should be the same as the associated 
+
+		 <code>directory</code> entry (but may not be!)</p> 
+
+		 <p>This smaller subset includes the properties:
+
+		 <code>compressorVersion</code>, <code>bitFlags</code>, <code>compressor</code>, <code>modifiedTime</code>, 
+
+		 <code>modifiedDate</code>, <code>CRC32</code>, <code>compressedSize</code>, <code>uncompressedSize</code>, 
+
+		 <code>name</code>, and <code>extraField</code>.</p> 
+
+		 <p>Differences between these values and the associated <code>directory</code> entry may indicate
+
+		 data corruption.</p>
+
+		 
+
+		 ]]></description>
+<eventType><![CDATA[SwagEvent.SwagErrorEvent.DATAFORMATERROR
+
+		 ]]></eventType>
+<param><![CDATA[fileName The name of the file as it appears in the ZIP directory. Use the associated 
+
+		 <code>directory</code> object to retrieve the list of files within the ZIP data first if this
+
+		 value is unknown.
+
+		 ]]></param>
+<param><![CDATA[returnType The object type (<code>ByteArray</code>, <code>String</code>, or <code>XML</code>) to 
+
+		 return the decompressed data as. If not specified the default is <code>ByteArray</code> (safest).
+
+		 
+
+		 ]]></param>
+<return><![CDATA[<p>An object containing the properties of the associated file (detailed below), and also including 
+
+		 the following two properties:
+
+		 <p>
+
+		 <ul>
+
+		 <li>data (<code>ByteArray</code> / <code>String</code> / <code>XML</code>): The uncompressed data in the 
+
+		 format specified by the <code>returnType</code> parameter.</li>
+
+		 <li>type (<code>Class</code>): The class type specified in the <code>returnType</code> parameter.</li>
+
+		 </ul>
+
+		 </p>
+
+		 <p>If the required parameters are supplied as <em>null</em>, or they are of an unexpected type / format,
+
+		 <em>null</em> is returned.</p>
+
+		 <p>The returned object also contains the following properties:</p>
+
+		 <ul>
+
+		 <li>compressorID (<code>uint</code>): The ID of the software used to create the ZIP data.</li>
+
+		 <li>compressorVersion (<code>uint</code>): The minium version of the software required to handle the associated 
+
+		 ZIP data.</li>
+
+		 <li>bitFlags (<code>uint</code>): Special attribute flags. Currently, if bit 3 is set (0x04), the CRC32 value is stored as 
+
+		 0 in the <code>directory</code> object and will rather be appended as a 12-byte value at the end of the compressed 
+
+		 data.</li>
+
+		 <li>compressor (<code>uint</code>): The compression algorithm used for the stored file. Valid values include 
+
+		 <strong>0 = stored</strong> (no compression), <strong>1 = shrunk</strong>, <strong>2 to 5 = reduced with 
+
+		 compression factor 1 to 4</strong> (in order), <strong>6 = imploded</strong>, <strong>7 = reserved</strong>, 
+
+		 <strong>8 = deflated</strong> (most common).</li>
+
+		 <li>modifiedTime (<code>SwagTime</code>): The last modified time of the file, stored in a <code>SwagTime</code> 
+
+		 instance.</li>
+
+		 <li>modifiedDate (<code>SwagDate</code>): The last modified date of the file, stored in a <code>Swagdate</code> 
+
+		 instance.</li>
+
+		 <li>CRC32 (<code>uint</code>): The 32-bit cyclical redundancy check value that can be used to verify the integrity 
+
+		 of the associated data.</li>
+
+		 <li>compressedSize (<code>uint</code>): The size of the compressed file, in bytes.</li>
+
+		 <li>uncompressedSize (<code>uint</code>): The size of the uncompressed file, in bytes.</li>
+
+		 <li>startDisk (<code>uint</code>): The first disk in which the compressed file resides. For multi-disk / multi-part 
+
+		 ZIPs.</li>
+
+		 <li>internalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown).</li>
+
+		 <li>externalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown). Most likely these 
+
+		 refer to file-system settings for the associated file / folder.</li>
+
+		 <li>headerOffset (<code>uint</code>): The offset to the file header within the ZIP. After the header is the actual 
+
+		 compressed data. The file header repeats much of the information found in the directory information and can thus be used 
+
+		 to retrieve data from partially corrupted ZIP files.</li>
+
+		 <li>fullPath (<code>String</code>): The full, relative path of the file or folder. For example: 
+
+		 <em>/folder/sub_folder/my_file.txt</em> --or-- <em>no_folder_file.doc</em></li>
+
+		 <li>extraField (<code>uint</code>): Extra field provided for associating extra information with the compressed data. 
+
+		 Format unspecified.</li>
+
+		 <li>comment (<code>String</code>): A comment associated with the individual file or folder.</li>
+
+		 <li>name (<code>String</code>): The file name portion of the <code>fullPath</code> property. For example, if 
+
+		 <code>fullPath</code> is <em>some_folder/my_file.txt</em>, the name will be <em>my_file.txt</em>. For folder items, 
+
+		 this is an empty string.</li>
+
+		 <li>path (<code>String</code>): The path portion of the <code>fullPath</code> property. For example, if 
+
+		 <code>fullPath</code> is <em>some_folder/my_file.txt</em>, this path will be <em>some_folder</em>. If a file is 
+
+		 stored in the root of the ZIP data (not in any folder), this will be an empty string.</li>
+
+		 <li>pathParts (<code>Array</code>): The path broken up into a numbered array, each element corresponding to a 
+
+		 deeper level in the folder structure. For example, the path <em>folder_one/folder_two</em> would produce 
+
+		 <code>pathParts[0]="folder_one"</code> and <code>pathParts[1]="folder_two"</code>. The file name is not included 
+
+		 in this array since it's not part of the path.</li>
+
+		 <li>pathDepth (<code>uint</code>): The depth (within folder) at which the file resides. This is equal to the length 
+
+		 of the <code>pathParts</code> array. For example, the file <em>folder_one/second_folder/my_file.txt</em> is at 
+
+		 <code>pathDepth</code> 2 (two folders deep).</li> 
+
+		 <li>type (<code>String</code>): The type of item that this directory entry is. Valid values include "<em>file</em>" 
+
+		 and "<em>folder</em>".</li>
+
+		 <li>index (<code>uint</code>): The index value at which this item resides in the <code>directory</code> array.</li>
+
+		 </ul></p>
+
+		 
+
+		 ]]></return>
+<see><![CDATA[#extractFileData()
+
+		 ]]></see>
+</method>
+<method name='findFileInfo' fullname='swag.core.instances:SwagZip/private:findFileInfo' isStatic='false' isFinal='false' isOverride='false'  param_names='fileName;isDirectory' param_types='String;Boolean' param_defaults='null;false' result_type='Object'>
+<description><![CDATA[
+
+		 ]]></description>
+<param><![CDATA[fileName An exact or wildcard file name (without path) of the file to find in the 
+
+		 <code>directory</code> array. Regular expression search terms such as "<em>/em>"
+
+		 and "<em>?</em>" may be used.
+
+		 ]]></param>
+<param><![CDATA[isDirectory If <em>true</em>, directory entries are searched instead of file
+
+		 entries. If <em>false</em> (default), only files are searched.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[An object from the <code>directory</code> matching the file or or directory name specified 
+
+		 in the parameter. Only the first match will be returned, or <em>null</em> if none found.
+
+		 ]]></return>
+<private><![CDATA[]]></private>
+</method>
+<method name='getFileInfo' fullname='swag.core.instances:SwagZip/getFileInfo' isStatic='false' isFinal='false' isOverride='false'  param_names='fileName' param_types='String' param_defaults='null' result_type='Object'>
+<description><![CDATA[
+
+		 Returns the file info object for a specified file name within the ZIP data. 
+
+		 <p>If a specific file name within the ZIP data is known to exist, this method will search
+
+		 for it within the <code>directory</code> array and return the found object. The <code>directory</code> 
+
+		 must first exist -- the ZIP data must already be assigned or loaded, in other words -- otherwise
+
+		 an error is dispatched and the method fails.</p>
+
+		 
+
+		 ]]></description>
+<param><![CDATA[fileName The exact file name (without path) of the file to find in the <code>directory</code> array.
+
+		 
+
+		 ]]></param>
+<return><![CDATA[An object from the <code>directory</code> array matching the file name specified in the
+
+		 parameter. This object contains the properties of the <code>header</code> object. <em>Null</em> is
+
+		 returned if the parameters are incorrect.
+
+		 <p>The returned object contains the following properties:</p>
+
+		 <p><ul>
+
+		 <li>compressorID (<code>uint</code>): The ID of the software used to create the ZIP data.</li>
+
+		 <li>compressorVersion (<code>uint</code>): The minium version of the software required to handle the associated 
+
+		 ZIP data.</li>
+
+		 <li>bitFlags (<code>uint</code>): Special attribute flags. Currently, if bit 3 is set (0x04), the CRC32 value is stored as 
+
+		 0 in the <code>directory</code> object and will instead be appended as a 12-byte value at the end of the compressed 
+
+		 data.</li>
+
+		 <li>compressor (<code>uint</code>): The compression algorithm used for the stored file. Valid values include 
+
+		 <strong>0 = stored</strong> (no compression), <strong>1 = shrunk</strong>, <strong>2 to 5 = reduced with 
+
+		 compression factor 1 to 4</strong> (in order), <strong>6 = imploded</strong>, <strong>7 = reserved</strong>, 
+
+		 <strong>8 = deflated</strong> (most common).</li>
+
+		 <li>modifiedTime (<code>SwagTime</code>): The last modified time of the file, stored in a <code>SwagTime</code> 
+
+		 instance.</li>
+
+		 <li>modifiedDate (<code>SwagDate</code>): The last modified date of the file, stored in a <code>Swagdate</code> 
+
+		 instance.</li>
+
+		 <li>CRC32 (<code>uint</code>): The 32-bit cyclical redundancy check value that can be used to verify the integrity 
+
+		 of the associated data.</li>
+
+		 <li>compressedSize (<code>uint</code>): The size of the compressed file, in bytes.</li>
+
+		 <li>uncompressedSize (<code>uint</code>): The size of the uncompressed file, in bytes.</li>
+
+		 <li>startDisk (<code>uint</code>): The first disk in which the compressed file resides. For multi-disk / multi-part 
+
+		 ZIPs.</li>
+
+		 <li>internalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown).</li>
+
+		 <li>externalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown). Most likely these 
+
+		 refer to file-system settings for the associated file / folder.</li>
+
+		 <li>headerOffset (<code>uint</code>): The offset to the file header within the ZIP. After the header is the actual 
+
+		 compressed data. The file header repeats much of the information found in the directory information and can thus be used 
+
+		 to retrieve data from partially corrupted ZIP files.</li>
+
+		 <li>fullPath (<code>String</code>): The full, relative path of the file or folder. For example: 
+
+		 <em>/folder/sub_folder/my_file.txt</em> --or-- <em>no_folder_file.doc</em></li>
+
+		 <li>extraField (<code>uint</code>): Extra field provided for associating extra information with the compressed data. 
+
+		 Format unspecified.</li>
+
+		 <li>comment (<code>String</code>): A comment associated with the individual file or folder.</li>
+
+		 <li>name (<code>String</code>): The file name portion of the <code>fullPath</code> property. For example, if 
+
+		 <code>fullPath</code> is <em>some_folder/my_file.txt</em>, the name will be <em>my_file.txt</em>. For folder items, 
+
+		 this is an empty string.</li>
+
+		 <li>path (<code>String</code>): The path portion of the <code>fullPath</code> property. For example, if 
+
+		 <code>fullPath</code> is <em>some_folder/my_file.txt</em>, this path will be <em>some_folder</em>. If a file is 
+
+		 stored in the root of the ZIP data (not in any folder), this will be an empty string.</li>
+
+		 <li>pathParts (<code>Array</code>): The path broken up into a numbered array, each element corresponding to a 
+
+		 deeper level in the folder structure. For example, the path <em>folder_one/folder_two</em> would produce 
+
+		 <code>pathParts[0]="folder_one"</code> and <code>pathParts[1]="folder_two"</code>. The file name is not included 
+
+		 in this array since it's not part of the path.</li>
+
+		 <li>pathDepth (<code>uint</code>): The depth (within folder) at which the file resides. This is equal to the length 
+
+		 of the <code>pathParts</code> array. For example, the file <em>folder_one/second_folder/my_file.txt</em> is at 
+
+		 <code>pathDepth</code> 2 (two folders deep).</li> 
+
+		 <li>type (<code>String</code>): The type of item that this directory entry is. Valid values include "<em>file</em>" 
+
+		 and "<em>folder</em>".</li>
+
+		 <li>index (<code>uint</code>): The index value at which this item resides in the <code>directory</code> array.</li>
+
+		 </ul></p>
+
+		 
+
+		 ]]></return>
+<see><![CDATA[#extractFile() 
+
+		 
+
+		 ]]></see>
+</method>
+<method name='parseDirectoryEndHeader' fullname='swag.core.instances:SwagZip/private:parseDirectoryEndHeader' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+<description><![CDATA[
+
+		 ]]></description>
+<eventType><![CDATA[SwagEvent.SwagZipEvent.PARSEHEADER
+
+		 ]]></eventType>
+<return><![CDATA[The parsed directory end record or <em>null</null> if it could not be read (no ZIP data present, 
+
+		 for example).
+
+		 
+
+		 ]]></return>
+<private><![CDATA[]]></private>
+</method>
+<method name='parseDirectory' fullname='swag.core.instances:SwagZip/private:parseDirectory' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+
+		 ]]></description>
+<eventType><![CDATA[SwagEvent.SwagZipEvent.PARSEDIRECTORY
+
+		 ]]></eventType>
+<return><![CDATA[Array A numbered array of objects containing information about individual compressed files
+
+		 and folders in the ZIP data (see class description for more information). These are stored in the order 
+
+		 found in the ZIP, starting with 0. If no ZIP data exists, or if the end directory data has not yet been 
+
+		 parsed, <em>null</em> is returned.
+
+		 
+
+		 ]]></return>
+<private><![CDATA[]]></private>
+</method>
+<method name='setDefaults' fullname='swag.core.instances:SwagZip/private:setDefaults' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='data' fullname='swag.core.instances:SwagZip/data/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.utils:ByteArray'>
+</method>
+<method name='directory' fullname='swag.core.instances:SwagZip/directory/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+
+		 The parsed directory information associated with the compressed ZIP data for this class.
+
+		 <p>This is a numbered array of objects, each of which contains information about each file or folder
+
+		 within the ZIP data.</p>
+
+		 <p>Each <code>directory</code> record contains the following information:</p>
+
+		 <p><ul>
+
+		 <li>compressorID (<code>uint</code>): The ID of the software used to create the ZIP data.</li>
+
+		 <li>compressorVersion (<code>uint</code>): The minium version of the software required to handle the associated 
+
+		 ZIP data.</li>
+
+		 <li>bitFlags (<code>uint</code>): Special attribute flags. Currently, if bit 3 is set (0x04), the CRC32 value is stored as 
+
+		 0 in the <code>directory</code> object and will rather be appended as a 12-byte value at the end of the compressed 
+
+		 data.</li>
+
+		 <li>compressor (<code>uint</code>): The compression algorithm used for the stored file. Valid values include 
+
+		 <strong>0 = stored</strong> (no compression), <strong>1 = shrunk</strong>, <strong>2 to 5 = reduced with 
+
+		 compression factor 1 to 4</strong> (in order), <strong>6 = imploded</strong>, <strong>7 = reserved</strong>, 
+
+		 <strong>8 = deflated</strong> (most common).</li>
+
+		 <li>modifiedTime (<code>SwagTime</code>): The last modified time of the file, stored in a <code>SwagTime</code> 
+
+		 instance.</li>
+
+		 <li>modifiedDate (<code>SwagDate</code>): The last modified date of the file, stored in a <code>Swagdate</code> 
+
+		 instance.</li>
+
+		 <li>CRC32 (<code>uint</code>): The 32-bit cyclical redundancy check value that can be used to verify the integrity 
+
+		 of the associated data.</li>
+
+		 <li>compressedSize (<code>uint</code>): The size of the compressed file, in bytes.</li>
+
+		 <li>uncompressedSize (<code>uint</code>): The size of the uncompressed file, in bytes.</li>
+
+		 <li>startDisk (<code>uint</code>): The first disk in which the compressed file resides. For multi-disk / multi-part 
+
+		 ZIPs.</li>
+
+		 <li>internalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown).</li>
+
+		 <li>externalAttributes (<code>uint</code>): Internal file attribute bits (exact values unknown). Most likely these 
+
+		 refer to file-system settings for the associated file / folder.</li>
+
+		 <li>headerOffset (<code>uint</code>): The offset to the file header within the ZIP. After the header is the actual 
+
+		 compressed data. The file header repeats much of the information found in the directory information and can thus be used 
+
+		 to retrieve data from partially corrupted ZIP files.</li>
+
+		 <li>fullPath (<code>String</code>): The full, relative path of the file or folder. For example: 
+
+		 <em>/folder/sub_folder/my_file.txt</em> --or-- <em>no_folder_file.doc</em></li>
+
+		 <li>extraField (<code>uint</code>): Extra field provided for associating extra information with the compressed data. 
+
+		 Format unspecified.</li>
+
+		 <li>comment (<code>String</code>): A comment associated with the individual file or folder.</li>
+
+		 <li>name (<code>String</code>): The file name portion of the <code>fullPath</code> property. For example, if 
+
+		 <code>fullPath</code> is <em>some_folder/my_file.txt</em>, the name will be <em>my_file.txt</em>. For folder items, 
+
+		 this is an empty string.</li>
+
+		 <li>path (<code>String</code>): The path portion of the <code>fullPath</code> property. For example, if 
+
+		 <code>fullPath</code> is <em>some_folder/my_file.txt</em>, this path will be <em>some_folder</em>. If a file is 
+
+		 stored in the root of the ZIP data (not in any folder), this will be an empty string.</li>
+
+		 <li>pathParts (<code>Array</code>): The path broken up into a numbered array, each element corresponding to a 
+
+		 deeper level in the folder structure. For example, the path <em>folder_one/folder_two</em> would produce 
+
+		 <code>pathParts[0]="folder_one"</code> and <code>pathParts[1]="folder_two"</code>. The file name is not included 
+
+		 in this array since it's not part of the path.</li>
+
+		 <li>pathDepth (<code>uint</code>): The depth (within folder) at which the file resides. This is equal to the length 
+
+		 of the <code>pathParts</code> array. For example, the file <em>folder_one/second_folder/my_file.txt</em> is at 
+
+		 <code>pathDepth</code> 2 (two folders deep).</li> 
+
+		 <li>type (<code>String</code>): The type of item that this directory entry is. Valid values include "<em>file</em>" 
+
+		 and "<em>folder</em>".</li>
+
+		 <li>index (<code>uint</code>): The index value at which this item resides in the <code>directory</code> array.</li>
+
+		 </ul></p>
+
+		 ]]></description>
+</method>
+<method name='header' fullname='swag.core.instances:SwagZip/header/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+<description><![CDATA[
+
+		 Retrieves the parsed header information for the associated ZIP data. 
+
+		 <p>This includes global items such as the offset of the file information headers within the ZIP 
+
+		 data, the comment associated with the ZIP data, and so on.</p>
+
+		 <p>The header object contains the following information:</p>
+
+		 <p><ul>
+
+		 <li>diskNumber (<code>uint</code>): The disk number associated with this archive (for multi-disk archives).</li>
+
+		 <li>directoryDiskNumber (<code>uint</code>): The number of the current disk's directory (for multi-disk archives).</li>
+
+		 <li>directoryDiskRecords (<code>uint</code>): The total number of directory records across all disks (for multi-disk 
+
+		 archives).</li>
+
+		 <li>directoryRecords (<code>uint</code>): The total number of records in the current disk directory (should match the 
+
+		 number of <code>directory</code> elements once parsed).</li>
+
+		 <li>directorySize (<code>uint</code>): The size of the directory, in bytes, in the current disk archive.</li>
+
+		 <li>directoryOffser (<code>uint</code>): The offset, in bytes from the beginning of the ZIP data, of the directory 
+
+		 data in the current archive.</li>
+
+		 <li>comment (<code>String</code>): A comment associated with the current ZIP data. May be up to 65,535 characters.</li>
+
+		 </ul></p>
+
+		 ]]></description>
+</method>
+<method name='data' fullname='swag.core.instances:SwagZip/data/set' isStatic='false' isFinal='false' isOverride='false'  param_names='dataSet' param_types='flash.utils:ByteArray' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ 
+
+		 The raw, compressed ZIP data for the class instance.
+
+		 <p>The data is parsed directly, verifying whether or not it's valid ZIP data, and then extracting 
+
+		 <code>directory</code> information from it (available via the <code>header</code> object).</p> 
+
+		 ]]></description>
+</method>
+<field name='_ZIPData' fullname='swag.core.instances:SwagZip/private:_ZIPData' type='flash.utils:ByteArray' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_directoryData' fullname='swag.core.instances:SwagZip/private:_directoryData' type='Array' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_directoryEndHeaderSignature' fullname='swag.core.instances:SwagZip/private:_directoryEndHeaderSignature' type='uint' isStatic='true' isConst='true' defaultValue='0x06054b50' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_directoryHeaderSignature' fullname='swag.core.instances:SwagZip/private:_directoryHeaderSignature' type='uint' isStatic='true' isConst='true' defaultValue='0x02014b50' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_endDirectoryData' fullname='swag.core.instances:SwagZip/private:_endDirectoryData' type='Object' isStatic='false' isConst='false' defaultValue='null' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_fileHeaderSignature' fullname='swag.core.instances:SwagZip/private:_fileHeaderSignature' type='uint' isStatic='true' isConst='true' defaultValue='0x04034b50' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='SwagEvent' fullname='swag.events:SwagEvent' sourcefile='C:\BNM\development\SwAG.git\src\swag\events\SwagEvent.as' namespace='swag.events' access='public' baseclass='Object' interfaces='swag.interfaces.events:ISwagEvent' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The base class for all Swag events. This class may be sub-classed, or sent directly, to the <code>SwagDispatcher</code>.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+</classRec>
+<method name='SwagEvent' fullname='swag.events:SwagEvent/SwagEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='eventType;args' param_types='String;restParam' param_defaults='null;undefined' result_type='*'>
+<description><![CDATA[
+
+		 The default constructor for the SwagEvent class. 
+
+		  
+
+		 ]]></description>
+<param><![CDATA[eventType The type of event to create. It's highly advisable to use one of the event constant strings 
+
+		 provided with the various event types in order to easily maintain code changes (especially if event types 
+
+		 change in future revisions).
+
+		 ]]></param>
+<param><![CDATA[args Additional arguments to provide to the event. These include:
+
+		 <ul>
+
+		 <li>parameters (<code>Array</code>) - Optional parameters to pass to the receiving listener. The parameters 
+
+		 specified here are persistent -- they are maintained while the event object remains active. This allows updated 
+
+		 values to be passed to subsequent listeners, but for the same reason the <code>parameters</code> object should 
+
+		 not be assumed to have the same properties as when the event dispatch began.</li>
+
+		 </ul>
+
+		 
+
+		 ]]></param>
+<see><![CDATA[swag.core.SwagDispatcher
+
+		 ]]></see>
+</method>
+<method name='parameters' fullname='swag.events:SwagEvent/parameters/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+
+		 
+
+		 ]]></description>
+<return><![CDATA[Returns the associated parameters object associated with the event, or <em>null</em> if not defined.
+
+		 
+
+		 ]]></return>
+</method>
+<method name='type' fullname='swag.events:SwagEvent/type/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 
+
+		 ]]></description>
+<return><![CDATA[Returns the event type which should, ideally, match one of the constant <code>SwagEvent</code>-derived types 
+
+		 defined in the toolkit.
+
+		 
+
+		 ]]></return>
+</method>
+<field name='DEFAULT' fullname='swag.events:SwagEvent/DEFAULT' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.DEFAULT' >
+<description><![CDATA[
+
+		 The default <code>SwagEvent</code> type. The string value "swagDefaultEvent" may also be used but
+
+		 using this constant value is advisable in order to prevent potentially numerous code updates if it ever changes. 
+
+		 ]]></description>
+</field>
+<field name='_parameters' fullname='swag.events:SwagEvent/private:_parameters' type='Array' isStatic='false' isConst='false' defaultValue='null' >
+</field>
+<field name='_type' fullname='swag.events:SwagEvent/private:_type' type='String' isStatic='false' isConst='false' defaultValue='null' >
+</field>
+<classRec name='SwagSequenceEvent' fullname='swag.events:SwagSequenceEvent' sourcefile='C:\BNM\development\SwAG.git\src\swag\events\SwagSequenceEvent.as' namespace='swag.events' access='public' baseclass='swag.events:SwagEvent' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 ]]></author>
+<private><![CDATA[]]></private>
+</classRec>
+<method name='SwagSequenceEvent' fullname='swag.events:SwagSequenceEvent/SwagSequenceEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='eventType;args' param_types='String;restParam' param_defaults='null;undefined' result_type='*'>
+</method>
+<field name='END' fullname='swag.events:SwagSequenceEvent/END' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagSequenceEvent.END' >
+</field>
+<field name='START' fullname='swag.events:SwagSequenceEvent/START' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagSequenceEvent.START' >
+</field>
+<field name='STOP' fullname='swag.events:SwagSequenceEvent/STOP' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagSequenceEvent.START' >
+</field>
+<classRec name='SwagErrorEvent' fullname='swag.events:SwagErrorEvent' sourcefile='C:\BNM\development\SwAG.git\src\swag\events\SwagErrorEvent.as' namespace='swag.events' access='public' baseclass='swag.events:SwagEvent' interfaces='swag.interfaces.events:ISwagErrorEvent' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Extends the <code>SwagEvent</code> class for broadcasting error messages generated by the <em>SwAG Toolkit</em>. This
+
+	 class is used to broadcast any errors that are not thrown (i.e. non-fatal code errors). 
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+</classRec>
+<method name='SwagErrorEvent' fullname='swag.events:SwagErrorEvent/SwagErrorEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;args' param_types='String;restParam' param_defaults='null;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Creates a new <code>SwagErrorEvent</code> instance which can subsequently be broadcast using the standard
+
+		 Flash event system.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[type The type of event to broadcast. If this parameter is omitted, or is null, or a blank string, a generic
+
+		 <code>SwagErrorEvent.ERROR</code>-type event will be created. Use the included static properties for other error codes.
+
+		 ]]></param>
+<param><![CDATA[bubbles Passed as is to the standard Flash Event constructor.
+
+		 ]]></param>
+<param><![CDATA[cancelable Passed as is to the standard Flash Event constructor.
+
+		 
+
+		 ]]></param>
+<see><![CDATA[flash.events.Event 
+
+		 ]]></see>
+</method>
+<method name='description' fullname='swag.events:SwagErrorEvent/description/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+</method>
+<method name='remedy' fullname='swag.events:SwagErrorEvent/remedy/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+</method>
+<method name='description' fullname='swag.events:SwagErrorEvent/description/set' isStatic='false' isFinal='false' isOverride='false'  param_names='descriptionSet' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 The plain text description for the error instance.
+
+		 <p>This is a description of where the error occured and how it happened. This text should be 
+
+		 descriptive in order to allow the developer to remedy the issue. For example, avoid vague descriptions 
+
+		 like "The parameter was incorrect" and instead include specific details like "The firstParam parameter 
+
+		 was not a String type as expected".</p>
+
+		 <p>When deciding what to enter as a description, a good question to ask is: will this information
+
+		 help other developers pinpoint and fix the error?</p> 
+
+		 ]]></description>
+</method>
+<method name='remedy' fullname='swag.events:SwagErrorEvent/remedy/set' isStatic='false' isFinal='false' isOverride='false'  param_names='remedySet' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+
+		 The suggested remedy for the associated error. 
+
+		 <p>This plain text describes the suggested remedy that the developer can take in order
+
+		 to fix the error.</p>
+
+		 <p>This string shouldn't include information on what caused the error but should instead
+
+		 include useful suggestions on some of the possible steps that the developer can take
+
+		 to prevent the error in the future. For example, "Ensure that the firstParam parameter
+
+		 is a String type and is not null".</p>
+
+		 ]]></description>
+</method>
+<field name='DATAEMPTYERROR' fullname='swag.events:SwagErrorEvent/DATAEMPTYERROR' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagErrorEvent.DATAEMPTYERROR' >
+<description><![CDATA[
+
+		 This type of event is dispatched when the expected data is missing (either null or undefined).
+
+		 <p>This differs from the DATAVERIFYERROR in that the data expected doesn't exist as opposed to
+
+		 simply being of the wrong type or otherwise not matching the expected format.</p> 
+
+		 ]]></description>
+</field>
+<field name='DATAFORMATERROR' fullname='swag.events:SwagErrorEvent/DATAFORMATERROR' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagErrorEvent.DATAFORMATERROR' >
+<description><![CDATA[
+
+		 This type of event is dispatched when data verification fails.
+
+		 <p>Typically this type of event signifies that the data being analyzed does not match the required 
+
+		 format (either it's of the wrong type or the contents are not as expected). This differs from the 
+
+		 DATAEMPTYERROR type in that data is present (not null, not undefined).</p> 
+
+		 ]]></description>
+</field>
+<field name='ERROR' fullname='swag.events:SwagErrorEvent/ERROR' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagErrorEvent.SWAGERROREVENT' >
+<description><![CDATA[
+
+		 A default (generic) error.
+
+		 <p>This type of event is dispatched when the cause of an error can't be established
+
+		 or doesn't fit into any of the other error event types of this object.</p> 
+
+		 ]]></description>
+</field>
+<field name='UNSUPPORTEDOPERATIONERROR' fullname='swag.events:SwagErrorEvent/UNSUPPORTEDOPERATIONERROR' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagErrorEvent.UNSUPPORTEDOPERATIONERROR' >
+<description><![CDATA[
+
+		 This type of event is dispatched when the specified operation can't be performed because
+
+		 it isn't supported.
+
+		 <p>This type of error means that the operation being attempted, while valid and
+
+		 properly formatted, can't be performed (is not supported). If possible, this operation
+
+		 <em>may</em> be supported in future versions.</p> 
+
+		 ]]></description>
+</field>
+<field name='_description' fullname='swag.events:SwagErrorEvent/private:_description' type='String' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_remedy' fullname='swag.events:SwagErrorEvent/private:_remedy' type='String' isStatic='false' isConst='false' defaultValue='unknown' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='SwagTimeEvent' fullname='swag.events:SwagTimeEvent' sourcefile='C:\BNM\development\SwAG.git\src\swag\events\SwagTimeEvent.as' namespace='swag.events' access='public' baseclass='swag.events:SwagEvent' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Contains a number of constant properties used by the <code>SwagTime</code> class to dispatch events via the <code>SwagDispatcher</code>.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+<see><![CDATA[swag.core.instances.SwagTime
+
+	 ]]></see>
+<see><![CDATA[swag.events.SwagEvent
+
+	 ]]></see>
+<see><![CDATA[swag.core.SwagDispatcher 
+
+	 
+
+	 ]]></see>
+</classRec>
+<method name='SwagTimeEvent' fullname='swag.events:SwagTimeEvent/SwagTimeEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='eventType;args' param_types='String;restParam' param_defaults='null;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Default constructor for the <code>SwagTimeEvent</code> class.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[eventType The type of event to associate with the instance. It's advisable to use
+
+		 one of the provided class constants instead of direct string values in order to maintain forward compatibiliy.
+
+		 ]]></param>
+<param><![CDATA[args Optional parameters to include with the event (passed to super constructor in <code>SwagEvent</code> class).
+
+		 
+
+		 ]]></param>
+<see><![CDATA[swag.events.SwagEvent()
+
+		 
+
+		 ]]></see>
+</method>
+<field name='ENDCOUNTDOWN' fullname='swag.events:SwagTimeEvent/ENDCOUNTDOWN' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.ENDCOUNTDOWN' >
+<description><![CDATA[
+
+		 Dispatched when the associated <code>SwagTime</code> object ends a count down operation. A
+
+		 <code>SwagTimeEvent.STOPCOUNTDOWN</code> event is also broadcast at the same time.
+
+		 ]]></description>
+</field>
+<field name='ENDCOUNTUP' fullname='swag.events:SwagTimeEvent/ENDCOUNTUP' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.ENDCOUNTUP' >
+<description><![CDATA[
+
+		 Dispatched when the associated <code>SwagTime</code> object ends a count up operation. A
+
+		 <code>SwagTimeEvent.STOPCOUNTUP</code> event is also broadcast at the same time.
+
+		 ]]></description>
+</field>
+<field name='ONCOUNTDOWN' fullname='swag.events:SwagTimeEvent/ONCOUNTDOWN' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.ONCOUNTDOWN' >
+<description><![CDATA[
+
+		 Dispatched on each tick of the associated <code>SwagTime</code>'s timer during a count down operation.
+
+		 <p>This even may not be dispatched if the count down is launched in <em>silent</em> mode.</p> 
+
+		 ]]></description>
+</field>
+<field name='ONCOUNTUP' fullname='swag.events:SwagTimeEvent/ONCOUNTUP' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.ONCOUNTUP' >
+<description><![CDATA[
+
+		 Dispatched on each tick of the associated <code>SwagTime</code>'s timer during a count up operation.
+
+		 <p>This even may not be dispatched if the count up is launched in <em>silent</em> mode.</p> 
+
+		 ]]></description>
+</field>
+<field name='RESETCOUNTDOWN' fullname='swag.events:SwagTimeEvent/RESETCOUNTDOWN' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.RESETCOUNTDOWN' >
+<description><![CDATA[
+
+		 Dispatched when the associated <code>SwagTime</code> object's count down operation is reset. 
+
+		 ]]></description>
+</field>
+<field name='RESETCOUNTUP' fullname='swag.events:SwagTimeEvent/RESETCOUNTUP' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.RESETCOUNTUP' >
+<description><![CDATA[
+
+		 Dispatched when the associated <code>SwagTime</code> object's count up operation is reset. 
+
+		 ]]></description>
+</field>
+<field name='STARTCOUNTDOWN' fullname='swag.events:SwagTimeEvent/STARTCOUNTDOWN' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.STARTCOUNTDOWN' >
+<description><![CDATA[
+
+		 Dispatched when the associated <code>SwagTime</code> object begins a count down operation. 
+
+		 ]]></description>
+</field>
+<field name='STARTCOUNTUP' fullname='swag.events:SwagTimeEvent/STARTCOUNTUP' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.STARTCOUNTUP' >
+<description><![CDATA[
+
+		 Dispatched when the associated <code>SwagTime</code> object begins a count up operation. 
+
+		 ]]></description>
+</field>
+<field name='STOPCOUNTDOWN' fullname='swag.events:SwagTimeEvent/STOPCOUNTDOWN' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.STOPCOUNTDOWN' >
+<description><![CDATA[
+
+		 Dispatched when the associated <code>SwagTime</code> object's count down is stopped via a method call. 
+
+		 ]]></description>
+</field>
+<field name='STOPCOUNTUP' fullname='swag.events:SwagTimeEvent/STOPCOUNTUP' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagTimeEvent.STOPCOUNTUP' >
+<description><![CDATA[
+
+		 Dispatched when the associated <code>SwagTime</code> object's count up is stopped via a method call. 
+
+		 ]]></description>
+</field>
+<classRec name='SwagZipEvent' fullname='swag.events:SwagZipEvent' sourcefile='C:\BNM\development\SwAG.git\src\swag\events\SwagZipEvent.as' namespace='swag.events' access='public' baseclass='swag.events:SwagEvent' interfaces='swag.interfaces.core.instances:ISwagZipEvent' isFinal='false' isDynamic='false' >
+</classRec>
+<method name='SwagZipEvent' fullname='swag.events:SwagZipEvent/SwagZipEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='eventType;args' param_types='String;restParam' param_defaults='null;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Default constructor for the class.
+
+		  
+
+		 ]]></description>
+<param><![CDATA[eventType The type of event to create.
+
+		 ]]></param>
+<param><![CDATA[args Additional arguments to provide to the event. These include:
+
+		 <ul>
+
+		 <li>parameters (<code>Array</code>) - Optional parameters to pass to the receiving listener. The parameters specified here
+
+		 are persistent -- they are maintained while the event object remains active. This allows updated values to be passed to
+
+		 subsequent listeners, but for the same reason the <code>parameters</code> object should not be assumed to have the same
+
+		 properties as when the event dispatch began.</li>
+
+		 </ul>
+
+		 
+
+		 ]]></param>
+</method>
+<field name='PARSEDIRECTORY' fullname='swag.events:SwagZipEvent/PARSEDIRECTORY' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagZipEvent.PARSEDIRECTORY' >
+<description><![CDATA[
+
+		 Invoked when the associated <code>SwagZip</code> object has completed parsing the Zip file's directory info.
+
+		 <p>The Zip data of the <code>SwagZip</code> can only be used once this information has been
+
+		 parsed, otherwise it's not possible to know where individual files / directories begin, how
+
+		 large they are, etc.</p>
+
+		 ]]></description>
+</field>
+<field name='PARSEHEADER' fullname='swag.events:SwagZipEvent/PARSEHEADER' type='String' isStatic='true' isConst='true' defaultValue='SwagEvent.SwagZipEvent.PARSEHEADER' >
+<description><![CDATA[
+
+		 Invoked when the associated <code>SwagZip</code> object has completed parsing the Zip file's
+
+		 main header information.
+
+		 <p>This event will be broadcast first, before <code>SwagZipEvent.PARSEDIRECTORY</code>.</p>
+
+		 ]]></description>
+</field>
+<classRec name='SwagTween' fullname='swag.effects:SwagTween' sourcefile='C:\BNM\development\SwAG.git\src\swag\effects\SwagTween.as' namespace='swag.effects' access='public' baseclass='Object' interfaces='swag.interfaces.effects:ISwagTween' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 ]]></description>
+<author><![CDATA[Patrick Bay
+
+	 
+
+	 ]]></author>
+<see><![CDATA[fl.transitions.Tween
+
+	 
+
+	 ]]></see>
+<private><![CDATA[]]></private>
+</classRec>
+<method name='SwagTween' fullname='swag.effects:SwagTween/SwagTween' isStatic='false' isFinal='false' isOverride='false'  param_names='obj;props;func;begin;finish;duration;useSeconds;extras' param_types='Object;String;*;*;*;*;Boolean;Object' param_defaults='undefined;undefined;undefined;undefined;undefined;undefined;false;null' result_type='*'>
+<description><![CDATA[
+
+		 Default constructor for the <code>SwagTween</code> class.
+
+		 <p>The class constructor's parameter list is almost identical to a standard Flash <code>Tween</code> instance with the exception of
+
+		 an additional <code>props</code> paramater which provides support for <code>SwagTween</code>'s extended features.</p>
+
+		 
+
+		 ]]></description>
+<param><![CDATA[obj The object on which to perform the tween (within which the <code>props</code> property / properties reside.
+
+		 ]]></param>
+<param><![CDATA[props The property or properties to update with the tween. If applying the tween to multiple properties, they must be 
+
+		 separated by a comma. All properties will be tweened with the same values. Note that this differs from the standard <code>Tween</code> 
+
+		 instance which only supports one property).
+
+		 ]]></param>
+<param><![CDATA[func The tweening function (for example, one of the <code>fl.transitions.easing.&#42;</code> classes) to use with the tween. The parameter
+
+		 may either be a direct reference to the easing class, as in a standard <code>Tween</code> instance, or it may be a string in which case
+
+		 <code>SwagTween</code> will attempt to retrieve a reference to the class from Flash memory. If none can be found, an error will be dispatched and
+
+		 no tween will take place.
+
+		 ]]></param>
+<param><![CDATA[begin The starting value(s) for the tweenable properties. If this value is numeric, it is assumed to apply to all the properies listed in the
+
+		 <code>props</code> parameter. If it's a string or an array it's assumed to contain a list of values to apply to the properties listed in the 
+
+		 <code>props</code> parameter in the order in which they appear (values in a string must be comma separated). If the number of values exceeds the 
+
+		 number of properties, any remaining values are ignored. If the number of values is less than the associated properties, the last value in the list 
+
+		 is used with the remaining properties. If no value is provided (e.g. <em>null</em>), or the value is of a type that can't be used (e.g. not a 
+
+		 <code>String</code>, <code>Array</code>, or a numeric type), an error will be dispatched and no tween will take place.
+
+		 ]]></param>
+<param><![CDATA[finish The ending value(s) for the tweenable properties. If this value is numeric, it is assumed to apply to all the properies listed in the
+
+		 <code>props</code> parameter. If it's a string or an array it's assumed to contain a list of values to apply to the properties listed in the "props"
+
+		 parameter in the order in which they appear (values in a string must be comma separated). If the number of values exceeds the number of properties, 
+
+		 any remaining values are ignored. If the number of values is less than the associated properties, the last value in the list is used with the 
+
+		 remaining properties. If no value is provided (e.g. <em>null</em>), or the value is of a type that can't be used (e.g. not a <code>String</code>, 
+
+		 <code>Array</code>, or a numeric type), an error will be dispatched and no tween will take place.
+
+		 ]]></param>
+<param><![CDATA[duration The duration(s) to apply to the associated tween. If this is a numeric value it's assumed to apply to all of the supplied properties.
+
+		 If this value is a comma-separated list or an array of values, they are applied in the order in which they appear. If the number of values
+
+		 exceed the number of properties, the remaining values are ignored. If the number of properties exceeds the number of <code>duration</code> values,
+
+		 the last value in the list will be applied to remaining properties. If no value is provided (e.g. <em>null</em>), or the value is of a type that 
+
+		 can't be used (e.g. not a <code>String</code>, <code>Array</code>, or a numeric type), an error will be dispatched and no tween will take place.
+
+		 ]]></param>
+<param><![CDATA[useSeconds If <em>true</em>, the value(s) specified in the <code>duration</code> property is / are in seconds. If <em>false</em>, the
+
+		 value(s) are in frames.
+
+		 ]]></param>
+<param><![CDATA[extras Additional optional properties to include with the tween. These include:
+
+		 <ul>
+
+		 <li>delay (<code>Number</code>) - The delay(s), in the units specified by the <code>useSeconds</code> parameter, to hold the tween before
+
+		 starting it. If this value is numeric it applies to all the tweenable properties. If this is a <code>String</code> or <code>Array</code>,
+
+		 this property is assumed to hold a list of delays in the same order as the tweenable properties. If there are more delay values than tweenable
+
+		 properties, remaining delays are ignored. If there are more properties than delays, the last delay in the list applies to all outstanding properties.
+
+		 </li>
+
+		 </ul>
+
+		 
+
+		 ]]></param>
+<see><![CDATA[fl.transitions.Tween()
+
+		 
+
+		 ]]></see>
+</method>
+<field name='_tweens' fullname='swag.effects:SwagTween/private:_tweens' type='Array' isStatic='false' isConst='false' >
+<description><![CDATA[
+
+		 Array of tween objects including references to individual Tween instances, tween properties, and other information
+
+		 controlled by <code>SwagTween</code>.
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+</asdoc>

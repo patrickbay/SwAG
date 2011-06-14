@@ -11,7 +11,42 @@ package swag.events {
 	 */	
 	public class SwagErrorEvent extends SwagEvent implements ISwagErrorEvent {
 		
-		public static const ERROR:String="swagErrorEvent";
+		/**
+		 * A default (generic) error.
+		 * <p>This type of event is dispatched when the cause of an error can't be established
+		 * or doesn't fit into any of the other error event types of this object.</p> 
+		 */
+		public static const ERROR:String="SwagEvent.SwagErrorEvent.SWAGERROREVENT";
+		/**
+		 * This type of event is dispatched when data verification fails.
+		 * <p>Typically this type of event signifies that the data being analyzed does not match the required 
+		 * format (either it's of the wrong type or the contents are not as expected). This differs from the 
+		 * DATAEMPTYERROR type in that data is present (not null, not undefined).</p> 
+		 */
+		public static const DATAFORMATERROR:String="SwagEvent.SwagErrorEvent.DATAFORMATERROR";
+		/**
+		 * This type of event is dispatched when the expected data is missing (either null or undefined).
+		 * <p>This differs from the DATAVERIFYERROR in that the data expected doesn't exist as opposed to
+		 * simply being of the wrong type or otherwise not matching the expected format.</p> 
+		 */
+		public static const DATAEMPTYERROR:String="SwagEvent.SwagErrorEvent.DATAEMPTYERROR";
+		/**
+		 * This type of event is dispatched when the specified operation can't be performed because
+		 * it isn't supported.
+		 * <p>This type of error means that the operation being attempted, while valid and
+		 * properly formatted, can't be performed (is not supported). If possible, this operation
+		 * <em>may</em> be supported in future versions.</p> 
+		 */
+		public static const UNSUPPORTEDOPERATIONERROR:String="SwagEvent.SwagErrorEvent.UNSUPPORTEDOPERATIONERROR";
+		
+		/**
+		 * @private 
+		 */
+		private var _description:String=new String("");
+		/**
+		 * @private
+		 */
+		private var _remedy:String=new String("");
 		
 		/**
 		 * Creates a new <code>SwagErrorEvent</code> instance which can subsequently be broadcast using the standard
@@ -24,12 +59,46 @@ package swag.events {
 		 * 
 		 * @see flash.events.Event 
 		 */		
-		public function SwagErrorEvent(type:String=null, bubbles:Boolean=false, cancelable:Boolean=false) {
+		public function SwagErrorEvent(type:String=null) {
 			if ((type==null) || (type=="")) {
 				type=SwagErrorEvent.ERROR;
 			}//if
-			super(type, bubbles, cancelable);
+			super(type);
 		}//constructor
+		
+		/**
+		 * The plain text description for the error instance.
+		 * <p>This is a description of where the error occured and how it happened. This text should be 
+		 * descriptive in order to allow the developer to remedy the issue. For example, avoid vague descriptions 
+		 * like "The parameter was incorrect" and instead include specific details like "The firstParam parameter 
+		 * was not a String type as expected".</p>
+		 * <p>When deciding what to enter as a description, a good question to ask is: will this information
+		 * help other developers pinpoint and fix the error?</p> 
+		 */
+		public function set description(descriptionSet:String):void {
+			this._description=descriptionSet;
+		}//set description
+		
+		public function get description():String {
+			return (this._description);
+		}//get description
+		
+		/**
+		 * The suggested remedy for the associated error. 
+		 * <p>This plain text describes the suggested remedy that the developer can take in order
+		 * to fix the error.</p>
+		 * <p>This string shouldn't include information on what caused the error but should instead
+		 * include useful suggestions on some of the possible steps that the developer can take
+		 * to prevent the error in the future. For example, "Ensure that the firstParam parameter
+		 * is a String type and is not null".</p>
+		 */
+		public function set remedy(remedySet:String):void {
+			this._remedy=remedySet;
+		}//set remedy
+		
+		public function get remedy():String {
+			return (this._remedy);
+		}//get remedy
 		
 	}//SwagErrorEvent class
 	
